@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Михаил Леонов](https://up.htmlacademy.ru/adaptive/15/user/596635).
-* Наставник: [Павел Фомин] (https://up.htmlacademy.ru/adaptive/15/user/44744).
+* Наставник: [Павел Фомин](https://up.htmlacademy.ru/adaptive/15/user/44744).
 
 ---
 

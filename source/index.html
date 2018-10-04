@@ -37,7 +37,9 @@
 
   <main class="page-main">
 
-    <h1>Милые штуки ручной работы для дома</h1>
+    <div class="page-main__name">
+      <h1>Милые штуки<br> ручной<br> работы для дома</h1>
+    </div>
 
     <section class="site-navigation">
       <a class="site-navigation__link" href="#">
@@ -87,7 +89,7 @@
             </td>
           </tr>
         </table>
-        <img class="hit-week__image" src="http://placehold.it/150x100" alt="Вязаная корзина">
+        <img class="hit-week__image" src="img/triple-set-mobile@1x.jpg" width="260px" height="315px" alt="Вязаная корзина">
         <p class="hit-week__price">Цена: 990 руб.</p>
         <a class="hit-week__button button" href="#">
           Заказать
@@ -132,22 +134,21 @@
       <div class="reviews__wrapper slider">
         <h2 class="reviews__title">Отзывы</h2>
         <div class="reviews__list slider__list">
-          <blockquote class="reviews__item slider__item">
+          <div class="reviews__item slider__item">
             <p class="reviews__text">
               Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
             </p>
             <p class="reviews__author">
               Анастасия Красильникова
+              <span class="reviews__adress">@misssssiskras</span>
             </p>
-            <p class="reviews__adress">
-              @misssssiskras
-            </p>
-          </blockquote>
+          </div>
         </div>
         <p class="reviews__toggles slider__toggles">
           <button class="slider__toggle--left" type="button"></button>
           <button class="slider__toggle--right" type="button"></button>
-          <a class="reviews__write button" href="#">
+        </p>
+        <a class="reviews__write button" href="#">
         Написать
       </a>
       </div>
@@ -167,6 +168,7 @@
           </tr>
         </table>
       </div>
+      <img src="img/map-mobile@1x.jpg" width="320" height="457" alt="Карта, где мы находимся">
       <iframe class="contacts__map"></iframe>
       <a class="contacts__write button" href="#">Напишите нам</a>
     </section>
@@ -179,19 +181,19 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Мы в Инстаграме</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy"><span class="visually-hidden">Мы в Твиттере</span></a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
       </div>
     </div>
 

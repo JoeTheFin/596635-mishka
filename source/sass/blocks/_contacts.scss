@@ -1,0 +1,26 @@
+.contacts {
+  display: block;
+  margin-top: 50px;
+  font-family: $font-family;
+}
+
+.contacts__wrapper,
+.contacts__write {
+  width: 260px;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.contacts__name {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.contacts__info {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #444444;
+}

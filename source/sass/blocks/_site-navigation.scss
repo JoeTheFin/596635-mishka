@@ -1,0 +1,55 @@
+.site-navigation {
+  display: block;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.site-navigation__link {
+  text-decoration: none;
+}
+
+.site-navigation__box {
+  display: block;
+  min-width: 320px;
+  height: 104px;
+
+  &--home {
+    background-color: #63d1bb;
+  }
+
+  &--kids {
+    background-color: #56c3b2;
+  }
+}
+
+.site-navigation__name {
+  display: block;
+  padding: 30px 30px;
+  font-family: $font-family;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .site-navigation {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  .site-navigation__box {
+    display: block;
+    height: 104px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .site-navigation__name {
+    min-width: 270px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

@@ -1,0 +1,54 @@
+.hit-week {
+  font-family: $font-family;
+}
+
+.hit-week__wrapper {
+  width: 260px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.hit-week__header {
+  display: block;
+}
+
+.hit-week__name-product {
+  display: block;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.hit-week__name {
+  display: block;
+  margin-top: -20px;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #63d1bb;
+  text-transform: uppercase;
+}
+
+.hit-week__description {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #444444;
+}
+
+.hit-week__options {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #444444;
+}
+
+.hit-week__price {
+  display: block;
+  text-align: center;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #444444;
+}

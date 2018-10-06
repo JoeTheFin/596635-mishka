@@ -1,0 +1,37 @@
+.reviews {
+  display: block;
+  margin-top: 50px;
+  font-family: $font-family;
+}
+
+.reviews__wrapper {
+  width: 260px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.reviews__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.reviews__item {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #444444;
+}
+
+.reviews__author {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.reviews__adress {
+  font-size: 15px;
+  font-weight: 400;
+}

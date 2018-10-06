@@ -2,8 +2,6 @@
   display: block;
   margin-top: 50px;
   font-family: $font-family;
-  background-image: url("../img/review@1x.jpg");
-  background-repeat: no-repeat;
 }
 
 .reviews__wrapper {
@@ -58,8 +56,9 @@
   &--right {
     margin-left: -4px;
     border-left: none;
-    background-image: url("../img/icon-right-arrow.svg");
+    background-image: url("../img/icon-left-arrow.svg");
     background-repeat: no-repeat;
+    transform: rotate(180deg);
   }
 }
 
@@ -79,6 +78,8 @@
 @media (min-width: $tablet-width) {
   .reviews {
     position: relative;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
   }
 
   .reviews__title {

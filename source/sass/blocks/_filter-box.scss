@@ -40,9 +40,11 @@
   line-height: 16px;
   font-weight: 700;
   color: #62d1ba;
+  text-transform: uppercase;
 }
 
-.filter__list {
+.filter__list-radio,
+.filter__list-checkbox {
   padding-left: 0;
   list-style: none;
 }
@@ -66,11 +68,13 @@
   color: #000000;
 }
 
-.filter__fullname-box {
+.filter__fullname-box,
+.filter__email-box,
+.filter__telephone-box {
   input {
     width: 100%;
     border: none;
-    border-bottom: 3px solid black;
+    border-bottom: 2px solid black;
   }
 }
 
@@ -88,4 +92,100 @@
   line-height: 16px;
   font-weight: 700;
   color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .filter-box__wrapper {
+    min-width: 668px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .filter-box__caption {
+    h1 {
+      font-size: 43px;
+      line-height: 50px;
+    }
+  }
+
+  .filter-box__description {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .filter__fieldset {
+    border: none;
+  }
+
+  .filter__name {
+    font-size: 17px;
+    line-height: 16px;
+  }
+
+  .filter__label {
+    display: block;
+    width: 255px;
+    height: 70px;
+    margin-left: 230px;
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  .filter__color-box {
+    display: block;
+    width: 100vw;
+    background-color: #f1f1f1;
+  }
+
+  .filter__list-checkbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 205px;
+
+    .filter__label:nth-child(2n) {
+      display: inline-block;
+      margin-left: 0;
+      width: 200px;
+    }
+  }
+
+  .filter__label-name {
+    margin-left: 230px;
+  }
+
+  .filter__telephone-box,
+  .filter__email-box {
+    input {
+      margin-left: 230px;
+      background-color: inherit;
+      width: 410px;
+    }
+  }
+
+  .filter__addition-box {
+    min-width: 400px;
+    min-height: 140px;
+    margin-left: 230px;
+    border: 2px solid black;
+  }
+
+  .filter__footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .filter__footnote {
+    display: block;
+    width: 334px;
+    order: 2;
+  }
+
+  .filter__button {
+    display: block;
+    width: 230px;
+    margin-right: 170px;
+  }
 }

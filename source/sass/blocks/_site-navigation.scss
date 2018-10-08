@@ -42,7 +42,7 @@
 
   .site-navigation__box {
     display: block;
-    height: 104px;
+    height: 100px;
     margin-left: 50px;
     margin-right: 50px;
   }
@@ -51,5 +51,18 @@
     min-width: 270px;
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-navigation__box {
+    display: block;
+    height: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .site-navigation__name {
+    min-width: 505px;
   }
 }

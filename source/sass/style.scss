@@ -1,7 +1,9 @@
 @import "helpers/variables";
 @import "helpers/visually-hidden";
+@import "helpers/global";
 @import "blocks/buttons";
 @import "blocks/page-header";
+@import "blocks/main-nav";
 @import "blocks/page-main";
 @import "blocks/site-navigation";
 @import "blocks/hit-week";
@@ -9,5 +11,9 @@
 @import "blocks/reviews";
 @import "blocks/contacts";
 @import "blocks/page-footer";
+@import "blocks/social";
 @import "blocks/catalog";
+@import "blocks/product";
+@import "blocks/videobox";
 @import "blocks/filter-box";
+@import "blocks/filter";

@@ -4,6 +4,10 @@
   margin: 0 auto;
 }
 
+.page-main__promo-list {
+  display: none;
+}
+
 .page-main__name {
   display: block;
   height: 284px;
@@ -42,6 +46,51 @@
       padding-top: 140px;
       font-size: 50px;
       line-height: 43px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    width: 1200px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 10px;
+  }
+
+  .page-main__promo-list {
+    display: block;
+    padding: 0;
+    margin-left: 100px;
+
+    .promo-list {
+      display: inline-block;
+      width: 200px;
+      margin-right: 40px;
+
+      a {
+        font-family: $font-family;
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: 700;
+        text-decoration: none;
+        color: #000000;
+      }
+    }
+  }
+
+  .page-main__name {
+    margin-left: -100px;
+    margin-right: -100px;
+    background-color: #fbfbfb;
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-position: 50% 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1 {
+      font-size: 53px;
+      line-height: 57px;
     }
   }
 }

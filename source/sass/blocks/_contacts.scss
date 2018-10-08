@@ -25,14 +25,23 @@
   color: #444444;
 }
 
-.contacts__map-tablet {
+.contacts__map-mobile {
+  display: block;
+  margin-left: -30px;
+}
+
+.contacts__map-tablet,
+.contacts__map-desktop {
   display: none;
 }
 
+.contacts__write {
+  margin: 0 auto;
+}
 
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
-    width: 100vw;
+    width: 100%;
     margin-left: 50px;
     margin-right: 50px;
   }
@@ -42,12 +51,14 @@
     line-height: 50px;
   }
 
-  .contacts__map-mobile {
-    display: none;
-  }
+  .contacts__map {
+    &-mobile {
+      display: none;
+    }
 
-  .contacts__map-tablet {
-    display: block;
+    &-tablet {
+      display: block;
+    }
   }
 
   .contacts__write {
@@ -55,5 +66,13 @@
     margin-top: 40px;
     margin-bottom: 40px;
     font-weight: 700;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__wrapper {
+    width: 875px;
+    margin-left: 275px;
+    margin-right: 100px;
   }
 }

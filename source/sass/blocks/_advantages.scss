@@ -42,3 +42,21 @@
     width: 300px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .advantages__wrapper {
+    width: 700px;
+    margin-left: 275px;
+    margin-right: 275px;
+  }
+
+  .advantages__name {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .advantages__description {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}

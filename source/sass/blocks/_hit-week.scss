@@ -62,10 +62,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .hit-week {
+    display: block;
+    width: 668px;
+    margin: 0 auto;
+  }
+
   .hit-week__wrapper {
     width: 668px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 0px;
   }
 
   .hit-week__header {

@@ -31,6 +31,21 @@
 }
 
 @media (min-width: $tablet-width) {
+  .advantages {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .advantages__wrapper {
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  .advantages__name {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
   .advantages__list {
     display: flex;
     justify-content: space-between;

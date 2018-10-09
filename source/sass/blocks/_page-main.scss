@@ -33,8 +33,9 @@
 
 @media (min-width: $tablet-width) {
   .page-main {
-    width: 768px;
+    min-width: 768px;
     margin: 0 auto;
+    margin-top: -70px;
   }
 
   .page-main__name {
@@ -43,6 +44,7 @@
     background-image: url("../img/hero-tablet@1x.jpg");
     background-position: 50% 20%;
     background-repeat: no-repeat;
+    background-size: cover;
 
     h1 {
       padding-top: 140px;

@@ -79,21 +79,23 @@
 
 @media (min-width: $tablet-width) {
   .reviews {
+    width: 768px;
+    margin: 0 auto;
     min-height: 455px;
     position: relative;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
   }
 
+  .reviews__wrapper {
+    min-width: 668px;
+    margin: 0 auto;
+    padding-top: 60px;
+  }
+
   .reviews__title {
     font-size: 43px;
     line-height: 50px;
-  }
-
-  .reviews__wrapper {
-    width: 668px;
-    margin-left: 50px;
-    margin-right: 50px;
   }
 
   .reviews__item {
@@ -109,7 +111,7 @@
 
   .reviews__toggles {
     position: absolute;
-    top: 225px;
+    top: 335px;
     left: 500px;
 
     &--left,
@@ -123,7 +125,7 @@
     display: block;
     width: 175px;
     height: 20px;
-    top: 0;
+    top: 100px;
     left: 550px;
     font-size: 17px;
     line-height: 20px;

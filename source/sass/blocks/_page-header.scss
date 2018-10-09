@@ -28,7 +28,8 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    width: 768px;
+    min-width: 768px;
+    margin: 0 auto;
   }
 
   .page-header__logo-image {
@@ -36,9 +37,9 @@
 
     &--black {
       display: block;
-      width: 112.389px;
-      height: 46.087px;
-      margin-left: 48px;
+      width: 112px;
+      height: 46px;
+      margin-left: 6.25%;
       margin-top: 20px;
     }
   }

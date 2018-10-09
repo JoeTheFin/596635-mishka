@@ -14,6 +14,8 @@
 }
 
 .contacts__name {
+  display: block;
+  padding-bottom: 20px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -21,10 +23,17 @@
 }
 
 .contacts__info {
+  width: 260px;
+  height: 190px;
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
   color: #444444;
+
+  td {
+    width: 90px;
+    vertical-align: baseline;
+  }
 }
 
 .contacts__map-mobile {
@@ -43,10 +52,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contacts {
+    width: 768px;
+    margin: 0 auto;
+  }
+
   .contacts__wrapper {
-    width: 100%;
-    margin-left: 50px;
-    margin-right: 50px;
+    width: 668px;
+    margin: 0 auto;
   }
 
   .contacts__name {
@@ -61,6 +74,7 @@
 
     &-tablet {
       display: block;
+      margin-left: -50px;
     }
   }
 

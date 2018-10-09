@@ -24,7 +24,7 @@
 
 .site-navigation__name {
   display: block;
-  padding: 30px 10%;
+  padding: 30px 30px;
   font-family: $font-family;
   font-size: 19px;
   line-height: 24px;
@@ -37,20 +37,11 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin: 0 auto;
   }
 
-  .site-navigation__box {
-    display: block;
-    height: 100px;
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-
-  .site-navigation__name {
-    min-width: 270px;
-    font-size: 20px;
-    line-height: 30px;
+  .site-navigation__link {
+    margin-top: -100px;
+    min-width: 334px;
   }
 }
 

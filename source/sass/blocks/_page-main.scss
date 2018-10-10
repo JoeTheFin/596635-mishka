@@ -64,24 +64,27 @@
   .page-main__promo-list {
     display: block;
     padding: 0;
-    margin-left: 50px;
+    padding-left: 50px;
+    z-index: 1;
+    background-color: rgba (255, 255, 255, 1);
+  }
 
-    .promo-list {
-      display: inline-block;
-      width: 200px;
-      margin-top: 10px;
-      margin-right: 5px;
+  .page-main__promo-list-one,
+  .page-main__promo-list-two {
+    display: inline-block;
+    width: 200px;
+    margin-top: 10px;
+    margin-right: 5px;
 
-      a {
-        font-family: $font-family;
-        font-size: 15px;
-        line-height: 24px;
-        font-weight: 700;
-        text-decoration: none;
-        color: #000000;
+    a {
+      font-family: $font-family;
+      font-size: 15px;
+      line-height: 24px;
+      font-weight: 700;
+      text-decoration: none;
+      color: #000000;
       }
     }
-  }
 
   .page-main__name {
     background-color: #fbfbfb;

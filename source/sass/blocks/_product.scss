@@ -11,6 +11,10 @@
   &--tab {
     display: none;
   }
+
+  &--desktop {
+    display: none;
+  }
 }
 
 .product__box {
@@ -77,5 +81,26 @@
   .product__price {
     margin-top: 200px;
     font-size: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product__image {
+    &--tab {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
+
+  .product__box {
+    width: 284px;
+    height: 196px;
+  }
+
+  .product__price {
+    margin-top: 60px;
   }
 }

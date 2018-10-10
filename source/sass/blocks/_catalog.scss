@@ -48,3 +48,29 @@
     justify-content: center;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    min-width: 1150px;
+    margin: 0 auto;
+  }
+
+  .catalog__caption {
+    margin-top: -70px;
+  }
+
+  .catalog__wrapper {
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .catalog__wrapper-desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .catalog__product {
+    display: block;
+  }
+}

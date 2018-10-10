@@ -19,7 +19,8 @@
 .videobox__image {
   display: block;
 
-  &--tab {
+  &--tab,
+  &--desktop {
     display: none;
   }
 }
@@ -85,5 +86,46 @@
 
   .videobox__button {
     order: 3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .videobox {
+    display: block;
+    width: 1050px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 70px;
+  }
+
+  .videobox__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+
+  .videobox__content {
+    display: none;
+  }
+
+  .videobox__image--desktop {
+    display: block;
+  }
+
+  .videobox__name {
+    width: 180px;
+    margin-left: 60px;
+    margin-top: 80px;
+  }
+
+  .videobox__description {
+    margin-left: 20px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .videobox__button {
+    display: block;
+    width: 235px;
+    margin-left: 60px;
   }
 }

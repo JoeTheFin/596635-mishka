@@ -1,5 +1,7 @@
 .social {
   display: block;
+  padding-top: 30px;
+  margin-bottom: -30px;
 }
 
 .social__list {
@@ -36,5 +38,12 @@
   &--twitter {
     margin-left: 30px;
     background-image: url("../img/icon-twitter.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    padding-top: 10px;
+    margin: 0;
   }
 }

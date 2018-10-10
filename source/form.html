@@ -13,9 +13,9 @@
   <header class="page-header">
 
     <a class="page-header__logo" href="index.html">
-    <img class="page-header__logo-image" src="img/logo-mobile.svg" width="85" height="35" alt="Мишка">
-    <img class="page-header__logo-image--black" src="img/logo-tablet.svg" width="112.389" height="46.087" alt="Черный Мишка">
-    <img class="page-header__logo-image--desktop" src="img/logo-desktop.svg" width="149" height="73" alt="Черный Мишка с ушами">
+      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="85" height="35" alt="Мишка">
+      <img class="page-header__logo-image--black" src="img/logo-tablet.svg" width="112.389" height="46.087" alt="Черный Мишка">
+      <img class="page-header__logo-image--desktop" src="img/logo-desktop.svg" width="149" height="73" alt="Черный Мишка с ушами">
     </a>
     <nav class="page-header__main-nav main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -28,7 +28,7 @@
             <a href="#">Вязание на заказ</a>
           </li>
           <li class="main-nav__list-item">
-            <a href="#">Поиск по сайту</a>
+            <a href="#"><span class="main-nav__list-item-src">Поиск по сайту</span></a>
           </li>
           <li class="main-nav__list-item">
             <a href="#">Корзина: пока пуста</a>
@@ -49,26 +49,33 @@
         <p class="filter-box__description">
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
-        <form class="filter-box__filter" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="filter__fieldset">
-            <legend class="filter__name">Тип</legend>
-            <div class="filter__radio-filter-box">
-              <ul class="filter__list-radio">
-                <li class="filter__item item-radio">
-                  <input type="radio" class="filter__input-radio" name="type" value="accessory-for-interior" id="accs" checked>
-                  <label class="filter__label filter__label--radio" for="accs">Аксессуар для интерьера</label>
-                </li>
-                <li class="filter__item item-radio">
-                  <input type="radio" class="filter__input-radio" name="type" value="toy-for-kids" id="toys">
-                  <label class="filter__label filter__label--radio" for="toys">Детская игрушка</label>
-                </li>
-              </ul>
+      </div>
+
+      <form class="filter-box__filter filter" action="https://echo.htmlacademy.ru" method="get">
+        <div class="filter__wrapper">
+
+          <div class="filter__radio-filter-box">
+            <div class="filter__wrapper-min">
+              <fieldset class="filter__fieldset">
+                <legend class="filter__name">Тип</legend>
+                <ul class="filter__list-radio">
+                  <li class="filter__item item-radio">
+                    <input type="radio" class="filter__input-radio" name="type" value="accessory-for-interior" id="accs" checked>
+                    <label class="filter__label filter__label--radio" for="accs">Аксессуар для интерьера</label>
+                  </li>
+                  <li class="filter__item item-radio">
+                    <input type="radio" class="filter__input-radio" name="type" value="toy-for-kids" id="toys">
+                    <label class="filter__label filter__label--radio" for="toys">Детская игрушка</label>
+                  </li>
+                </ul>
+              </fieldset>
             </div>
-          </fieldset>
-          <div class="filter__color-box">
-            <fieldset class="filter__fieldset">
-              <legend class="filter__name">Цвет</legend>
-              <div class="filter__checkbox-filter-box">
+          </div>
+
+          <div class="filter__checkbox-filter-box">
+            <div class="filter__wrapper-min">
+              <fieldset class="filter__fieldset">
+                <legend class="filter__name">Цвет</legend>
                 <ul class="filter__list-checkbox">
                   <li class="filter__item item-checkbox">
                     <input type="checkbox" class="filter__input-checkbox" name="color" value="white-color" id="white" checked>
@@ -95,46 +102,55 @@
                     <label class="filter__label filter__label-checkbox" for="orange">Оранжевый</label>
                   </li>
                 </ul>
-              </div>
-            </fieldset>
-          </div>
-          <fieldset class="filter__fieldset">
-            <legend class="filter__name">ФИО</legend>
-            <div class="filter__fullname-box">
-              <label class="filter__label-name" for="your-name">Имя:<br>
-              <input type="text" id="your-name" name="your-name" placeholder="Введите ваше имя"></label>
-              <label class="filter__label-name" for="your-surname">Фамилия:<br>
-              <input type="text" id="your-surname" name="your-surname" placeholder="Укажите фамилию"></label>
-              <label class="filter__label-name" for="your-fath">Отчество:<br>
-              <input type="text" id="your-fath" name="your-fath" placeholder="Отчество, если желаете"></label>
+              </fieldset>
             </div>
-          </fieldset>
-          <div class="filter__color-box">
-            <fieldset class="filter__fieldset">
-              <legend class="filter__name">ТЕЛ</legend>
-              <div class="filter__telephone-box">
+          </div>
+
+          <div class="filter__fullname-box">
+            <div class="filter__wrapper-min">
+              <fieldset class="filter__fieldset">
+                <legend class="filter__name">ФИО</legend>
+                <label class="filter__label" for="your-name">Имя:<br>
+                  <input type="text" id="your-name" name="your-name" placeholder="Введите ваше имя"></label>
+                <label class="filter__label" for="your-surname">Фамилия:<br>
+                  <input type="text" id="your-surname" name="your-surname" placeholder="Укажите фамилию"></label>
+                <label class="filter__label" for="your-fath">Отчество:<br>
+                  <input type="text" id="your-fath" name="your-fath" placeholder="Отчество, если желаете"></label>
+              </fieldset>
+            </div>
+          </div>
+
+          <div class="filter__tel-email">
+            <div class="filter__wrapper-min">
+              <fieldset class="filter__fieldset">
+                <legend class="filter__name">ТЕЛ</legend>
                 <input type="tel" name="tel" pattern="+7[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 XXX XXX XX XX*">
-              </div>
-            </fieldset>
-            <fieldset class="filter__fieldset">
-              <legend class="filter__name">E-MAIL</legend>
-              <div class="filter__email-box">
+              </fieldset>
+              <fieldset class="filter__fieldset">
+                <legend class="filter__name">E-MAIL</legend>
                 <input type="email" name="email" placeholder="Ваш Email">
-              </div>
-            </fieldset>
-          </div>
-          <fieldset class="filter__fieldset">
-            <legend class="filter__name">ДОП</legend>
-            <div class="filter__addition-box">
-              <textarea type="text" name="additions" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              </fieldset>
             </div>
-          </fieldset>
-          <div class="filter__footer">
-            <p class="filter__footnote"><sup>*</sup>Поля обязательные для заполнения</p>
-            <button type="submit" class="filter__button button">Отправить заказ</button>
           </div>
-        </form>
-      </div>
+
+          <div class="filter__addition-box">
+            <div class="filter__wrapper-min">
+              <fieldset class="filter__fieldset">
+                <legend class="filter__name">ДОП</legend>
+                <textarea type="text" name="additions" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              </fieldset>
+            </div>
+          </div>
+
+          <div class="filter__footer">
+            <div class="filter__wrapper-min">
+              <p class="filter__footnote"><sup>*</sup>Поля обязательные для заполнения</p>
+              <button type="submit" class="filter__button button">Отправить заказ</button>
+            </div>
+          </div>
+
+        </div>
+      </form>
     </section>
 
   </main>

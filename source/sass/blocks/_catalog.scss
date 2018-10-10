@@ -17,12 +17,22 @@
 }
 
 .catalog__wrapper {
-  align-items: center;
   width: 260px;
   margin: 0 auto;
+  align-items: center;
 }
 
 @media (min-width: $tablet-width) {
+  .catalog {
+    min-width: 768px;
+    margin: 0 auto;
+  }
+
+  .catalog__wrapper {
+    width: 668px;
+    margin: 0 auto;
+  }
+
   .catalog__caption {
     height: 210px;
 
@@ -30,12 +40,6 @@
       font-size: 43px;
       line-height: 50px;
     }
-  }
-
-  .catalog__wrapper {
-    width: 668px;
-    margin-left: 50px;
-    margin-right: 50px;
   }
 
   .catalog__product {

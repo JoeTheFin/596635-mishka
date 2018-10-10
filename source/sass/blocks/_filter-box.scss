@@ -1,5 +1,7 @@
 .filter-box {
   font-family: $font-family;
+  min-width: 320px;
+  margin: 0 auto;
 }
 
 .filter-box__caption {
@@ -17,6 +19,7 @@
 .filter-box__wrapper {
   width: 260px;
   margin: 0 auto;
+  align-items: center;
 }
 
 .filter-box__description {
@@ -27,13 +30,19 @@
 }
 
 @media (min-width: $tablet-width) {
+  .filter-box {
+    min-width: 768px;
+    margin: 0 auto;
+  }
+
   .filter-box__wrapper {
-    min-width: 668px;
-    margin-left: 50px;
-    margin-right: 50px;
+    width: 668px;
+    margin: 0 auto;
   }
 
   .filter-box__caption {
+    height: 210px;
+
     h1 {
       font-size: 43px;
       line-height: 50px;

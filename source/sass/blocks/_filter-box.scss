@@ -16,8 +16,7 @@
 
 .filter-box__wrapper {
   width: 260px;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin: 0 auto;
 }
 
 .filter-box__description {
@@ -27,65 +26,22 @@
   color: #444444;
 }
 
-.filter__fieldset {
-  border: none;
-  border-top: 1px solid #62d1ba;
-}
-
-.filter__name {
-  display: block;
-  margin-left: -15px;
-  padding-right: 20px;
-  font-size: 17px;
-  line-height: 16px;
-  font-weight: 700;
-  color: #62d1ba;
-}
-
-.filter__list {
-  padding-left: 0;
-  list-style: none;
-}
-
-.filter__label {
-  display: block;
-  margin-left: 50px;
-  font-size: 17px;
-  line-height: 18px;
-  font-weight: 700;
-  color: #000000;
-}
-
-.filter__label-name {
-  display: block;
-  margin-top: 10px;
-  margin-left: -13px;
-  font-size: 17px;
-  line-height: 18px;
-  font-weight: 700;
-  color: #000000;
-}
-
-.filter__fullname-box {
-  input {
-    width: 100%;
-    border: none;
-    border-bottom: 3px solid black;
+@media (min-width: $tablet-width) {
+  .filter-box__wrapper {
+    min-width: 668px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
-}
 
-.filter__footnote {
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 400;
-  color: #444444;
-}
+  .filter-box__caption {
+    h1 {
+      font-size: 43px;
+      line-height: 50px;
+    }
+  }
 
-.filter__button {
-  width: 100%;
-  background-color: #ffffff;
-  font-size: 17px;
-  line-height: 16px;
-  font-weight: 700;
-  color: #444444;
+  .filter-box__description {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }

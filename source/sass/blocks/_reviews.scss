@@ -1,5 +1,7 @@
 .reviews {
   display: block;
+  width: 320px;
+  margin: 0 auto;
   margin-top: 50px;
   font-family: $font-family;
 }
@@ -34,4 +36,132 @@
 .reviews__adress {
   font-size: 15px;
   font-weight: 400;
+}
+
+.reviews__toggles {
+  margin-bottom: 40px;
+
+  &--left,
+  &--right {
+    display: inline-block;
+    width: 128px;
+    height: 50px;
+    border: 1px solid #ececec;
+    background-position: 50% 50%;
+  }
+
+  &--left {
+    background-image: url("../img/icon-left-arrow.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--right {
+    margin-left: -4px;
+    border-left: none;
+    background-image: url("../img/icon-left-arrow.svg");
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+  }
+}
+
+.slider__toggle {
+  display: block;
+
+  &--left,
+  &--right {
+    border: none;
+    background: none;
+    width: 128px;
+    height: 50px;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    width: 768px;
+    margin: 0 auto;
+    min-height: 455px;
+    position: relative;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .reviews__wrapper {
+    min-width: 668px;
+    margin: 0 auto;
+    padding-top: 60px;
+  }
+
+  .reviews__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .reviews__item {
+    display: block;
+    width: 600px;
+    font-size: 15px;
+  }
+
+  .reviews__author {
+    display: block;
+    width: 300px;
+  }
+
+  .reviews__toggles {
+    position: absolute;
+    top: 335px;
+    left: 500px;
+
+    &--left,
+    &--right {
+      border: none;
+    }
+  }
+
+  .reviews__write {
+    position: absolute;
+    display: block;
+    width: 175px;
+    height: 20px;
+    top: 100px;
+    left: 550px;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #444444;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    margin-left: 50px;
+  }
+
+  .reviews__wrapper {
+    width: 1050px;
+    margin-left: 225px;
+    margin-right: 100px;
+  }
+
+  .reviews__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .reviews__text {
+    display: block;
+    width: 770px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .reviews__write {
+    left: 950px;
+  }
+
+  .reviews__toggles {
+    left: 893px;
+  }
 }

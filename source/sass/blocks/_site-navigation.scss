@@ -1,6 +1,6 @@
 .site-navigation {
   display: block;
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
 }
 
@@ -24,11 +24,36 @@
 
 .site-navigation__name {
   display: block;
-  width: 125px;
   padding: 30px 30px;
   font-family: $font-family;
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .site-navigation {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .site-navigation__link {
+    margin-top: -100px;
+    min-width: 334px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-navigation__box {
+    display: block;
+    height: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .site-navigation__name {
+    min-width: 505px;
+  }
 }

@@ -3,33 +3,35 @@
 
 <head>
   <link href="css/style.css" type="text/css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <body class="catalog-page">
 
-  <header class="catalog-page__page-header page-header">
+  <header class="page-header">
 
-    <a class="page-header__link" href="index.html">
-      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="85.589px" height="35.034px" alt="Мишка">
+    <a class="page-header__logo" href="index.html">
+    <img class="page-header__logo-image" src="img/logo-mobile.svg" width="85" height="35" alt="Мишка">
+    <img class="page-header__logo-image--black" src="img/logo-tablet.svg" width="112.389" height="46.087" alt="Черный Мишка">
+    <img class="page-header__logo-image--desktop" src="img/logo-desktop.svg" width="149" height="73" alt="Черный Мишка с ушами">
     </a>
     <nav class="page-header__main-nav main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item">
             <a href="#">Каталог товаров</a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__list-item">
             <a href="form.html">Вязание на заказ</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__search" href="#">Поиск по сайту</a>
+          <li class="main-nav__list-item">
+            <a href="#">Поиск по сайту</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__basket" href="#">Корзина: пока пуста</a>
+          <li class="main-nav__list-item">
+            <a href="#">Корзина: пока пуста</a>
           </li>
         </ul>
       </div>
@@ -45,10 +47,14 @@
       </div>
       <div class="catalog__wrapper">
         <article class="catalog__product product">
-          <a class="product__link-img" href="#">
+          <div class="product__image-box">
+            <a class="product__link-img" href="#">
           <img class="product__image" src="img/photo-hare-mobile@1x.jpg"
           width="260" height="195" alt="Зайчик-попрыгайчик">
+          <img class="product__image--tab" src="img/photo-hare-tablet@1x.jpg"
+          width="334" height="334" alt="Зайчик-попрыгайчик">
           </a>
+          </div>
           <div class="product__box">
             <a class="product__link" href="#">
           <b class="product__name">
@@ -65,6 +71,8 @@
           <a class="product__link-img" href="#">
           <img class="product__image" src="img/photo-bowl-mobile@1x.jpg"
           width="260" height="195" alt="Корзинка для белья">
+          <img class="product__image--tab" src="img/photo-bowl-tablet@1x.jpg"
+          width="334" height="334" alt="Корзинка для белья">
           </a>
           <div class="product__box">
             <a class="product__link" href="#">
@@ -82,6 +90,8 @@
           <a class="product__link" href="#">
           <img class="product__image" src="img/photo-toys-mobile@1x.jpg"
           width="260" height="195" alt="Большая корзина для игрушек">
+          <img class="product__image--tab" src="img/photo-toys-tablet@1x.jpg"
+          width="334" height="334" alt="Большая корзина для игрушек">
           </a>
           <div class="product__box">
             <a class="product__link" href="#">
@@ -96,8 +106,9 @@
           </div>
         </article>
         <article class="catalog__videobox videobox">
-          <b class="videobox__name">Процесс<br> производства</b>
+          <b class="videobox__name">Процесс производства</b>
           <div class="videobox__content"><img class="videobox__image" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Большая корзина для игрушек">
+            <img class="videobox__image--tab" src="img/video-tablet@1x.jpg" width="668" height="455" alt="Большая корзина для игрушек">
           </div>
           <p class="videobox__description">
             По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары
@@ -109,9 +120,11 @@
 
   </main>
 
-  <footer class="catalog-page__page-footer page-footer">
+  <footer class="page-footer">
 
     <div class="page-footer__wrapper">
+      <div class="page-footer__logo">
+      </div>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -125,9 +138,9 @@
           </li>
         </ul>
       </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
+      <div class="page-footer__copyright">
+        <b class="page-footer__copyright-text">Разработано</b>
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
       </div>
     </div>
 

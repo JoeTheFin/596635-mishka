@@ -3,31 +3,35 @@
 
 <head>
   <link href="css/style.css" type="text/css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <body>
 
   <header class="page-header">
 
-    <img class="page-header__logo-image" src="img/logo-mobile.svg" width="85.589" height="35.034" alt="Мишка">
+    <a class="page-header__logo">
+    <img class="page-header__logo-image" src="img/logo-mobile.svg" width="85" height="35" alt="Мишка">
+    <img class="page-header__logo-image--black" src="img/logo-tablet.svg" width="112" height="46" alt="Черный Мишка">
+    <img class="page-header__logo-image--desktop" src="img/logo-desktop.svg" width="149" height="73" alt="Черный Мишка с ушами">
+    </a>
     <nav class="page-header__main-nav main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item">
             <a href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__list-item">
             <a href="form.html">Вязание на заказ</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__search" href="#">Поиск по сайту</a>
+          <li class="main-nav__list-item">
+            <a href="#"><span class="main-nav__list-item-src">Поиск по сайту</span></a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__basket" href="#">Корзина: пока пуста</a>
+          <li class="main-nav__list-item">
+            <a href="#">Корзина: пока пуста</a>
           </li>
         </ul>
       </div>
@@ -38,62 +42,79 @@
   <main class="page-main">
 
     <div class="page-main__name">
-      <h1>Милые штуки<br> ручной<br> работы для дома</h1>
+      <ul class="page-main__promo-list promo-list">
+        <li class="promo-list">
+          <a class="promo-list__new" href="#">Новые поступления</a>
+        </li>
+        <li class="promo-list">
+          <a class="promo-list__sale" href="#">Распродажа</a>
+        </li>
+      </ul>
+      <h1>Милые штуки ручной<br> работы для дома</h1>
     </div>
 
     <section class="site-navigation">
       <a class="site-navigation__link" href="#">
         <div class="site-navigation__box--home">
-          <b class="site-navigation__name">Предметы интерьера</b>
+          <b class="site-navigation__name">Предметы<br> интерьера</b>
         </div>
       </a>
       <a class="site-navigation__link" href="#">
         <div class="site-navigation__box--kids">
-          <b class="site-navigation__name">Детские игрушки</b>
+          <b class="site-navigation__name">Детские<br> игрушки</b>
         </div>
       </a>
     </section>
 
+    </header>
+
     <article class="hit-week">
       <div class="hit-week__wrapper">
         <header class="hit-week__header">
-          <h2 class="hit-week__name-product">Вязаные корзины</h2>
+          <h2 class="hit-week__name-product">Вязаные корзинки</h2>
           <h3 class="hit-week__name">Товар недели</h3>
         </header>
-        <p class="hit-week__description">
-          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
-        </p>
-        <table class="hit-week__options">
-          <tr class="hit-week__row">
-            <td class="hit-week__item--one">
-              Цвет:
-            </td>
-            <td class="hit-week__item--two">
-              "Тиффани"/серый
-            </td>
-          </tr>
-          <tr class="hit-week__row">
-            <td class="hit-week__item--one">
-              Диаметр:
-            </td>
-            <td class="hit-week__item--two">
-              25 см
-            </td>
-          </tr>
-          <tr class="hit-week__row">
-            <td class="hit-week__item--one">
-              Высота:
-            </td>
-            <td class="hit-week__item--two">
-              15 см
-            </td>
-          </tr>
-        </table>
-        <img class="hit-week__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаная корзина">
-        <p class="hit-week__price">Цена: 990 руб.</p>
-        <a class="hit-week__button button" href="#">
-          Заказать
-        </a>
+        <div class="hit-week__container">
+          <div class="hit-week__container--one">
+            <p class="hit-week__description">
+              Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+            </p>
+            <table class="hit-week__options">
+              <tr class="hit-week__row">
+                <td class="hit-week__item--one">
+                  Цвет:
+                </td>
+                <td class="hit-week__item--two">
+                  "Тиффани"/серый
+                </td>
+              </tr>
+              <tr class="hit-week__row">
+                <td class="hit-week__item--one">
+                  Диаметр:
+                </td>
+                <td class="hit-week__item--two">
+                  25 см
+                </td>
+              </tr>
+              <tr class="hit-week__row">
+                <td class="hit-week__item--one">
+                  Высота:
+                </td>
+                <td class="hit-week__item--two">
+                  15 см
+                </td>
+              </tr>
+            </table>
+            <img class="hit-week__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаная корзина">
+            <p class="hit-week__price">Цена: 990 руб.</p>
+            <a class="hit-week__button button" href="#">Заказать
+            </a>
+          </div>
+          <div class="hit-week__container-two">
+            <img class="hit-week__image-tab" src="img/triple-set-tablet@1x.jpg" width="333" height="404" alt="Вязаная корзина">
+            <img class="hit-week__image-desktop" src="img/triple-set-desktop@1x.jpg" width="525" height="636" alt="Вязаная корзина">
+          </div>
+        </div>
       </div>
     </article>
 
@@ -144,33 +165,43 @@
             </p>
           </div>
         </div>
-        <p class="reviews__toggles slider__toggles">
-          <button class="slider__toggle--left" type="button"></button>
-          <button class="slider__toggle--right" type="button"></button>
-        </p>
-        <a class="reviews__write button" href="#">
-        Написать
-      </a>
+        <div class="reviews__toggles slider__toggles">
+          <div class="reviews__toggles--left">
+            <button class="slider__toggle--left" type="button"></button>
+          </div>
+          <div class="reviews__toggles--right">
+            <button class="slider__toggle--right" type="button"></button>
+          </div>
+        </div>
+        <a class="reviews__write button" href="#">Написать
+        </a>
       </div>
     </section>
 
     <section class="contacts">
       <div class="contacts__wrapper">
-        <b class="contacts__name">Контакты</b>
-        <table class="contacts__info">
-          <tr class="contacts__row">
-            <td class="contacts__item--one">e-mail:</td>
-            <td class="contacts__item--two">info@mimimishkashop.ru</td>
-          </tr>
-          <tr class="contacts__row">
-            <td class="contacts__item--one">адрес:</td>
-            <td class="contacts__item--two">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
-          </tr>
-        </table>
+        <div class="contacts__container">
+          <div class="contacts__container-one">
+          <b class="contacts__name">Контакты</b>
+          <table class="contacts__info">
+            <tr class="contacts__row">
+              <td class="contacts__item--one">e-mail:</td>
+              <td class="contacts__item--two">info@mimimishkashop.ru</td>
+            </tr>
+            <tr class="contacts__row">
+              <td class="contacts__item--one">адрес:</td>
+              <td class="contacts__item--two">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+            </tr>
+          </table>
+          <img class="contacts__map-mobile" src="img/map-mobile@1x.jpg" width="320" height="457" alt="Карта, где мы находимся">
+          <img class="contacts__map-tablet" src="img/map-tablet@1x.jpg" width="768" height="457" alt="Карта, где мы находимся">
+          <a class="contacts__write button" href="#">Напишите нам</a>
+        </div>
+        <div class="contacts__container-two">
+          <img class="contacts__map-desktop" src="img/map-desktop@1x.jpg" width="525" height="457" alt="Карта, где мы находимся">
+        </div>
       </div>
-      <img src="img/map-mobile@1x.jpg" width="320" height="457" alt="Карта, где мы находимся">
-      <iframe class="contacts__map"></iframe>
-      <a class="contacts__write button" href="#">Напишите нам</a>
+      </div>
     </section>
 
   </main>
@@ -178,6 +209,8 @@
   <footer class="page-footer">
 
     <div class="page-footer__wrapper">
+      <div class="page-footer__logo">
+      </div>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -191,9 +224,9 @@
           </li>
         </ul>
       </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
+      <div class="page-footer__copyright">
+        <b class="page-footer__copyright-text">Разработано</b>
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
       </div>
     </div>
 

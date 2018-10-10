@@ -1,5 +1,7 @@
 .catalog {
   font-family: $font-family;
+  min-width: 320px;
+  margin: 0 auto;
 }
 
 .catalog__caption {
@@ -17,97 +19,28 @@
 .catalog__wrapper {
   align-items: center;
   width: 260px;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin: 0 auto;
 }
 
-.product {
-  min-height: 373px;
-  margin-top: 30px;
-}
+@media (min-width: $tablet-width) {
+  .catalog__caption {
+    height: 210px;
 
-.product__box {
-  display: block;
-  margin-top: -5px;
-  padding-left: 30px;
-  border: 1px solid #f1f1f1;
-}
-
-.product__link {
-  text-decoration: none;
-}
-
-.product__name {
-  display: block;
-  padding-top: 15px;
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #000000;
-}
-
-.product__description {
-  display: block;
-  margin-top: 5px;
-  font-size: 13px;
-  line-height: 30px;
-  font-weight: 400;
-  color: #444444;
-}
-
-.product__price {
-  display: block;
-  padding-top: 10px;
-  padding-bottom: 30px;
-  font-size: 15px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #000000;
-}
-
-.catalog__videobox {
-  width: 260px;
-  margin-top: 30px;
-  margin-right: 30px;
-  border: 1px solid #f1f1f1;
-}
-
-.videobox__name {
-  display: block;
-  margin-left: 90px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #000000;
-}
-
-.videobox__content {
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 30px;
-    left: 80px;
-    width: 100px;
-    height: 77px;
-    background-image: url("../img/icon-play.svg");
-    background-repeat: no-repeat;
+    h1 {
+      font-size: 43px;
+      line-height: 50px;
+    }
   }
-}
 
-.videobox__description {
-  display: block;
-  padding-left: 40px;
-  padding-right: 30px;
-  font-size: 13px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #444444;
-}
+  .catalog__wrapper {
+    width: 668px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
 
-.videobox__button {
-  margin: 35px;
+  .catalog__product {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }

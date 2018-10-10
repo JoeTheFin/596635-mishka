@@ -87,9 +87,31 @@
 }
 
 @media (min-width: $desktop-width) {
+  .contacts {
+    display: block;
+    width: 1050px;
+    margin: 0 auto;
+  }
+
   .contacts__wrapper {
     width: 875px;
-    margin-left: 275px;
+    margin-left: 175px;
     margin-right: 100px;
+  }
+
+  .contacts__map {
+    &-tablet {
+      display: none;
+    }
+
+    &-desktop {
+      display: block;
+    }
+  }
+
+  .contacts__container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
   }
 }

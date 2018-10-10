@@ -56,21 +56,21 @@
 
 @media (min-width: $desktop-width) {
   .page-main {
-    width: 1200px;
-    margin-left: 100px;
-    margin-right: 100px;
-    padding-top: 10px;
+    width: 1150px;
+    margin: 0 auto;
+    padding-top: 20px;
   }
 
   .page-main__promo-list {
     display: block;
     padding: 0;
-    margin-left: 100px;
+    margin-left: 50px;
 
     .promo-list {
       display: inline-block;
       width: 200px;
-      margin-right: 40px;
+      margin-top: 10px;
+      margin-right: 5px;
 
       a {
         font-family: $font-family;
@@ -84,8 +84,6 @@
   }
 
   .page-main__name {
-    margin-left: -100px;
-    margin-right: -100px;
     background-color: #fbfbfb;
     background-image: url("../img/hero-desktop@1x.jpg");
     background-position: 50% 20%;

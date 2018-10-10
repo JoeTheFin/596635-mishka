@@ -40,7 +40,7 @@
   }
 
   .site-navigation__link {
-    margin-top: -100px;
+    margin-top: -108px;
     min-width: 334px;
   }
 }
@@ -48,12 +48,16 @@
 @media (min-width: $desktop-width) {
   .site-navigation__box {
     display: block;
+    width: 1050px;
     height: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 0 auto;
+  }
+
+  .site-navigation__link {
+    margin-top: -108px;
   }
 
   .site-navigation__name {
-    min-width: 505px;
+    min-width: 460px;
   }
 }

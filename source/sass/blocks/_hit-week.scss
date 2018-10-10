@@ -123,10 +123,16 @@
 }
 
 @media (min-width: $desktop-width) {
+  .hit-week {
+    display: block;
+    width: 1050px;
+    margin: 0 auto;
+  }
+
   .hit-week__wrapper {
     position: relative;
     width: 875px;
-    margin-left: 275px;
+    margin-left: 175px;
     margin-right: 100px;
   }
 

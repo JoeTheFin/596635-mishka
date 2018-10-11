@@ -11,7 +11,8 @@
 .site-navigation__box {
   display: block;
   min-width: 320px;
-  height: 104px;
+  margin: 0 auto;
+  background-position: center;
 
   &--home {
     background-color: #63d1bb;
@@ -24,7 +25,7 @@
 
 .site-navigation__name {
   display: block;
-  padding: 30px 30px;
+  padding: 27px 68px;
   font-family: $font-family;
   font-size: 19px;
   line-height: 24px;

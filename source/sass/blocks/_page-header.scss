@@ -11,20 +11,8 @@
   display: block;
   margin-top: 20px;
   margin-bottom: 5px;
+  margin-left: -2px;
   text-align: center;
-}
-
-.page-header__logo-image {
-  width: 85px;
-  height: 35px;
-
-  &--black {
-    display: none;
-  }
-
-  &--desktop {
-    display: none;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -33,16 +21,12 @@
     margin: 0 auto;
   }
 
-  .page-header__logo-image {
-    display: none;
-
-    &--black {
+  .page-header__logo {
       display: block;
-      width: 112px;
-      height: 46px;
+      width: 113px;
+      height: 47px;
       margin-left: 6.25%;
       margin-top: 20px;
-    }
   }
 }
 
@@ -53,16 +37,13 @@
     margin: 0 auto;
   }
 
-  .page-header__logo-image {
-    &--black {
-      display: none;
-    }
-
-    &--desktop {
-      display: block;
-      position: absolute;
-      top: 10px;
-      left: 45%;
-    }
+  .page-header__logo {
+    display: block;
+    width: 149px;
+    height: 73px;
+    position: absolute;
+    top: 10px;
+    left: 45%;
+    transform: scale(1.7);
   }
 }

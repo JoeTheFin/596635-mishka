@@ -54,3 +54,19 @@
     line-height: 30px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .filter-box {
+    min-width: 1150px;
+    margin: 0 auto;
+  }
+
+  .filter-box__caption {
+    margin-top: -70px;
+  }
+
+  .filter-box__wrapper {
+    width: 700px;
+    margin: 0 auto;
+  }
+}

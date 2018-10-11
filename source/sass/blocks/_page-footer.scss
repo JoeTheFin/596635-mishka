@@ -87,3 +87,16 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    min-width: 1150px;
+    min-height: 145px;
+    margin: 0 auto;
+  }
+
+  .page-footer__wrapper {
+    width: 1050px;
+    margin: 0 auto;
+  }
+}

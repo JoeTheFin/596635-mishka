@@ -120,6 +120,7 @@
   }
 
   .filter__name {
+    padding-top: 45px;
     font-size: 17px;
     line-height: 16px;
   }
@@ -169,20 +170,64 @@
   }
 
   .filter__footer {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+    .filter__wrapper-min {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: row-reverse;
+      width: 668px;
+      margin: 0 auto;
+    }
   }
 
   .filter__footnote {
     display: block;
-    width: 334px;
-    order: 2;
+    width: 306px;
+    height: 50px;
   }
 
   .filter__button {
     display: block;
-    width: 230px;
-    margin-right: 170px;
+    width: 228px;
+    height: 50px;
+    margin-right: 220px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter {
+    display: block;
+    min-width: 1150px;
+    margin: 0 auto;
+  }
+
+  .filter__wrapper {
+    display: block;
+    min-width: 1150px;
+    margin: 0 auto;
+  }
+
+  .filter__wrapper-min {
+    width: 860px;
+    margin: 0 auto;
+  }
+
+  .filter__addition-box {
+    textarea {
+      display: block;
+      margin-left: 68px;
+      height: 139px;
+      width: 700px;
+      border: 2px solid black;
+    }
+  }
+
+  .filter__footer {
+    display: block;
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  .filter__button {
+    margin-right: 220px;
   }
 }

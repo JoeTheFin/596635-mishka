@@ -7,8 +7,7 @@
 
 .hit-week__wrapper {
   width: 260px;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin: 0 auto;
 }
 
 .hit-week__header {
@@ -17,6 +16,8 @@
 
 .hit-week__name-product {
   display: block;
+  margin-top: 25px;
+  padding-bottom: 5px;
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
@@ -26,6 +27,7 @@
 .hit-week__name {
   display: block;
   margin-top: -20px;
+  margin-bottom: 24px;
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
@@ -41,24 +43,49 @@
 }
 
 .hit-week__options {
+  display: block;
+  margin-top: 23px;
   font-size: 15px;
   line-height: 20px;
   font-weight: 400;
   color: #444444;
+
+  td {
+    vertical-align: baseline;
+    text-align: left;
+  }
+
+  td:first-child {
+    padding-right: 25px;
+    padding-bottom: 17px;
+  }
 }
 
-.hit-week__price {
+.hit-week__image {
   display: block;
-  text-align: center;
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #444444;
+  margin-top: 20px;
+  margin-bottom: 25px;
 }
 
 .hit-week__image-tab,
 .hit-week__image-desktop {
   display: none;
+}
+
+.hit-week__button {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.hit-week__price {
+  display: block;
+  margin-bottom: 23px;
+  text-align: center;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #444444;
 }
 
 @media (min-width: $tablet-width) {

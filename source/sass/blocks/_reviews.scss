@@ -2,7 +2,7 @@
   display: block;
   width: 320px;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 58px;
   font-family: $font-family;
 }
 
@@ -27,6 +27,7 @@
 }
 
 .reviews__author {
+  padding-top: 10px;
   font-size: 17px;
   line-height: 30px;
   font-weight: 700;
@@ -34,12 +35,13 @@
 }
 
 .reviews__adress {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 400;
 }
 
 .reviews__toggles {
-  margin-bottom: 40px;
+  margin-top: 28px;
+  margin-bottom: 34px;
 
   &--left,
   &--right {
@@ -76,6 +78,12 @@
     height: 50px;
     cursor: pointer;
   }
+}
+
+.reviews__write {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
 }
 
 @media (min-width: $tablet-width) {

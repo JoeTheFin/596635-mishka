@@ -2,7 +2,7 @@
   display: block;
   width: 320px;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 85px;
   font-family: $font-family;
 }
 
@@ -30,14 +30,20 @@
   font-weight: 400;
   color: #444444;
 
-  td {
-    width: 90px;
+  td:first-child {
+    padding-right: 22px;
+    padding-bottom: 25px;
+    vertical-align: baseline;
+  }
+
+  td:last-child {
     vertical-align: baseline;
   }
 }
 
 .contacts__map-mobile {
   display: block;
+  margin-top: 30px;
   margin-left: -30px;
 }
 
@@ -49,6 +55,9 @@
 .contacts__write {
   margin: 0 auto;
   margin-top: 40px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
 }
 
 @media (min-width: $tablet-width) {

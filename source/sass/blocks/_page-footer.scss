@@ -1,9 +1,9 @@
 .page-footer {
   display: block;
   width: 100%;
-  min-height: 143px;
+  min-height: 145px;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 35px;
   font-family: $font-family;
   background-color: #f1f1f1;
 }
@@ -11,10 +11,10 @@
 .page-footer__copyright {
   display: block;
   position: relative;
-  width: 190px;
+  width: 215px;
   height: 30px;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 45px;
   padding: 20px 10px 20px 40px;
 }
 
@@ -26,8 +26,8 @@
 
 .page-footer__copyright-link {
   position: absolute;
-  top: 12px;
-  right: 20px;
+  top: 8px;
+  right: 35px;
   width: 40px;
   height: 45px;
   background-image: url("../img/htmlacademy.svg");

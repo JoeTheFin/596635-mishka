@@ -2,13 +2,13 @@
   display: block;
   width: 320px;
   margin: 0 auto;
+  margin-top: 68px;
   font-family: $font-family;
 }
 
 .advantages__wrapper {
   width: 260px;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin: 0 auto;
 }
 
 .advantages__name {
@@ -24,8 +24,10 @@
 }
 
 .advantages__description {
+  display: block;
+  margin-top: 85px;
   font-size: 17px;
-  line-height: 20px;
+  line-height: 19px;
   font-weight: 700;
   color: #000000;
 }

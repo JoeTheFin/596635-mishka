@@ -13,9 +13,11 @@
   <header class="page-header">
 
     <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="85" height="35" alt="Мишка">
-      <img class="page-header__logo-image--black" src="img/logo-tablet.svg" width="112.389" height="46.087" alt="Черный Мишка">
-      <img class="page-header__logo-image--desktop" src="img/logo-desktop.svg" width="149" height="73" alt="Черный Мишка с ушами">
+      <picture>
+      <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+      <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+      <img src="img/logo-mobile.svg" width="85" height="35" alt="Мишка-логотип">
+    </picture>
     </a>
     <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>

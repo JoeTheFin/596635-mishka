@@ -13,6 +13,8 @@
   h1 {
     display: block;
     padding-top: 70px;
+    font-size: 27px;
+    line-height: 30px;
   }
 }
 
@@ -23,6 +25,9 @@
 }
 
 .filter-box__description {
+  display: block;
+  margin-top: 22px;
+  margin-bottom: 24px;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;

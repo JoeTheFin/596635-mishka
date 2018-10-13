@@ -44,6 +44,7 @@
 }
 
 .main-nav__list-item {
+  position: relative;
   height: 78px;
   border-top: 1px solid #ececec;
   background-color: #ffffff;
@@ -52,8 +53,8 @@
     display: block;
     width: 190px;
     margin: 0 auto;
-    padding-left: 35px;
-    padding-top: 20px;
+    padding-left: 20px;
+    padding-top: 25px;
     font-size: 17px;
     line-height: 24px;
     font-weight: 700;
@@ -63,6 +64,13 @@
 
   &:last-child {
     border-bottom: 1px solid #ececec;
+  }
+
+  &:nth-child(3) svg,
+  &:last-child svg {
+    position: absolute;
+    top: 25px;
+    left: 75px;
   }
 }
 

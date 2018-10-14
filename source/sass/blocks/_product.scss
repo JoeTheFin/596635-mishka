@@ -56,6 +56,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .product {
+    margin-bottom: -15px;
+  }
+
+  .product:first-child {
+    margin-top: 80px;
+  }
+
   .product__image {
     display: none;
 
@@ -66,7 +74,7 @@
 
   .product__box {
     width: 332px;
-    height: 334px;
+    height: 332px;
   }
 
   .product__name {
@@ -79,8 +87,13 @@
   }
 
   .product__price {
-    margin-top: 200px;
+    margin-top: 169px;
+    margin-left: 4px;
     font-size: 17px;
+  }
+
+  .product__price-basket {
+    margin-top: 146px;
   }
 }
 

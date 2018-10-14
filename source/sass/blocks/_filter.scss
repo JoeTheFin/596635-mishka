@@ -39,21 +39,18 @@
 
 .filter__label {
   display: block;
+  position: relative;
   margin-left: 50px;
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
   color: #000000;
+  cursor: pointer;
 }
 
 .filter input[type="radio"],
 .filter input[type="checkbox"] {
   opacity: 0;
-}
-
-.filter__label {
-  position: relative;
-  cursor: pointer;
 }
 
 .filter__label--radio::before {

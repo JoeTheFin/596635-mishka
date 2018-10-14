@@ -90,7 +90,8 @@
   .reviews {
     width: 768px;
     margin: 0 auto;
-    min-height: 455px;
+    margin-top: 44px;
+    min-height: 457px;
     position: relative;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
@@ -99,12 +100,20 @@
   .reviews__wrapper {
     min-width: 668px;
     margin: 0 auto;
-    padding-top: 60px;
+    padding-top: 40px;
   }
 
   .reviews__title {
     font-size: 43px;
     line-height: 50px;
+    margin-left: -4px;
+  }
+
+  .reviews__text {
+    width: 645px;
+    margin-top: 50px;
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .reviews__item {
@@ -116,13 +125,15 @@
   .reviews__author {
     display: block;
     width: 300px;
+    margin-top: 45px;
     margin-bottom: -20px;
+    font-size: 18px;
   }
 
   .reviews__toggles {
     display: inline-block;
-    margin-left: 500px;
-    margin-top: -50px;
+    margin-left: 472px;
+    margin-top: -35px;
     width: 256px;
     height: 50px;
 
@@ -132,17 +143,17 @@
     }
 
     &--right {
-      margin-left: -50px;
+      margin-left: -45px;
     }
   }
 
   .reviews__write {
     position: absolute;
     display: block;
-    width: 175px;
-    height: 20px;
-    top: 100px;
-    left: 550px;
+    width: 171px;
+    height: 16px;
+    top: 79px;
+    left: 543px;
     font-size: 17px;
     line-height: 20px;
     font-weight: 700;

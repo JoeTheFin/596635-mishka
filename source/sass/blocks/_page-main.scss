@@ -35,23 +35,23 @@
   .page-main {
     min-width: 768px;
     margin: 0 auto;
-    margin-top: -70px;
+    margin-top: -340px;
   }
 
   .page-main__name {
     height: 625px;
     background-color: #fbfbfb;
     background-image: url("../img/hero-tablet@1x.jpg");
-    background-position: 50% 20%;
+    background-position: 50% 0%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
 
     h1 {
-      width: 500px;
+      width: 600px;
       margin: 0 auto;
-      padding-top: 140px;
-      font-size: 50px;
-      line-height: 43px;
+      padding-top: 153px;
+      font-size: 43px;
+      line-height: 50px;
     }
   }
 }

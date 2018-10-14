@@ -24,30 +24,6 @@
   }
 }
 
-.site-navigation__box--home::after {
-  content: "";
-  position: absolute;
-  top: 22px;
-  right: 76px;
-  width: 41px;
-  height: 63px;
-  background-image: url("../img/icon-interior.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.site-navigation__box--kids::after {
-  content: "";
-  position: absolute;
-  top: 123px;
-  right: 68px;
-  width: 60px;
-  height: 60px;
-  background-image: url("../img/icon-toy.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
 .site-navigation__name {
   display: block;
   padding-left: 17%;
@@ -68,8 +44,15 @@
   }
 
   .site-navigation__link {
-    margin-top: -108px;
+    margin-top: 1px;
     min-width: 334px;
+  }
+
+  .site-navigation__name {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 35px;
+    padding-top: 28px;
   }
 }
 

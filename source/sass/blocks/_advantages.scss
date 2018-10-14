@@ -36,6 +36,7 @@
   .advantages {
     width: 768px;
     margin: 0 auto;
+    margin-top: 119px;
   }
 
   .advantages__wrapper {
@@ -44,6 +45,7 @@
   }
 
   .advantages__name {
+    margin-left: -4px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -59,6 +61,12 @@
   .advantages__item {
     height: 150px;
     width: 300px;
+  }
+
+  .advantages__description {
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: 68px;
   }
 }
 

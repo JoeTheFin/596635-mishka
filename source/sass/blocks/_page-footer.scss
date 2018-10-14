@@ -3,7 +3,7 @@
   width: 100%;
   min-height: 145px;
   margin: 0 auto;
-  margin-top: 35px;
+  margin-top: 39px;
   font-family: $font-family;
   background-color: #f1f1f1;
 }
@@ -48,14 +48,15 @@
     justify-content: space-around;
     width: 668px;
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 45px;
   }
 
   .page-footer__logo {
     display: block;
-    width: 200px;
+    width: 215px;
     height: 50px;
     margin: 0;
+    margin-left: -5px;
     padding: 0;
     background-image: url("../img/logo-footer.svg");
     background-repeat: no-repeat;
@@ -64,26 +65,25 @@
 
   .page-footer__social {
     display: block;
-    width: 200px;
+    width: 190px;
     height: 50px;
     margin: 0;
     padding: 0;
-    margin-top: 20px;
   }
 
   .page-footer__copyright {
     display: block;
-    width: 200px;
+    width: 230px;
     height: 50px;
     margin: 0;
     padding: 0;
-    padding-top: 20px;
+    padding-top: 18px;
     text-align: center;
     align-self: baseline;
 
     &-link {
-      top: 10px;
-      right: -20px;
+      top: 7px;
+      right: -11px;
     }
   }
 }

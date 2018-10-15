@@ -54,6 +54,32 @@
       line-height: 50px;
     }
   }
+
+  .page-main__promo-list {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    height: 40px;
+    padding: 0;
+    list-style: none;
+
+    a {
+      display: block;
+      font-family: $font-family;
+      font-size: 15px;
+      line-height: 24px;
+      font-weight: 400;
+      color: #444444;
+      text-decoration: none;
+      margin-right: 50px;
+      padding-top: 18px;
+    }
+  }
+
+  .page-main__promo-list-item:first-child,
+  .page-main__promo-list-item:nth-child(2) {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -71,8 +97,7 @@
     background-color: rgba (255, 255, 255, 1);
   }
 
-  .page-main__promo-list-one,
-  .page-main__promo-list-two {
+  .page-main__promo-list-item {
     display: inline-block;
     width: 200px;
     margin-top: 10px;

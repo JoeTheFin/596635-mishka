@@ -99,4 +99,24 @@
     width: 1050px;
     margin: 0 auto;
   }
+
+  .page-footer__logo {
+    margin-left: 0;
+    margin-right: 300px;
+  }
+
+  .page-footer__social {
+    margin: 0;
+  }
+
+  .page-footer__copyright {
+    margin-right: 0;
+    margin-left: 260px;
+    padding-right: 45px;
+
+    &-link {
+      top: 7px;
+      right: -6px;
+    }
+  }
 }

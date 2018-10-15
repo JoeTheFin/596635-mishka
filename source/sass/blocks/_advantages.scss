@@ -74,6 +74,7 @@
   .advantages {
     width: 1050px;
     margin: 0 auto;
+    margin-top: 155px;
   }
 
   .advantages__wrapper {
@@ -87,7 +88,19 @@
     line-height: 57px;
   }
 
+  .advantages__list {
+    width: 700px;
+    justify-content: center;
+  }
+
+  .advantages__item {
+    width: 350px;
+    margin-left: auto;
+    margin-bottom: 3px;
+  }
+
   .advantages__description {
+    margin-top: 60px;
     font-size: 20px;
     line-height: 22px;
   }

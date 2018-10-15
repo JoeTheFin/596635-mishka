@@ -174,19 +174,28 @@
   }
 
   .reviews__title {
+    margin-left: -53px;
+    margin-top: 30px;
     font-size: 53px;
     line-height: 57px;
   }
 
   .reviews__text {
     display: block;
-    width: 770px;
+    width: 780px;
+    margin-left: -50px;
     font-size: 17px;
     line-height: 30px;
   }
 
+  .reviews__author {
+    margin-top: 25px;
+    margin-left: -50px;
+    font-size: 17px;
+  }
+
   .reviews__write {
-    left: 870px;
+    left: 875px;
   }
 
   .reviews__toggles {

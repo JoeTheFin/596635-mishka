@@ -180,6 +180,7 @@
   }
 
   .hit-week__name-product {
+    margin-top: 127px;
     font-size: 53px;
     line-height: 57px;
     z-index: 1;
@@ -187,12 +188,21 @@
 
   .hit-week__name {
     position: absolute;
-    top: 15px;
-    left: -130px;
+    top: 85px;
+    left: -155px;
+  }
+
+  .hit-week__description {
+    margin-top: -18px;
+    margin-bottom: 55px;
+  }
+
+  .hit-week__price {
+    margin-top: 103px;
   }
 
   .hit-week__container-two {
-    margin-top: -120px;
+    margin-top: -175px;
   }
 
   .hit-week__image {

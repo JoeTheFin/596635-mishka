@@ -2,13 +2,13 @@
   display: block;
   width: 320px;
   margin: 0 auto;
+  margin-top: 68px;
   font-family: $font-family;
 }
 
 .advantages__wrapper {
   width: 260px;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin: 0 auto;
 }
 
 .advantages__name {
@@ -24,8 +24,10 @@
 }
 
 .advantages__description {
+  display: block;
+  margin-top: 85px;
   font-size: 17px;
-  line-height: 20px;
+  line-height: 19px;
   font-weight: 700;
   color: #000000;
 }
@@ -34,6 +36,7 @@
   .advantages {
     width: 768px;
     margin: 0 auto;
+    margin-top: 119px;
   }
 
   .advantages__wrapper {
@@ -42,6 +45,7 @@
   }
 
   .advantages__name {
+    margin-left: -4px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -58,13 +62,25 @@
     height: 150px;
     width: 300px;
   }
+
+  .advantages__description {
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: 68px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .advantages {
+    width: 1050px;
+    margin: 0 auto;
+    margin-top: 155px;
+  }
+
   .advantages__wrapper {
-    width: 700px;
-    margin-left: 275px;
-    margin-right: 275px;
+    width: 875px;
+    margin-left: 175px;
+    margin-right: 100px;
   }
 
   .advantages__name {
@@ -72,7 +88,19 @@
     line-height: 57px;
   }
 
+  .advantages__list {
+    width: 700px;
+    justify-content: center;
+  }
+
+  .advantages__item {
+    width: 350px;
+    margin-left: auto;
+    margin-bottom: 3px;
+  }
+
   .advantages__description {
+    margin-top: 60px;
     font-size: 20px;
     line-height: 22px;
   }

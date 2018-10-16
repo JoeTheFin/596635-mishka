@@ -13,14 +13,22 @@
   <header class="page-header">
 
     <a class="page-header__logo">
-    <img class="page-header__logo-image" src="img/logo-mobile.svg" width="85" height="35" alt="Мишка">
-    <img class="page-header__logo-image--black" src="img/logo-tablet.svg" width="112" height="46" alt="Черный Мишка">
-    <img class="page-header__logo-image--desktop" src="img/logo-desktop.svg" width="149" height="73" alt="Черный Мишка с ушами">
+      <picture>
+        <img src="img/logo-mobile.svg" width="85" height="35" alt="Мишка-логотип">
+      </picture>
     </a>
-    <nav class="page-header__main-nav main-nav">
+    <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
+          <li class="main-nav__list-item main-nav__list-item-logo">
+            <a href="index.html">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                <img src="img/logo-tablet.svg" width="113" height="47" alt="Мишка-логотип">
+              </picture>
+            </a>
+          </li>
           <li class="main-nav__list-item">
             <a href="catalog.html">Каталог товаров</a>
           </li>
@@ -28,10 +36,19 @@
             <a href="form.html">Вязание на заказ</a>
           </li>
           <li class="main-nav__list-item">
-            <a href="#"><span class="main-nav__list-item-src">Поиск по сайту</span></a>
+            <a href="#">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
+            <path fill="#231F20" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
+            </svg>
+            <span class="main-nav__list-name-src">Поиск по сайту</span></a>
           </li>
           <li class="main-nav__list-item">
-            <a href="#">Корзина: пока пуста</a>
+            <a href="#">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
+            <path fill="#231F20" d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
+            </svg>
+            <span class="main-nav__list-name-basket">
+            Корзина: пока пуста</span></a>
           </li>
         </ul>
       </div>
@@ -42,12 +59,15 @@
   <main class="page-main">
 
     <div class="page-main__name">
-      <ul class="page-main__promo-list promo-list">
-        <li class="promo-list">
-          <a class="promo-list__new" href="#">Новые поступления</a>
+      <ul class="page-main__promo-list">
+        <li class="page-main__promo-list-item">
+          <a href="#">Новые поступления</a>
         </li>
-        <li class="promo-list">
-          <a class="promo-list__sale" href="#">Распродажа</a>
+        <li class="page-main__promo-list-item">
+          <a href="#">Распродажа</a>
+        </li>
+        <li class="page-main__promo-list-item">
+          <a href="#">Бесплатная доставка по России</a>
         </li>
       </ul>
       <h1>Милые штуки ручной<br> работы для дома</h1>
@@ -80,27 +100,27 @@
               Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
             </p>
             <table class="hit-week__options">
-              <tr class="hit-week__row">
-                <td class="hit-week__item--one">
+              <tr>
+                <td>
                   Цвет:
                 </td>
-                <td class="hit-week__item--two">
-                  "Тиффани"/серый
+                <td>
+                  &laquo;Тиффани&raquo;/серый
                 </td>
               </tr>
-              <tr class="hit-week__row">
-                <td class="hit-week__item--one">
+              <tr>
+                <td>
                   Диаметр:
                 </td>
-                <td class="hit-week__item--two">
+                <td>
                   25 см
                 </td>
               </tr>
-              <tr class="hit-week__row">
-                <td class="hit-week__item--one">
+              <tr>
+                <td>
                   Высота:
                 </td>
-                <td class="hit-week__item--two">
+                <td>
                   15 см
                 </td>
               </tr>
@@ -124,27 +144,27 @@
         </h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--eco">
-            <p class="advantages__description">Экологически чистые материалы
+            <p class="advantages__description">Экологически<br> чистые материалы
             </p>
           </li>
           <li class="advantages__item advantages__item--money">
-            <p class="advantages__description">Скандинавский стиль по российской цене
+            <p class="advantages__description">Скандинавский стиль<br> по российской цене
             </p>
           </li>
           <li class="advantages__item advantages__item--like">
-            <p class="advantages__description">Увеличивает лайки на фотографиях
+            <p class="advantages__description">Увеличивает лайки<br> на фотографиях
             </p>
           </li>
           <li class="advantages__item advantages__item--tie">
-            <p class="advantages__description">Связано вручную с любовью и умилением
+            <p class="advantages__description">Связано вручную с<br> любовью и умилением
             </p>
           </li>
           <li class="advantages__item advantages__item--rus">
-            <p class="advantages__description">Поддержка отечественного производителя
+            <p class="advantages__description">Поддержка отечественного<br> производителя
             </p>
           </li>
           <li class="advantages__item advantages__item--gift">
-            <p class="advantages__description">Поставляется в подарочной упаковке
+            <p class="advantages__description">Поставляется в<br> подарочной упаковке
             </p>
           </li>
         </ul>
@@ -182,25 +202,31 @@
       <div class="contacts__wrapper">
         <div class="contacts__container">
           <div class="contacts__container-one">
-          <b class="contacts__name">Контакты</b>
-          <table class="contacts__info">
-            <tr class="contacts__row">
-              <td class="contacts__item--one">e-mail:</td>
-              <td class="contacts__item--two">info@mimimishkashop.ru</td>
-            </tr>
-            <tr class="contacts__row">
-              <td class="contacts__item--one">адрес:</td>
-              <td class="contacts__item--two">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
-            </tr>
-          </table>
-          <img class="contacts__map-mobile" src="img/map-mobile@1x.jpg" width="320" height="457" alt="Карта, где мы находимся">
-          <img class="contacts__map-tablet" src="img/map-tablet@1x.jpg" width="768" height="457" alt="Карта, где мы находимся">
-          <a class="contacts__write button" href="#">Напишите нам</a>
+            <b class="contacts__name">Контакты</b>
+            <div class="contacts__table-one">
+              <table class="contacts__info">
+                <tr>
+                  <td>e-mail:</td>
+                  <td>info@mimimishkashop.ru</td>
+                </tr>
+              </table>
+            </div>
+            <div class="contacts__table-two">
+              <table class="contacts__info">
+                <tr>
+                  <td>адрес:</td>
+                  <td>г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</td>
+                </tr>
+              </table>
+            </div>
+            <img class="contacts__map-mobile" src="img/map-mobile@1x.jpg" width="320" height="457" alt="Карта, где мы находимся">
+            <img class="contacts__map-tablet" src="img/map-tablet@1x.jpg" width="768" height="457" alt="Карта, где мы находимся">
+            <a class="contacts__write button" href="#">Напишите нам</a>
+          </div>
+          <div class="contacts__container-two">
+            <img class="contacts__map-desktop" src="img/map-desktop@1x.jpg" width="525" height="457" alt="Карта, где мы находимся">
+          </div>
         </div>
-        <div class="contacts__container-two">
-          <img class="contacts__map-desktop" src="img/map-desktop@1x.jpg" width="525" height="457" alt="Карта, где мы находимся">
-        </div>
-      </div>
       </div>
     </section>
 
@@ -231,6 +257,24 @@
     </div>
 
   </footer>
+
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+
+  </script>
 
 </body>
 

@@ -1,4 +1,5 @@
 .site-navigation {
+  position: relative;
   display: block;
   min-width: 320px;
   margin: 0 auto;
@@ -10,8 +11,9 @@
 
 .site-navigation__box {
   display: block;
-  min-width: 320px;
-  height: 104px;
+  width: 320px;
+  margin: 0 auto;
+  background-position: center;
 
   &--home {
     background-color: #63d1bb;
@@ -24,7 +26,9 @@
 
 .site-navigation__name {
   display: block;
-  padding: 30px 30px;
+  padding-left: 17%;
+  padding-top: 25px;
+  padding-bottom: 30px;
   font-family: $font-family;
   font-size: 19px;
   line-height: 24px;
@@ -40,20 +44,27 @@
   }
 
   .site-navigation__link {
-    margin-top: -100px;
+    margin-top: 3px;
     min-width: 334px;
+  }
+
+  .site-navigation__name {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 35px;
+    padding-top: 28px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .site-navigation__box {
     display: block;
+    width: 1050px;
     height: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 0 auto;
   }
 
   .site-navigation__name {
-    min-width: 505px;
+    min-width: 490px;
   }
 }

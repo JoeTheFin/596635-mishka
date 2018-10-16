@@ -2,14 +2,15 @@
   width: 260px;
   margin-top: 30px;
   margin-right: 30px;
+  margin-bottom: 54px;
   border: 1px solid #f1f1f1;
 }
 
 .videobox__name {
   display: block;
   margin-left: 90px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 25px;
+  margin-bottom: 23px;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
@@ -19,7 +20,8 @@
 .videobox__image {
   display: block;
 
-  &--tab {
+  &--tab,
+  &--desktop {
     display: none;
   }
 }
@@ -30,7 +32,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 30px;
+    top: 36px;
     left: 80px;
     width: 100px;
     height: 77px;
@@ -41,7 +43,8 @@
 
 .videobox__description {
   display: block;
-  padding-left: 40px;
+  padding-top: 15px;
+  padding-left: 33px;
   padding-right: 30px;
   font-size: 13px;
   line-height: 24px;
@@ -50,20 +53,26 @@
 }
 
 .videobox__button {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
   margin: 35px;
+  margin-top: 24px;
 }
 
 @media (min-width: $tablet-width) {
   .videobox {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
     min-width: 668px;
+    min-height: 740px;
+    margin-bottom: 62px;
+  }
+
+  .videobox__wrapper {
+    width: 668px;
   }
 
   .videobox__image {
     display: none;
-    order: 0;
 
     &--tab {
       display: block;
@@ -75,15 +84,120 @@
     left: 284px;
   }
 
+  .videobox__content-desktop-two {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .videobox__content {
+    order: 0;
+  }
+
   .videobox__name {
+    position: relative;
     order: 1;
+    font-size: 20px;
+    line-height: 24px;
+    padding-top: 12px;
+    padding-left: 16px;
+  }
+
+  .videobox__name::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -49px;
+    width: 32px;
+    height: 32px;
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .videobox__description {
+    width: 586px;
+    font-size: 15px;
+    line-height: 30px;
+    margin-left: 6px;
+    margin-top: -7px;
     order: 2;
+
+    br {
+      display: none;
+    }
   }
 
   .videobox__button {
+    width: 584px;
+    margin: 0 auto;
+    margin-top: 22px;
+    padding-top: 14px;
     order: 3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .videobox {
+    display: block;
+    width: 1050px;
+    min-height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 105px;
+  }
+
+  .videobox__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+
+  .videobox__content {
+    display: none;
+  }
+
+  .videobox__image--desktop {
+    display: block;
+  }
+
+  .videobox__content-desktop {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 190px;
+      left: 290px;
+      width: 100px;
+      height: 77px;
+      background-image: url("../img/icon-play.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .videobox__name {
+    width: 180px;
+    margin-left: 60px;
+    margin-top: 85px;
+  }
+
+  .videobox__name::before {
+    top: -43px;
+    left: 18px;
+  }
+
+  .videobox__description {
+    width: 235px;
+    margin-left: 43px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .videobox__button {
+    display: block;
+    width: 225px;
+    margin-top: 33px;
+    margin-left: 80px;
   }
 }

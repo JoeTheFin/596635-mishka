@@ -1,5 +1,7 @@
 .filter-box {
   font-family: $font-family;
+  min-width: 320px;
+  margin: 0 auto;
 }
 
 .filter-box__caption {
@@ -11,15 +13,21 @@
   h1 {
     display: block;
     padding-top: 70px;
+    font-size: 27px;
+    line-height: 30px;
   }
 }
 
 .filter-box__wrapper {
   width: 260px;
   margin: 0 auto;
+  align-items: center;
 }
 
 .filter-box__description {
+  display: block;
+  margin-top: 22px;
+  margin-bottom: 24px;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
@@ -27,21 +35,62 @@
 }
 
 @media (min-width: $tablet-width) {
+  .filter-box {
+    min-width: 768px;
+    margin: 0 auto;
+  }
+
   .filter-box__wrapper {
-    min-width: 668px;
-    margin-left: 50px;
-    margin-right: 50px;
+    width: 668px;
+    margin: 0 auto;
   }
 
   .filter-box__caption {
+    display: block;
+    height: 204px;
+    margin-top: -56px;
+    padding-top: 18px;
+
     h1 {
       font-size: 43px;
       line-height: 50px;
+      margin-top: 5px;
     }
   }
 
   .filter-box__description {
+    margin-top: 76px;
     font-size: 17px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter-box {
+    min-width: 1150px;
+    margin: 0 auto;
+  }
+
+  .filter-box__caption {
+    display: block;
+    margin-top: -60px;
+    padding-top: 18px;
+    height: 225px;
+
+    h1 {
+      padding-top: 72px;
+      font-size: 53px;
+      line-height: 57px;
+    }
+  }
+
+  .filter-box__wrapper {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  .filter-box__description {
+    margin-top: 135px;
+    margin-bottom: 27px;
   }
 }

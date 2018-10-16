@@ -450,13 +450,35 @@ li:active .filter__label--radio::before {
 
   .filter__wrapper-min {
     width: 860px;
-    margin: 0 auto;
+    margin-left: 110px;
+    margin-right: 180px;
+  }
+
+  .filter__list-radio,
+  .filter__list-checkbox {
+    label{
+      margin-left: 185px;
+    }
+  }
+
+  .filter__checkbox-filter-box {
+    height: 225px;
+  }
+
+  .filter__input-box {
+    margin-left: 118px;
+    padding-right: 45px;
+
+    input[type="email"],
+    input[type="tel"] {
+      width: 700px;
+    }
   }
 
   .filter__addition-box {
     textarea {
       display: block;
-      margin-left: 68px;
+      margin-left: 100px;
       height: 139px;
       width: 700px;
       border: 2px solid black;
@@ -470,6 +492,13 @@ li:active .filter__label--radio::before {
   }
 
   .filter__button {
-    margin-right: 220px;
+    margin-right: auto;
+    margin-left: -15px;
+    margin-top: 40px;
+  }
+
+  .filter__footnote {
+    margin-right: -15px;
+    margin-top: 52px;
   }
 }

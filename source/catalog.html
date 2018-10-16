@@ -78,9 +78,11 @@
           <article class="catalog__product product">
             <div class="product__image-box">
               <a class="product__link-img" href="#">
-                <img class="product__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
+               <picture>
                 <img class="product__image--tab" src="img/photo-hare-tablet@1x.jpg" width="334" height="334" alt="Зайчик-попрыгайчик">
                 <img class="product__image--desktop" src="img/photo-hare-desktop@1x.jpg" width="316" height="462" alt="Зайчик-попрыгайчик">
+                <img class="product__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
+              </picture>
               </a>
             </div>
             <div class="product__box">
@@ -139,13 +141,13 @@
         <article class="catalog__videobox videobox">
           <div class="videobox__wrapper">
             <div class="videobox__content-desktop">
-              <img class="videobox__image--desktop" src="img/video-desktop@1x.jpg" width="682" height="455" alt="Большая корзина для игрушек">
-            </div>
-            <div class="videobox__content-desktop-two">
               <b class="videobox__name">Процесс производства</b>
               <div class="videobox__content">
-                <img class="videobox__image" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Большая корзина для игрушек">
-                <img class="videobox__image--tab" src="img/video-tablet@1x.jpg" width="668" height="455" alt="Большая корзина для игрушек">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+                  <img class="videobox__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="Большая корзина для игрушек">
+                </picture>
               </div>
               <p class="videobox__description">
                 По просьбам наших<br> любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.

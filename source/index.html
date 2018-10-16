@@ -125,14 +125,16 @@
                 </td>
               </tr>
             </table>
-            <img class="hit-week__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаная корзина">
             <p class="hit-week__price">Цена: 990 руб.</p>
             <a class="hit-week__button button" href="#">Заказать
             </a>
           </div>
           <div class="hit-week__container-two">
-            <img class="hit-week__image-tab" src="img/triple-set-tablet@1x.jpg" width="333" height="404" alt="Вязаная корзина">
-            <img class="hit-week__image-desktop" src="img/triple-set-desktop@1x.jpg" width="525" height="636" alt="Вязаная корзина">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <img class="hit-week__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Вязаная корзина">
+          </picture>
           </div>
         </div>
       </div>

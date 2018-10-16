@@ -35,7 +35,7 @@
   .page-main {
     min-width: 768px;
     margin: 0 auto;
-    margin-top: -22px;
+    margin-top: -20px;
   }
 
   .page-main__name {
@@ -60,6 +60,7 @@
     justify-content: flex-end;
     flex-direction: row;
     height: 40px;
+    margin-top: 20px;
     padding: 0;
     list-style: none;
 
@@ -73,6 +74,7 @@
       text-decoration: none;
       margin-right: 50px;
       padding-top: 18px;
+      cursor: pointer;
     }
   }
 
@@ -101,7 +103,7 @@
 
   .page-main__promo-list-item {
     display: block;
-    margin-top: 3px;
+    margin-top: 5px;
     margin-right: 5px;
 
     a {

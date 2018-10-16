@@ -141,9 +141,10 @@
   .videobox {
     display: block;
     width: 1050px;
+    min-height: auto;
     margin: 0 auto;
     margin-top: 50px;
-    margin-bottom: 70px;
+    margin-bottom: 105px;
   }
 
   .videobox__wrapper {
@@ -160,21 +161,43 @@
     display: block;
   }
 
+  .videobox__content-desktop {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 190px;
+      left: 290px;
+      width: 100px;
+      height: 77px;
+      background-image: url("../img/icon-play.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
   .videobox__name {
     width: 180px;
     margin-left: 60px;
-    margin-top: 80px;
+    margin-top: 85px;
+  }
+
+  .videobox__name::before {
+    top: -43px;
+    left: 18px;
   }
 
   .videobox__description {
-    margin-left: 20px;
+    width: 235px;
+    margin-left: 43px;
     font-size: 15px;
     line-height: 30px;
   }
 
   .videobox__button {
     display: block;
-    width: 235px;
-    margin-left: 60px;
+    width: 225px;
+    margin-top: 33px;
+    margin-left: 80px;
   }
 }

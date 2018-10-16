@@ -73,6 +73,7 @@
 
   .videobox__content {
     display: block;
+    order: 0;
   }
 
   .videobox__content::before {
@@ -83,16 +84,6 @@
   .videobox__image {
     width: 668px;
     height: 455px;
-  }
-
-  .videobox__content-desktop {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-  }
-
-  .videobox__content {
-    order: 0;
   }
 
   .videobox__name {
@@ -149,13 +140,6 @@
   }
 
   .videobox__wrapper {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-  }
-
-  .videobox__content-desktop {
-    display: block;
     position: relative;
   }
 

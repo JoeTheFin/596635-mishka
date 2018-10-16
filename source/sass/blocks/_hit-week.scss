@@ -166,9 +166,11 @@
 
 @media (min-width: $desktop-width) {
   .hit-week {
+    position: relative;
     display: block;
     width: 1050px;
     margin: 0 auto;
+    padding-top: 80px;
   }
 
   .hit-week__wrapper {
@@ -179,7 +181,6 @@
   }
 
   .hit-week__name-product {
-    margin-top: 127px;
     font-size: 53px;
     line-height: 57px;
     z-index: 1;
@@ -187,7 +188,7 @@
 
   .hit-week__name {
     position: absolute;
-    top: 85px;
+    top: 0;
     left: -155px;
   }
 
@@ -200,17 +201,11 @@
     margin-top: 103px;
   }
 
-  .hit-week__container-two {
-    margin-top: -175px;
-  }
-
   .hit-week__image {
-    &-tab {
-      display: none;
-    }
-
-    &-desktop {
-      display: block;
-    }
+    position: absolute;
+    top: -7px;
+    right: 0;
+    width: 525px;
+    height: 636px;
   }
 }

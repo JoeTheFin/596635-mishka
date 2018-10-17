@@ -7,14 +7,6 @@
 
 .product__image {
   display: block;
-
-  &--tab {
-    display: none;
-  }
-
-  &--desktop {
-    display: none;
-  }
 }
 
 .product__box {
@@ -65,11 +57,9 @@
   }
 
   .product__image {
-    display: none;
-
-    &--tab {
-      display: block;
-    }
+    display: block;
+    width: 334px;
+    height: 334px;
   }
 
   .product__box {
@@ -127,12 +117,8 @@
   }
 
   .product__image {
-    &--tab {
-      display: none;
-    }
-
-    &--desktop {
-      display: block;
-    }
+    display: block;
+    width: 316px;
+    height: 462px;
   }
 }

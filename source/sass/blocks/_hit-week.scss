@@ -1,5 +1,6 @@
 .hit-week {
   display: block;
+  position: relative;
   width: 320px;
   margin: 0 auto;
   font-family: $font-family;
@@ -62,14 +63,8 @@
 }
 
 .hit-week__image {
-  display: block;
-  margin-top: 20px;
-  margin-bottom: 25px;
-}
-
-.hit-week__image-tab,
-.hit-week__image-desktop {
-  display: none;
+  position: absolute;
+  top: 317px;
 }
 
 .hit-week__button {
@@ -81,6 +76,7 @@
 .hit-week__price {
   display: block;
   margin-bottom: 23px;
+  padding-top: 344px;
   text-align: center;
   font-size: 17px;
   line-height: 24px;
@@ -137,6 +133,7 @@
   .hit-week__price {
     margin-top: 48px;
     margin-bottom: 33px;
+    padding-top: 0;
     font-size: 20px;
     line-height: 24px;
   }
@@ -156,20 +153,24 @@
     width: 290px;
   }
 
-  .hit-week__image {
-    display: none;
+  .hit-week__container-two {
+    display: block;
+  }
 
-    &-tab {
-      display: block;
-    }
+  .hit-week__image {
+    position: inherit;
+    width: 333px;
+    height: 404px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .hit-week {
+    position: relative;
     display: block;
     width: 1050px;
     margin: 0 auto;
+    padding-top: 80px;
   }
 
   .hit-week__wrapper {
@@ -180,7 +181,6 @@
   }
 
   .hit-week__name-product {
-    margin-top: 127px;
     font-size: 53px;
     line-height: 57px;
     z-index: 1;
@@ -188,7 +188,7 @@
 
   .hit-week__name {
     position: absolute;
-    top: 85px;
+    top: 0;
     left: -155px;
   }
 
@@ -201,17 +201,11 @@
     margin-top: 103px;
   }
 
-  .hit-week__container-two {
-    margin-top: -175px;
-  }
-
   .hit-week__image {
-    &-tab {
-      display: none;
-    }
-
-    &-desktop {
-      display: block;
-    }
+    position: absolute;
+    top: -7px;
+    right: 0;
+    width: 525px;
+    height: 636px;
   }
 }

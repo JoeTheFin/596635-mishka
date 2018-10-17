@@ -17,11 +17,27 @@
 
   &--home {
     background-color: #63d1bb;
+    position: relative;
   }
 
   &--kids {
     background-color: #56c3b2;
+    position: relative;
   }
+}
+
+.site-navigation__box--icon-interior {
+  position: absolute;
+  top: 21px;
+  right: 75px;
+  fill: #3bb09d;
+}
+
+.site-navigation__box--icon-toy {
+  position: absolute;
+  top: 21px;
+  right: 68px;
+  fill: #3bb09d;
 }
 
 .site-navigation__name {
@@ -34,6 +50,29 @@
   line-height: 24px;
   font-weight: 700;
   color: #ffffff;
+}
+
+.site-navigation__link:hover {
+  .site-navigation__name {
+    padding-bottom: 35px;
+  }
+
+  .site-navigation__box--icon-interior,
+  .site-navigation__box--icon-toy {
+    fill: #29a592;
+  }
+}
+
+.site-navigation__link:active {
+  .site-navigation__name {
+    padding-bottom: 30px;
+    color: #97e2d2;
+  }
+
+  .site-navigation__box--icon-interior,
+  .site-navigation__box--icon-toy {
+    fill: #3eb9a7;
+  }
 }
 
 @media (min-width: $tablet-width) {

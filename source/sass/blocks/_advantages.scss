@@ -23,6 +23,47 @@
   list-style: none;
 }
 
+.advantages__item {
+  position: relative;
+}
+
+.advantages__item--icon-eco {
+  position: absolute;
+  top: -55px;
+  left: 9px;
+}
+
+.advantages__item--icon-money {
+  position: absolute;
+  top: -55px;
+  left: 0;
+}
+
+.advantages__item--icon-heart {
+  position: absolute;
+  top: -50px;
+  left: 8px;
+}
+
+.advantages__item--icon-ball {
+  fill: #63d1bb;
+  position: absolute;
+  top: -53px;
+  left: 2px;
+}
+
+.advantages__item--icon-rocket {
+  position: absolute;
+  top: -52px;
+  left: -5px;
+}
+
+.advantages__item--icon-gift {
+  position: absolute;
+  top: -54px;
+  left: 4px;
+}
+
 .advantages__description {
   display: block;
   margin-top: 85px;

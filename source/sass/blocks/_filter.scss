@@ -53,10 +53,6 @@
   opacity: 0;
 }
 
-.filter input[type="text"] {
-  margin-left: -15px;
-}
-
 .filter__label--radio::before {
   content: "";
   position: absolute;
@@ -116,11 +112,16 @@ li:active .filter__label--radio::before {
   border-color: #e1e1e1;
 }
 
+.filter input[type="text"] {
+  margin-left: -15px;
+}
+
 .filter__fullname-box,
 .filter__tel-email {
   input {
     width: 260px;
     height: 48px;
+    padding-left: 0;
     border: none;
     border-bottom: 2px solid #000000;
     outline: none;
@@ -146,6 +147,26 @@ li:active .filter__label--radio::before {
   }
 }
 
+.filter__input-box {
+  position: relative;
+}
+
+.filter__input-box--icon-tel,
+.filter__input-box--icon-mail {
+  position: absolute;
+  top: 13px;
+  right: 5px;
+  fill: #cccccc;
+}
+
+.filter__input-box:hover,
+.filter__input-box:active {
+  .filter__input-box--icon-tel,
+  .filter__input-box--icon-mail {
+    fill: #62d1ba;
+  }
+}
+
 .filter__tel-email {
   display: block;
   margin-top: 20px;
@@ -164,7 +185,7 @@ li:active .filter__label--radio::before {
   margin-left: -14px;
   padding: 13px;
   border: 2px solid #000000;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 18px;
   color: #444444;
   box-sizing: border-box;
@@ -172,9 +193,14 @@ li:active .filter__label--radio::before {
   resize: none;
 
   ::placeholder {
-    padding: 12px;
+    padding: 13px;
     color: #c4c4c4;
   }
+}
+
+.filter__name--dop-input:hover,
+.filter__name--dop-input:active {
+  border: 2px solid #62d1ba;
 }
 
 .filter__footnote {
@@ -361,12 +387,11 @@ li:active .filter__label--radio::before {
 
     input[type="text"]::placeholder {
       font-size: 20px;
-      padding-left: 16px;
     }
 
     input[type="email"],
     input[type="tel"] {
-      width: 500px;
+      width: 485px;
       height: 50px;
       margin-left: -15px;
       margin-top: 2px;
@@ -374,15 +399,23 @@ li:active .filter__label--radio::before {
     }
 
     input[type="email"]::placeholder {
-      padding-left: 16px;
       font-size: 20px;
       line-height: 18px;
     }
 
     input[type="tel"]::placeholder {
-      padding: 16px;
       font-size: 17px;
       line-height: 18px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      padding-left: 16px;
+
+      ::placeholder {
+        padding: 16px;
+      }
     }
   }
 
@@ -471,8 +504,13 @@ li:active .filter__label--radio::before {
 
     input[type="email"],
     input[type="tel"] {
-      width: 700px;
+      width: 682px;
     }
+  }
+
+  .filter__input-box--icon-tel,
+  .filter__input-box--icon-mail {
+    right: 52px;
   }
 
   .filter__addition-box {

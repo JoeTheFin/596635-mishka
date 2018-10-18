@@ -65,7 +65,6 @@
 
 .site-navigation__link:active {
   .site-navigation__name {
-    padding-bottom: 30px;
     color: #97e2d2;
   }
 
@@ -92,6 +91,25 @@
     line-height: 30px;
     padding-left: 35px;
     padding-top: 28px;
+  }
+
+  .site-navigation__box--icon-interior {
+    position: absolute;
+    top: 30px;
+    right: 35px;
+  }
+
+  .site-navigation__box--icon-toy {
+    position: absolute;
+    top: 31px;
+    right: 35px;
+  }
+
+  .site-navigation__link:hover {
+    .site-navigation__name {
+      margin-top: -4px;
+      padding-bottom: 34px;
+    }
   }
 }
 

@@ -47,6 +47,38 @@
   }
 }
 
+.contacts__email-link {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+.contacts__email-link::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 180px;
+  height: 1px;
+  background-color: #62d1ba;
+}
+
+.contacts__email-link:hover {
+  color: #46c1ae;
+}
+
+.contacts__email-link:hover::after {
+  background-color: #46c1ae;
+}
+
+.contacts__email-link:active {
+  color: #ebf7f5;
+}
+
+.contacts__email-link:active::after {
+  background-color: #ebf7f5;
+}
+
 .contacts__map {
   display: block;
   margin-top: 35px;
@@ -138,6 +170,10 @@
       padding: 0;
       white-space: nowrap;
     }
+  }
+
+  .contacts__email-link::after {
+    width: 200px;
   }
 
   .contacts__write {

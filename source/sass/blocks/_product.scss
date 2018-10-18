@@ -5,6 +5,14 @@
   margin-top: 30px;
 }
 
+.product:hover {
+  box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+.product:active {
+  box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
 .product__image {
   display: block;
 }
@@ -49,7 +57,8 @@
 
 @media (min-width: $tablet-width) {
   .product {
-    margin-bottom: -15px;
+    margin-bottom: 54px;
+    min-height: 334px;
   }
 
   .product:first-child {
@@ -90,6 +99,7 @@
 @media (min-width: $desktop-width) {
   .product {
     min-height: 656px;
+    margin-bottom: -16px;
   }
 
   .product:first-child {

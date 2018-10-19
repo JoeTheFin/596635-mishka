@@ -237,8 +237,13 @@
   }
 
   .contacts__table-one {
+    position: relative;
     display: block;
     margin-top: 27px;
+  }
+
+  .contacts__email-link {
+    z-index: 1;
   }
 
   .contacts__table-two {
@@ -277,16 +282,8 @@
   }
 
   .contacts__write {
+    position: relative;
     margin-left: 0;
     margin-top: -50px;
-  }
-
-  .contacts__write:hover {
-    background-color: #444444;
-    color: #ffffff;
-  }
-
-  .contacts__write:active {
-    color: #8d8d8d;
   }
 }

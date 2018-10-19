@@ -66,6 +66,7 @@
   }
 
   .page-main__promo-list {
+    position: relative;
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
@@ -87,6 +88,7 @@
       font-weight: 400;
       color: #444444;
       text-decoration: none;
+      z-index: 1;
     }
   }
 

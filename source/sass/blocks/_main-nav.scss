@@ -227,6 +227,16 @@
   .main-nav__list-item--name-src {
     font-size: 0;
   }
+
+  .main-nav__list-item-logo {
+    a:hover {
+      opacity: 0.6;
+    }
+
+    a:active {
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {

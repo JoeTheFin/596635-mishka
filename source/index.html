@@ -131,7 +131,7 @@
               </tr>
             </table>
             <p class="hit-week__price">Цена: 990 руб.</p>
-            <a class="hit-week__button button" href="#">Заказать
+            <a class="hit-week__button button modal-link" href="#">Заказать
             </a>
           </div>
           <div class="hit-week__container-two">
@@ -233,33 +233,33 @@
 
     <section class="contacts">
       <div class="contacts__wrapper">
-          <b class="contacts__name">Контакты</b>
-          <div class="contacts__table-one">
-            <table class="contacts__info">
-              <tr>
-                <td>e-mail:</td>
-                <td><a class="contacts__email-link" href="#">info@mimimishkashop.ru</a></td>
-              </tr>
-            </table>
-          </div>
-          <div class="contacts__table-two">
-            <table class="contacts__info">
-              <tr>
-                <td>адрес:</td>
-                <td>г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</td>
-              </tr>
-            </table>
-          </div>
-          <div class="contacts__map-box">
+        <b class="contacts__name">Контакты</b>
+        <div class="contacts__table-one">
+          <table class="contacts__info">
+            <tr>
+              <td>e-mail:</td>
+              <td><a class="contacts__email-link" href="#">info@mimimishkashop.ru</a></td>
+            </tr>
+          </table>
+        </div>
+        <div class="contacts__table-two">
+          <table class="contacts__info">
+            <tr>
+              <td>адрес:</td>
+              <td>г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</td>
+            </tr>
+          </table>
+        </div>
+        <div class="contacts__map-box">
           <picture>
             <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
             <img class="contacts__map" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="457" alt="Карта, где мы находимся">
           </picture>
           <iframe class="contacts__map-interactive" src="https://yandex.ru/map-widget/v1/?um=constructor%3A556077e997789d0ec8ffed6e0d328936633f971e0e7b6d140268e8b582e5439d&amp;source=constructor" width="100%" height="457" frameborder="0"></iframe>
-          </div>
-          <a class="contacts__write button" href="#">Напишите нам</a>
         </div>
+        <a class="contacts__write button" href="#">Напишите нам</a>
+      </div>
     </section>
 
   </main>
@@ -310,25 +310,34 @@
       </div>
     </div>
 
+    <div class="modal-overlay"></div>
+
   </footer>
 
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
+  <section class="modal">
+    <h1>Добавить в корзину</h1>
+    <p>Выберите размер:</p>
+    <div class="modal__wrapper">
+      <div class="modal__size-box">
+        <div class="modal__size">
+          <a class="modal__size-link">S</a>
+        </div>
+        <div class="modal__size">
+          <a class="modal__size-link">M</a>
+        </div>
+        <div class="modal__size">
+          <a class="modal__size-link">L</a>
+        </div>
+      </div>
+      <a class="modal__button button">
+      Добавить
+    </a>
+    </div>
+  </section>
 
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-
+  <script src="js/menu-open.js">
   </script>
+  <script src="js/modal-open.js"></script>
 
 </body>
 

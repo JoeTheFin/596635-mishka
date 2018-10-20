@@ -159,21 +159,21 @@
         </div>
         <article class="catalog__videobox videobox">
           <div class="videobox__wrapper">
-              <b class="videobox__name">Процесс производства</b>
-              <div class="videobox__content">
-                <picture>
-                  <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
-                  <img class="videobox__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="Большая корзина для игрушек">
-                </picture>
-                <svg class="videobox__content-icon-play" width="101" height="77">
+            <b class="videobox__name">Процесс производства</b>
+            <div class="videobox__content">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+                <img class="videobox__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="Большая корзина для игрушек">
+              </picture>
+              <svg class="videobox__content-icon-play" width="101" height="77">
                   <use xlink:href="./img/sprite.svg#icon-play"></use>
                 </svg>
-              </div>
-              <p class="videobox__description">
-                По просьбам наших<br> любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-              </p>
-              <a class="videobox__button button" href="#">Сделать заказ</a>
+            </div>
+            <p class="videobox__description">
+              По просьбам наших<br> любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+            </p>
+            <a class="videobox__button button" href="#">Сделать заказ</a>
           </div>
         </article>
       </div>
@@ -227,25 +227,34 @@
       </div>
     </div>
 
+    <div class="modal-overlay"></div>
+
   </footer>
 
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
+  <section class="modal">
+    <h1>Добавить в корзину</h1>
+    <p>Выберите размер:</p>
+    <div class="modal__wrapper">
+      <div class="modal__size-box">
+        <div class="modal__size">
+          <a class="modal__size-link">S</a>
+        </div>
+        <div class="modal__size">
+          <a class="modal__size-link">M</a>
+        </div>
+        <div class="modal__size">
+          <a class="modal__size-link">L</a>
+        </div>
+      </div>
+      <a class="modal__button button">
+      Добавить
+    </a>
+    </div>
+  </section>
 
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-
+  <script src="js/menu-open.js">
   </script>
+  <script src="js/modal-open.js"></script>
 
 </body>
 

@@ -44,12 +44,14 @@
   }
 
   .page-main__name {
-    height: 625px;
+    height: 743px;
     background-color: #fbfbfb;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-position: 50% 0%;
     background-repeat: no-repeat;
     background-size: auto;
+    margin-left: -75px;
+    margin-right: -75px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
@@ -59,10 +61,23 @@
     h1 {
       width: 600px;
       margin: 0 auto;
-      padding-top: 97px;
+      padding-top: 114px;
       font-size: 43px;
       line-height: 50px;
     }
+  }
+
+  .page-main__name::after {
+    content: "";
+    position: absolute;
+    bottom: -189px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 23px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-size: auto 22.7px;
+    z-index: 2;
   }
 
   .page-main__promo-list {
@@ -70,7 +85,9 @@
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
+    width: 768px;
     height: 40px;
+    margin: 0 auto;
     margin-top: 20px;
     padding: 0;
     list-style: none;
@@ -88,7 +105,6 @@
       font-weight: 400;
       color: #444444;
       text-decoration: none;
-      z-index: 1;
     }
   }
 
@@ -109,8 +125,10 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    width: 1150px;
+    margin: 0 auto;
     padding: 0;
-    padding-left: 50px;
+    padding-left: 100px;
   }
 
   .page-main__promo-list-item {
@@ -152,6 +170,7 @@
   .page-main__promo-list-item:last-child {
     width: 281px;
     margin-left: auto;
+    margin-right: 50px;
   }
 
   .page-main__name {
@@ -168,9 +187,23 @@
 
     h1 {
       width: 630px;
-      padding-top: 100px;
+      padding-top: 114px;
       font-size: 53px;
       line-height: 57px;
     }
+  }
+
+  .page-main__name::after {
+    content: "";
+    position: absolute;
+    bottom: -196px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 36px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-size: auto 37px;
+    background-position: center;
+    z-index: 2;
   }
 }

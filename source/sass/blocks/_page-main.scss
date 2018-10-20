@@ -70,7 +70,7 @@
   .page-main__name::after {
     content: "";
     position: absolute;
-    bottom: -189px;
+    bottom: -161px;
     left: 0;
     display: block;
     width: 100%;
@@ -128,12 +128,12 @@
     width: 1150px;
     margin: 0 auto;
     padding: 0;
-    padding-left: 100px;
+    padding-left: 50px;
   }
 
   .page-main__promo-list-item {
     display: block;
-    margin-top: 0;
+    margin-top: -18px;
     margin-right: 5px;
     background-color: rgba (255, 255, 255, 0);
 
@@ -196,7 +196,7 @@
   .page-main__name::after {
     content: "";
     position: absolute;
-    bottom: -196px;
+    bottom: -169px;
     left: 0;
     display: block;
     width: 100%;

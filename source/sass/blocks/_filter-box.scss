@@ -38,6 +38,7 @@
   .filter-box {
     min-width: 768px;
     margin: 0 auto;
+    margin-top: 16px;
   }
 
   .filter-box::after {
@@ -60,7 +61,7 @@
   .filter-box__caption {
     display: block;
     height: 204px;
-    margin-top: -56px;
+    margin-top: -40px;
     padding-top: 18px;
 
     h1 {
@@ -81,6 +82,7 @@
   .filter-box {
     min-width: 1150px;
     margin: 0 auto;
+    margin-top: 36px;
   }
 
   .filter-box::after {

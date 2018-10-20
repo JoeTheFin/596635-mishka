@@ -29,6 +29,7 @@
     position: relative;
     min-width: 768px;
     margin: 0 auto;
+    margin-top: 16px;
   }
 
   .catalog::after {
@@ -51,7 +52,7 @@
   .catalog__caption {
     display: block;
     height: 204px;
-    margin-top: -56px;
+    margin-top: -40px;
     padding-top: 18px;
 
     h1 {
@@ -72,12 +73,13 @@
   .catalog {
     min-width: 1150px;
     margin: 0 auto;
+    margin-top: 36px;
   }
 
   .catalog::after {
     content: "";
     position: absolute;
-    top: 239px;
+    top: 220px;
     left: 0;
     display: block;
     width: 100%;

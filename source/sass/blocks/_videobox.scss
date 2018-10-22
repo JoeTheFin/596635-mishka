@@ -64,6 +64,7 @@
   padding-top: 15px;
   padding-left: 33px;
   padding-right: 30px;
+  padding-bottom: 15px;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
@@ -75,14 +76,14 @@
   line-height: 16px;
   font-weight: 700;
   margin: 35px;
-  margin-top: 24px;
+  margin-top: 9px;
 }
 
 @media (min-width: $tablet-width) {
   .videobox {
     min-width: 668px;
     min-height: 740px;
-    margin-bottom: 62px;
+    margin-bottom: 60px;
   }
 
   .videobox__wrapper {
@@ -128,7 +129,7 @@
     order: 1;
     font-size: 20px;
     line-height: 24px;
-    padding-top: 12px;
+    padding-top: 10px;
     padding-left: 16px;
   }
 
@@ -150,6 +151,7 @@
     line-height: 30px;
     margin-left: 6px;
     margin-top: -7px;
+    margin-bottom: 10px;
     order: 2;
 
     br {
@@ -160,7 +162,8 @@
   .videobox__button {
     width: 584px;
     margin: 0 auto;
-    margin-top: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding-top: 14px;
     order: 3;
   }
@@ -232,7 +235,7 @@
 
   .videobox__button {
     position: absolute;
-    bottom: 62px;
+    bottom: 50px;
     right: -321px;
     display: block;
     width: 225px;

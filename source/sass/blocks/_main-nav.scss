@@ -264,9 +264,9 @@
     &:first-child {
       margin-top: -10px;
       margin-left: 55px;
-      transform: scale(1.6);
+      transform: scale(1.4);
       padding: 11px;
-      padding-left: 20px;
+      padding-left: 17px;
       width: 185px;
       height: 62px;
       order: 3;
@@ -323,6 +323,13 @@
 
     &:last-child svg {
       top: 4px;
+    }
+  }
+
+  .main-nav__list-item--search {
+    a {
+      display: block;
+      width: 20px;
     }
   }
 

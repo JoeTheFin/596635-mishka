@@ -41,6 +41,8 @@
   display: block;
   position: relative;
   margin-left: 50px;
+  margin-top: 4px;
+  margin-bottom: 2px;
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
@@ -112,6 +114,14 @@ li:active .filter__label--radio::before {
   border-color: #e1e1e1;
 }
 
+input[type="checkbox"]:focus + label {
+  outline: 2px solid #62d1ba;
+}
+
+input[type="radio"]:focus + label {
+  outline: 2px solid #62d1ba;
+}
+
 .filter input[type="text"] {
   margin-left: -15px;
 }
@@ -124,14 +134,14 @@ li:active .filter__label--radio::before {
     padding-left: 0;
     border: none;
     border-bottom: 2px solid #000000;
-    outline: none;
     font-size: 19px;
     line-height: 18px;
     color: #444444;
   }
 
   input:hover,
-  input:active {
+  input:active,
+  input:focus {
     border-color: #62d1ba;
   }
 
@@ -142,7 +152,7 @@ li:active .filter__label--radio::before {
   }
 
   label {
-    margin-top: 22px;
+    margin-top: 20px;
     margin-left: -15px;
   }
 }
@@ -160,7 +170,8 @@ li:active .filter__label--radio::before {
 }
 
 .filter__input-box:hover,
-.filter__input-box:active {
+.filter__input-box:active,
+.filter__input-box:focus {
   .filter__input-box--icon-tel,
   .filter__input-box--icon-mail {
     fill: #62d1ba;
@@ -199,13 +210,14 @@ li:active .filter__label--radio::before {
 }
 
 .filter__name--dop-input:hover,
-.filter__name--dop-input:active {
+.filter__name--dop-input:active,
+.filter__name--dop-input:focus {
   border: 2px solid #62d1ba;
 }
 
 .filter__footnote {
-  margin-top: -3px;
-  margin-bottom: 31px;
+  margin-top: 0;
+  margin-bottom: 33px;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
@@ -215,7 +227,7 @@ li:active .filter__label--radio::before {
 .filter__button {
   display: block;
   width: 100%;
-  margin-bottom: 55px;
+  margin-bottom: 60px;
   background-color: #ffffff;
   font-size: 17px;
   line-height: 16px;
@@ -290,7 +302,7 @@ li:active .filter__label--radio::before {
 
   .filter__list-radio {
     label {
-      margin-top: -53px;
+      margin-top: -50px;
       margin-bottom: 38px;
       margin-left: 235px;
     }
@@ -332,7 +344,7 @@ li:active .filter__label--radio::before {
 
     label {
       width: 200px;
-      margin-top: -53px;
+      margin-top: -48px;
       margin-bottom: 38px;
       margin-left: 235px;
     }
@@ -376,6 +388,7 @@ li:active .filter__label--radio::before {
 
     label {
       width: auto;
+      margin-top: 23px;
       margin-bottom: 28px;
       padding-right: 40px;
     }
@@ -441,6 +454,8 @@ li:active .filter__label--radio::before {
   }
 
   .filter__footer {
+    margin-bottom: -10px;
+
     .filter__wrapper-min {
       display: flex;
       justify-content: flex-start;
@@ -527,6 +542,7 @@ li:active .filter__label--radio::before {
     display: block;
     width: 700px;
     margin: 0 auto;
+    margin-bottom: -8px;
   }
 
   .filter__button {

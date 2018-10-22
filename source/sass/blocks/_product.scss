@@ -108,7 +108,6 @@
 
   .product__box {
     width: 332px;
-    height: 332px;
   }
 
   .product__name {
@@ -163,7 +162,7 @@
 
   .product__box {
     width: 287px;
-    height: 196px;
+    min-height: 196px;
   }
 
   .product__price,

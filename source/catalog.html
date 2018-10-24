@@ -28,9 +28,8 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__list-item main-nav__list-item-logo">
-            <a href="index.html">
+            <a class="main-nav__list-item-logo-link" href="index.html">
               <picture>
-                <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
                 <img src="img/logo-tablet.svg" width="113" height="47" alt="Мишка-логотип">
               </picture>
             </a>
@@ -178,6 +177,9 @@
         </div>
         <article class="catalog__videobox videobox">
           <div class="videobox__wrapper">
+            <svg class="videobox__icon-video" width="32" height="32">
+              <use xlink:href="./img/sprite-auto.svg#icon-video"></use>
+            </svg>
             <b class="videobox__name">Процесс производства</b>
             <div class="videobox__content">
               <picture>
@@ -190,8 +192,8 @@
                 <img class="videobox__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="Большая корзина для игрушек">
               </picture>
               <svg class="videobox__content-icon-play" width="101" height="77">
-                  <use xlink:href="./img/sprite-auto.svg#icon-cart"></use>
-                </svg>
+                <use xlink:href="./img/sprite-auto.svg#icon-play"></use>
+              </svg>
             </div>
             <p class="videobox__description">
               По просьбам наших<br> любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.

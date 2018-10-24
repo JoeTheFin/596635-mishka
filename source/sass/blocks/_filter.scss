@@ -132,11 +132,11 @@ input[type="radio"]:focus + label {
     width: 260px;
     height: 48px;
     padding-left: 0;
-    border: none;
-    border-bottom: 2px solid #000000;
     font-size: 19px;
     line-height: 18px;
     color: #444444;
+    border: none;
+    border-bottom: 2px solid #000000;
   }
 
   input:hover,
@@ -192,16 +192,16 @@ input[type="radio"]:focus + label {
 .filter__addition-box textarea {
   width: 260px;
   height: 142px;
+  box-sizing: border-box;
   margin-top: 19px;
   margin-left: -14px;
   padding: 13px;
-  border: 2px solid #000000;
   font-size: 19px;
   line-height: 18px;
   color: #444444;
-  box-sizing: border-box;
-  outline: none;
   resize: none;
+  outline: none;
+  border: 2px solid #000000;
 
   ::placeholder {
     padding: 13px;
@@ -228,11 +228,11 @@ input[type="radio"]:focus + label {
   display: block;
   width: 100%;
   margin-bottom: 60px;
-  background-color: #ffffff;
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
   color: #444444;
+  background-color: #ffffff;
 }
 
 @media (min-width: $tablet-width) {
@@ -445,10 +445,10 @@ input[type="radio"]:focus + label {
   .filter__addition-box {
     textarea {
       display: block;
-      margin-left: 153px;
-      margin-top: -40px;
       height: 142px;
       width: 500px;
+      margin-left: 153px;
+      margin-top: -40px;
       border: 2px solid black;
     }
 

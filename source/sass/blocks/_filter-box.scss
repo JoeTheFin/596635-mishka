@@ -1,7 +1,7 @@
 .filter-box {
-  font-family: $font-family;
   min-width: 320px;
   margin: 0 auto;
+  font-family: $font-family;
 }
 
 .filter-box__caption {
@@ -98,9 +98,9 @@
 
   .filter-box__caption {
     display: block;
+    height: 237px;
     margin-top: -60px;
     padding-top: 18px;
-    height: 237px;
 
     h1 {
       padding-top: 77px;

@@ -13,8 +13,8 @@
 }
 
 .page-footer__copyright {
-  display: block;
   position: relative;
+  display: block;
   width: 215px;
   height: 30px;
   margin: 0 auto;
@@ -23,6 +23,7 @@
 }
 
 .page-footer__copyright-link {
+  display: block;
   position: relative;
   text-decoration: none;
 }
@@ -30,11 +31,11 @@
 .page-footer__copyright-link::before {
   content: "";
   position: absolute;
+  top: -26px;
+  left: -38px;
   display: block;
   width: 260px;
   height: 1px;
-  top: -26px;
-  left: -38px;
   background-color: #cecece;
 }
 
@@ -47,8 +48,8 @@
 
 .page-footer__copyright-icon {
   position: absolute;
-  top: -6px;
-  right: -62px;
+  top: -3px;
+  right: 19px;
   fill: #63d1ba;
 }
 
@@ -122,9 +123,7 @@
     width: 230px;
     height: 50px;
     margin: 0;
-    padding: 0;
-    padding-top: 11px;
-    padding-right: 10px;
+    padding: 11px 10px 0 0;
     text-align: center;
     align-self: baseline;
 

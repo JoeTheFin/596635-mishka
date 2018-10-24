@@ -61,8 +61,8 @@
 .contacts__email-link::after {
   content: "";
   position: absolute;
-  display: block;
   left: 0;
+  display: block;
   width: 180px;
   height: 1px;
   background-color: #62d1ba;
@@ -102,10 +102,10 @@
 }
 
 .contacts__write {
-  margin: 0 auto;
-  margin-top: 35px;
   width: 256px;
   height: 18px;
+  margin: 0 auto;
+  margin-top: 35px;
   padding-top: 14px;
   font-size: 18px;
   line-height: 20px;
@@ -148,10 +148,10 @@
   .contacts__name::after {
     content: "";
     position: absolute;
-    width: 47px;
-    height: 82px;
     bottom: 3px;
     left: 622px;
+    width: 47px;
+    height: 82px;
     background-image: url("../img/icon-flag.svg");
     background-position: center;
     background-repeat: no-repeat;
@@ -224,8 +224,8 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    display: block;
     position: relative;
+    display: block;
     width: 1050px;
     margin: 0 auto;
     margin-top: 228px;
@@ -259,10 +259,10 @@
   .contacts__name::after {
     content: "";
     position: absolute;
-    width: 47px;
-    height: 82px;
     bottom: 3px;
     left: -108px;
+    width: 47px;
+    height: 82px;
     background-image: url("../img/icon-flag.svg");
     background-position: center;
     background-repeat: no-repeat;

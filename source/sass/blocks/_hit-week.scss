@@ -140,9 +140,9 @@
   }
 
   .hit-week__button {
-    box-sizing: border-box;
     width: 290px;
     height: 55px;
+    box-sizing: border-box;
   }
 
   .hit-week__container {
@@ -183,9 +183,9 @@
   }
 
   .hit-week__name-product {
+    z-index: 1;
     font-size: 53px;
     line-height: 57px;
-    z-index: 1;
   }
 
   .hit-week__name {

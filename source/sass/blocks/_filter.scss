@@ -437,6 +437,11 @@ input[type="radio"]:focus + label {
     margin-top: -20px;
   }
 
+  .filter__input-box--icon-tel,
+  .filter__input-box--icon-mail {
+    right: 26px;
+  }
+
   .filter__addition-box {
     textarea {
       display: block;

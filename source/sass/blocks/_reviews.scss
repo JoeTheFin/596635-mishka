@@ -41,7 +41,7 @@
 
 .reviews__toggles {
   margin-top: 28px;
-  margin-bottom: 32px;
+  margin-bottom: 36px;
 
   &--left,
   &--right {
@@ -93,6 +93,7 @@
 }
 
 .reviews__write {
+  padding: 14px;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
@@ -167,14 +168,15 @@
   .reviews__write {
     position: absolute;
     display: block;
-    width: 171px;
-    height: 16px;
+    width: 175px;
+    height: 54px;
     top: 79px;
     left: 543px;
     font-size: 17px;
     line-height: 20px;
     font-weight: 700;
     color: #444444;
+    box-sizing: border-box;
   }
 }
 

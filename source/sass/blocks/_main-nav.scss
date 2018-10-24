@@ -7,7 +7,7 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: -39px;
+  top: -37px;
   right: 71px;
   width: 21px;
   height: 21px;
@@ -262,13 +262,8 @@
     }
 
     &:first-child {
-      margin-top: -10px;
-      margin-left: 55px;
-      transform: scale(1.4);
-      padding: 11px;
-      padding-left: 17px;
-      width: 185px;
-      height: 62px;
+      width: 244px;
+      height: 73px;
       order: 3;
       box-sizing: border-box;
     }
@@ -334,6 +329,19 @@
   }
 
   .main-nav__list-item-logo {
+    width: 149px;
+    height: 103px;
+    margin-top: -10px;
+    padding-left: 68px;
+    background-image: url("../img/logo-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: auto;
+
+    picture {
+      display: none;
+    }
+
     a:hover {
       opacity: 0.6;
     }

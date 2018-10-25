@@ -172,6 +172,7 @@ input[type="radio"]:focus + label {
 .filter__input-box:hover,
 .filter__input-box:active,
 .filter__input-box:focus {
+
   .filter__input-box--icon-tel,
   .filter__input-box--icon-mail {
     fill: #62d1ba;
@@ -332,8 +333,10 @@ input[type="radio"]:focus + label {
   }
 
   .filter__checkbox-filter-box {
-    height: 303px;
+    position: relative;
     margin-top: -32px;
+    height: auto;
+    box-sizing: border-box;
   }
 
   .filter__list-checkbox {
@@ -341,18 +344,22 @@ input[type="radio"]:focus + label {
     justify-content: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
-
-    label {
-      width: 200px;
-      margin-top: -48px;
-      margin-bottom: 38px;
-      margin-left: 235px;
-    }
+    min-height: 230px;
+    width: 530px;
+    margin-top: -40px;
+    margin-bottom: 18px;
+    margin-left: 233px;
+    padding: 0;
 
     li {
-      display: block;
-      width: 245px;
-      margin-right: 17px;
+      width: 262px;
+    }
+
+    label {
+      width: 120px;
+      height: 30px;
+      margin: 0;
+      padding: 0;
     }
   }
 
@@ -383,7 +390,7 @@ input[type="radio"]:focus + label {
     justify-content: flex-start;
     flex-direction: row;
     margin-left: 168px;
-    margin-top: -44px;
+    margin-top: -46px;
     margin-right: -14px;
 
     label {
@@ -435,6 +442,10 @@ input[type="radio"]:focus + label {
   .filter__tel-email {
     min-height: 228px;
     margin-top: -20px;
+
+    input {
+      padding-top: 4px;
+    }
   }
 
   .filter__input-box--icon-tel,
@@ -459,7 +470,7 @@ input[type="radio"]:focus + label {
   }
 
   .filter__footer {
-    margin-bottom: -10px;
+    margin-bottom: -7px;
 
     .filter__wrapper-min {
       display: flex;
@@ -475,7 +486,7 @@ input[type="radio"]:focus + label {
     display: block;
     width: 300px;
     height: 50px;
-    margin-top: 55px;
+    margin-top: 60px;
     font-size: 17px;
   }
 
@@ -507,10 +518,20 @@ input[type="radio"]:focus + label {
     margin-right: 180px;
   }
 
-  .filter__list-radio,
-  .filter__list-checkbox {
+  .filter__list-radio {
     label {
       margin-left: 185px;
+    }
+  }
+
+  .filter__list-checkbox {
+    width: 880px;
+    margin-left: 180px;
+    min-height: 150px;
+
+    li {
+      width: 264px;
+      height: 40px;
     }
   }
 
@@ -526,6 +547,10 @@ input[type="radio"]:focus + label {
     input[type="tel"] {
       width: 682px;
     }
+  }
+
+  .filter__fullname-box {
+    margin-top: 5px;
   }
 
   .filter__input-box--icon-tel,
@@ -553,11 +578,11 @@ input[type="radio"]:focus + label {
   .filter__button {
     margin-right: auto;
     margin-left: -15px;
-    margin-top: 40px;
+    margin-top: 45px;
   }
 
   .filter__footnote {
-    margin-right: -15px;
-    margin-top: 52px;
+    margin-right: -17px;
+    margin-top: 60px;
   }
 }

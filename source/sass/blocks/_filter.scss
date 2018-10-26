@@ -334,7 +334,6 @@ input[type="radio"]:focus + label {
   .filter__checkbox-filter-box {
     position: relative;
     margin-top: -32px;
-    height: auto;
     box-sizing: border-box;
   }
 
@@ -343,7 +342,6 @@ input[type="radio"]:focus + label {
     justify-content: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
-    min-height: 230px;
     width: 530px;
     margin-top: -40px;
     margin-bottom: 18px;
@@ -356,7 +354,7 @@ input[type="radio"]:focus + label {
 
     label {
       width: 120px;
-      height: 30px;
+      height: 59px;
       margin: 0;
       padding: 0;
     }
@@ -526,16 +524,14 @@ input[type="radio"]:focus + label {
   .filter__list-checkbox {
     width: 880px;
     margin-left: 180px;
-    min-height: 150px;
+
+    label {
+      height: 59px;
+    }
 
     li {
       width: 264px;
-      height: 40px;
     }
-  }
-
-  .filter__checkbox-filter-box {
-    height: 225px;
   }
 
   .filter__input-box {
@@ -546,10 +542,6 @@ input[type="radio"]:focus + label {
     input[type="tel"] {
       width: 682px;
     }
-  }
-
-  .filter__fullname-box {
-    margin-top: 5px;
   }
 
   .filter__input-box--icon-tel,

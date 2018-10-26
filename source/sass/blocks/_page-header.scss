@@ -17,7 +17,8 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    min-width: 768px;
+    position: relative;
+    width: 768px;
     height: 88px;
     margin: 0 auto;
     border-top: none;
@@ -25,17 +26,45 @@
   }
 
   .page-header__logo {
-    display: none;
+    position: absolute;
+    top: 2px;
+    left: 50px;
+    z-index: 2;
+    display: block;
+    padding: 0;
+    cursor: pointer;
+
+    img {
+      width: 113px;
+      height: 47px;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-    position: relative;
     min-width: 1150px;
     height: 88px;
     margin: 0 auto;
     border-bottom: 1px solid #ececec;
     box-sizing: border-box;
+  }
+
+  .page-header__logo {
+    top: -11px;
+    left: 502px;
+
+    img {
+      width: 149px;
+      height: 73px;
+    }
   }
 }

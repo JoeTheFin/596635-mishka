@@ -73,30 +73,17 @@
     color: #cacaca;
   }
 
-  &:first-child {
-    display: none;
-  }
-
   &:last-child {
     margin-bottom: -22px;
     border-bottom: 1px solid #ececec;
-  }
-
-  &:nth-child(4) svg {
-    position: absolute;
-    top: 25px;
-    left: -25px;
-  }
-
-  &:last-child svg {
-    position: absolute;
-    top: 25px;
-    left: -27px;
   }
 }
 
 .main-nav__list-item--icon-search,
 .main-nav__list-item--icon-basket {
+  position: absolute;
+  top: 25px;
+  left: -26px;
   fill: #d3d2d2;
 }
 
@@ -157,7 +144,6 @@
     justify-content: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
-    min-height: 162px;
   }
 
   .main-nav__list-item {
@@ -175,50 +161,41 @@
     }
 
     &:first-child {
-      order: 1;
       display: block;
-      padding-top: 4px;
-      margin-left: -2px;
+      margin-top: 88px;
+      margin-right: 28px;
     }
 
     &:nth-child(2) {
-      order: 4;
-      width: 158px;
-      margin-right: 10px;
-      padding-bottom: 30px;
+      margin-top: 88px;
+      margin-right: 12px;
     }
 
     &:nth-child(3) {
-      order: 5;
-      width: 158px;
-    }
-
-    &:nth-child(4) {
-      order: 2;
-      width: 85px;
+      width: 82px;
       height: 88px;
-      margin-top: -17px;
-      margin-left: 180px;
+      margin-top: -20px;
+      margin-right: 82px;
       border-left: 1px solid #ececec;
       border-right: 1px solid #ececec;
     }
 
     &:last-child {
-      order: 3;
       margin-top: 13px;
-      padding-left: 82px;
       border-bottom: none;
     }
+  }
 
-    &:nth-child(4) svg {
-      top: 36px;
-      left: 35px;
-    }
+  .main-nav__list-item--icon-search {
+    position: absolute;
+    top: 38px;
+    left: 32px;
+  }
 
-    &:last-child svg {
-      top: 5px;
-      left: -52px;
-    }
+  .main-nav__list-item--icon-basket {
+    position: absolute;
+    top: 5px;
+    left: -52px;
   }
 
   .main-nav__list-item--name-basket {
@@ -227,16 +204,6 @@
 
   .main-nav__list-item--name-src {
     font-size: 0;
-  }
-
-  .main-nav__list-item-logo {
-    a:hover {
-      opacity: 0.6;
-    }
-
-    a:active {
-      opacity: 0.3;
-    }
   }
 }
 
@@ -262,56 +229,35 @@
     }
 
     &:first-child {
-      order: 3;
-      width: 244px;
-      height: 73px;
-      box-sizing: border-box;
-    }
-
-    &:nth-child(2) {
-      order: 1;
-      margin-top: -17px;
-      margin-left: -50px;
-      padding: 30px 28px 31px 48px;
+      margin-top: -20px;
+      margin-left: -48px;
+      padding: 31px 46px;
       border-right: 1px solid #e7e7e7;
     }
 
-    &:nth-child(3) {
-      order: 2;
+    &:nth-child(2) {
       margin-top: -17px;
-      margin-left: -10px;
-      padding: 30px 28px 31px 33px;
+      margin-left: -25px;
+      padding: 30px 30px;
     }
 
-    &:nth-child(4) {
-      order: 4;
-      width: 23px;
+    &:nth-child(3) {
+      width: 27px;
       height: 26px;
-      margin-left: 55px;
+      margin-left: 300px;
       margin-top: -18px;
-      padding: 30px;
+      padding: 29px;
       padding-bottom: 32px;
       border-left: 1px solid #e7e7e7;
       border-right: 1px solid #e7e7e7;
     }
 
     &:last-child {
-      order: 5;
       width: 314px;
-      margin-top: 0;
+      margin-top: 14px;
       margin-right: -50px;
-      padding-left: 40px;
-      padding-top: 14px;
+      margin-left: -45px;
       padding-bottom: 30px;
-    }
-
-    &:nth-child(4) svg {
-      top: 7px;
-      left: 3px;
-    }
-
-    &:last-child svg {
-      top: 4px;
     }
   }
 
@@ -320,35 +266,10 @@
       display: block;
       width: 20px;
     }
-  }
 
-  .main-nav__list-item-logo {
-    position: relative;
-    margin-top: -12px;
-    padding-left: 68px;
-
-    picture {
-      display: none;
+    svg {
+      top: 6px;
+      left: 1px;
     }
-
-    a:hover {
-      opacity: 0.6;
-    }
-
-    a:active {
-      opacity: 0.3;
-    }
-  }
-
-  .main-nav__list-item-logo-link {
-    position: absolute;
-    top: -1px;
-    left: -41px;
-    width: 149px;
-    height: 73px;
-    background-image: url("../img/logo-desktop.svg");
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: auto;
   }
 }

@@ -6,7 +6,26 @@
   border: 1px solid #f1f1f1;
 }
 
+.videobox__wrapper {
+  position: relative;
+}
+
+.videobox__icon-video {
+  position: absolute;
+  top: 6px;
+  left: 33px;
+}
+
+.videobox:hover {
+  box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+.videobox:active {
+  box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
 .videobox__name {
+  position: relative;
   display: block;
   margin-left: 90px;
   margin-top: 25px;
@@ -28,24 +47,32 @@
 
 .videobox__content {
   position: relative;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 36px;
-    left: 80px;
-    width: 100px;
-    height: 77px;
-    background-image: url("../img/icon-play.svg");
-    background-repeat: no-repeat;
+.videobox__content-icon-play {
+  position: absolute;
+  top: 36px;
+  left: 80px;
+
+  &:hover {
+    top: 31px;
+    left: 72px;
+    width: 120px;
+    height: 92px;
+  }
+
+  &:active {
+    top: 30%;
+    left: 35%;
+    width: 80px;
+    height: 62px;
+    opacity: 0.6;
   }
 }
 
 .videobox__description {
   display: block;
-  padding-top: 15px;
-  padding-left: 33px;
-  padding-right: 30px;
+  padding: 15px 30px 15px 33px;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
@@ -53,32 +80,35 @@
 }
 
 .videobox__button {
+  margin: 35px;
+  margin-top: 9px;
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
-  margin: 35px;
-  margin-top: 24px;
 }
 
 @media (min-width: $tablet-width) {
   .videobox {
     min-width: 668px;
     min-height: 740px;
-    margin-bottom: 62px;
+    margin-bottom: 60px;
   }
 
   .videobox__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
     width: 668px;
   }
 
-  .videobox__content {
-    display: block;
-    order: 0;
+  .videobox__icon-video {
+    top: 483px;
+    left: 41px;
   }
 
-  .videobox__content::before {
-    top: 190px;
-    left: 284px;
+  .videobox__content {
+    order: 0;
+    display: block;
   }
 
   .videobox__image {
@@ -86,34 +116,44 @@
     height: 455px;
   }
 
+  .videobox__content-icon-play {
+    position: absolute;
+    top: 41%;
+    left: 42%;
+
+    &:hover {
+      top: 39%;
+      left: 40%;
+      width: 120px;
+      height: 92px;
+    }
+
+    &:active {
+      top: 42%;
+      left: 43%;
+      width: 80px;
+      height: 62px;
+      opacity: 0.6;
+    }
+  }
+
   .videobox__name {
     position: relative;
     order: 1;
+    padding-top: 10px;
+    padding-left: 16px;
     font-size: 20px;
     line-height: 24px;
-    padding-top: 12px;
-    padding-left: 16px;
-  }
-
-  .videobox__name::before {
-    content: "";
-    position: absolute;
-    top: 7px;
-    left: -49px;
-    width: 32px;
-    height: 32px;
-    background-image: url("../img/icon-video.svg");
-    background-repeat: no-repeat;
-    background-position: center;
   }
 
   .videobox__description {
+    order: 2;
     width: 586px;
-    font-size: 15px;
-    line-height: 30px;
     margin-left: 6px;
     margin-top: -7px;
-    order: 2;
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 30px;
 
     br {
       display: none;
@@ -121,11 +161,12 @@
   }
 
   .videobox__button {
+    order: 3;
     width: 584px;
     margin: 0 auto;
-    margin-top: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding-top: 14px;
-    order: 3;
   }
 }
 
@@ -143,44 +184,50 @@
     position: relative;
   }
 
-  .videobox__content {
-    position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 190px;
-      left: 290px;
-      width: 100px;
-      height: 77px;
-      background-image: url("../img/icon-play.svg");
-      background-repeat: no-repeat;
-    }
+  .videobox__icon-video {
+    top: 43px;
+    left: 761px;
   }
 
   .videobox__image {
     width: 682px;
-    heught: 455px;
+    height: 455px;
+  }
+
+  .videobox__content-icon-play {
+    position: absolute;
+    top: 190px;
+    left: 290px;
+
+    &:hover {
+      top: 180px;
+      left: 282px;
+      width: 120px;
+      height: 92px;
+    }
+
+    &:active {
+      top: 196px;
+      left: 298px;
+      width: 80px;
+      height: 62px;
+      opacity: 0.6;
+    }
   }
 
   .videobox__name {
     position: absolute;
-    top: -2px;
-    right: -258px;
+    top: -1px;
+    right: -270px;
     width: 180px;
     margin-left: 60px;
     margin-top: 85px;
   }
 
-  .videobox__name::before {
-    top: -43px;
-    left: 18px;
-  }
-
   .videobox__description {
     position: absolute;
     top: 168px;
-    right: -342px;
+    right: -355px;
     width: 235px;
     margin-left: 43px;
     font-size: 15px;
@@ -189,8 +236,8 @@
 
   .videobox__button {
     position: absolute;
-    bottom: 62px;
-    right: -308px;
+    bottom: 50px;
+    right: -321px;
     display: block;
     width: 225px;
     margin-top: 33px;

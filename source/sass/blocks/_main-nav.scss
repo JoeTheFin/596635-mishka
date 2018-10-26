@@ -7,8 +7,8 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: -39px;
-  right: 71px;
+  top: -37px;
+  right: 31px;
   width: 21px;
   height: 21px;
   background-color: inherit;
@@ -52,6 +52,7 @@
 
   a {
     position: relative;
+    z-index: 1;
     display: block;
     width: 190px;
     margin: 0 auto;
@@ -152,72 +153,71 @@
   }
 
   .main-nav__list {
-    min-height: 162px;
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
+    min-height: 162px;
   }
 
   .main-nav__list-item {
-    border: none;
     height: 25px;
     width: 140px;
     margin: 0;
+    border: none;
     background-color: rgba(255, 255, 255, 0);
 
     a {
-      font-size: 15px;
-      line-height: 24px;
       padding-left: 0;
       padding-top: 0;
+      font-size: 15px;
+      line-height: 24px;
     }
 
     &:first-child {
+      order: 1;
       display: block;
       padding-top: 4px;
       margin-left: -2px;
-      order: 1;
     }
 
     &:nth-child(2) {
+      order: 4;
       width: 158px;
       margin-right: 10px;
       padding-bottom: 30px;
-      order: 4;
     }
 
     &:nth-child(3) {
-      width: 158px;
       order: 5;
+      width: 158px;
     }
 
     &:nth-child(4) {
+      order: 2;
       width: 85px;
       height: 88px;
       margin-top: -17px;
       margin-left: 180px;
       border-left: 1px solid #ececec;
       border-right: 1px solid #ececec;
-      order: 2;
     }
 
     &:last-child {
+      order: 3;
       margin-top: 13px;
       padding-left: 82px;
       border-bottom: none;
-      order: 3;
-    }
-
-    &:nth-child(4) svg,
-    &:last-child svg {
-      position: absolute;
-      top: 3px;
-      left: 33px;
     }
 
     &:nth-child(4) svg {
-      top: 30px;
+      top: 36px;
+      left: 35px;
+    }
+
+    &:last-child svg {
+      top: 5px;
+      left: -52px;
     }
   }
 
@@ -227,6 +227,16 @@
 
   .main-nav__list-item--name-src {
     font-size: 0;
+  }
+
+  .main-nav__list-item-logo {
+    a:hover {
+      opacity: 0.6;
+    }
+
+    a:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -252,14 +262,9 @@
     }
 
     &:first-child {
-      margin-top: -10px;
-      margin-left: 55px;
-      transform: scale(1.6);
-      padding: 11px;
-      padding-left: 20px;
-      width: 185px;
-      height: 62px;
       order: 3;
+      width: 244px;
+      height: 73px;
       box-sizing: border-box;
     }
 
@@ -267,10 +272,7 @@
       order: 1;
       margin-top: -17px;
       margin-left: -50px;
-      padding-top: 30px;
-      padding-left: 48px;
-      padding-right: 28px;
-      padding-bottom: 31px;
+      padding: 30px 28px 31px 48px;
       border-right: 1px solid #e7e7e7;
     }
 
@@ -278,10 +280,7 @@
       order: 2;
       margin-top: -17px;
       margin-left: -10px;
-      padding: 30px;
-      padding-left: 33px;
-      padding-right: 28px;
-      padding-bottom: 31px;
+      padding: 30px 28px 31px 33px;
     }
 
     &:nth-child(4) {
@@ -307,17 +306,31 @@
     }
 
     &:nth-child(4) svg {
-      top: 35px;
-      left: 33px;
+      top: 7px;
+      left: 3px;
     }
 
     &:last-child svg {
-      top: 16px;
-      left: 30px;
+      top: 4px;
+    }
+  }
+
+  .main-nav__list-item--search {
+    a {
+      display: block;
+      width: 20px;
     }
   }
 
   .main-nav__list-item-logo {
+    position: relative;
+    margin-top: -12px;
+    padding-left: 68px;
+
+    picture {
+      display: none;
+    }
+
     a:hover {
       opacity: 0.6;
     }
@@ -325,5 +338,17 @@
     a:active {
       opacity: 0.3;
     }
+  }
+
+  .main-nav__list-item-logo-link {
+    position: absolute;
+    top: -1px;
+    left: -41px;
+    width: 149px;
+    height: 73px;
+    background-image: url("../img/logo-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: auto;
   }
 }

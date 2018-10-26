@@ -1,6 +1,8 @@
 @import "helpers/variables";
-@import "helpers/visually-hidden";
 @import "helpers/global";
+@import "helpers/normalize";
+@import "helpers/visually-hidden";
+@import "components/buttons";
 @import "blocks/buttons";
 @import "blocks/page-header";
 @import "blocks/main-nav";
@@ -17,3 +19,4 @@
 @import "blocks/videobox";
 @import "blocks/filter-box";
 @import "blocks/filter";
+@import "blocks/modal";

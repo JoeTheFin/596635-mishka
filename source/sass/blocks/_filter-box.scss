@@ -1,18 +1,18 @@
 .filter-box {
-  font-family: $font-family;
   min-width: 320px;
   margin: 0 auto;
+  font-family: $font-family;
 }
 
 .filter-box__caption {
   width: 100%;
-  height: 175px;
+  min-height: 180px;
   text-align: center;
   background-color: #f1f1f1;
 
   h1 {
     display: block;
-    padding-top: 70px;
+    padding-top: 75px;
     font-size: 27px;
     line-height: 30px;
   }
@@ -40,6 +40,18 @@
     margin: 0 auto;
   }
 
+  .filter-box::after {
+    content: "";
+    position: absolute;
+    top: 302px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 22.8px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-size: auto 22.8px;
+  }
+
   .filter-box__wrapper {
     width: 668px;
     margin: 0 auto;
@@ -48,13 +60,13 @@
   .filter-box__caption {
     display: block;
     height: 204px;
-    margin-top: -56px;
+    margin-top: -40px;
     padding-top: 18px;
 
     h1 {
+      margin-top: 0;
       font-size: 43px;
       line-height: 50px;
-      margin-top: 5px;
     }
   }
 
@@ -67,18 +79,31 @@
 
 @media (min-width: $desktop-width) {
   .filter-box {
-    min-width: 1150px;
+    width: 1150px;
     margin: 0 auto;
+    margin-top: 16px;
+  }
+
+  .filter-box::after {
+    content: "";
+    position: absolute;
+    top: 324px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 34px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-size: auto 34px;
   }
 
   .filter-box__caption {
     display: block;
+    height: 237px;
     margin-top: -60px;
     padding-top: 18px;
-    height: 225px;
 
     h1 {
-      padding-top: 72px;
+      padding-top: 77px;
       font-size: 53px;
       line-height: 57px;
     }
@@ -90,7 +115,7 @@
   }
 
   .filter-box__description {
-    margin-top: 135px;
+    margin-top: 123px;
     margin-bottom: 27px;
   }
 }

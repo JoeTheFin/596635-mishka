@@ -17,7 +17,7 @@
 
 .hit-week__name-product {
   display: block;
-  margin-top: 25px;
+  margin-top: 27px;
   padding-bottom: 5px;
   font-size: 25px;
   line-height: 30px;
@@ -71,6 +71,7 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
+  padding: 14px;
 }
 
 .hit-week__price {
@@ -131,7 +132,7 @@
   }
 
   .hit-week__price {
-    margin-top: 48px;
+    margin-top: 45px;
     margin-bottom: 33px;
     padding-top: 0;
     font-size: 20px;
@@ -139,8 +140,9 @@
   }
 
   .hit-week__button {
-    width: 286px;
-    height: 17px;
+    width: 290px;
+    height: 55px;
+    box-sizing: border-box;
   }
 
   .hit-week__container {
@@ -181,9 +183,9 @@
   }
 
   .hit-week__name-product {
+    z-index: 1;
     font-size: 53px;
     line-height: 57px;
-    z-index: 1;
   }
 
   .hit-week__name {

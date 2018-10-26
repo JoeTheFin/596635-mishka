@@ -20,6 +20,8 @@
 
     <a class="page-header__logo" href="index.html">
       <picture>
+        <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
         <img src="img/logo-mobile.svg" width="85" height="35" alt="Мишка-логотип">
       </picture>
     </a>
@@ -27,13 +29,6 @@
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
-          <li class="main-nav__list-item main-nav__list-item-logo">
-            <a class="main-nav__list-item-logo-link" href="index.html">
-              <picture>
-                <img src="img/logo-tablet.svg" width="113" height="47" alt="Мишка-логотип">
-              </picture>
-            </a>
-          </li>
           <li class="main-nav__list-item">
             <a href="catalog.html">Каталог товаров</a>
           </li>
@@ -104,11 +99,11 @@
                 Рост 30 см, вес 200 г
               </p>
               <b class="product__price">1 200 руб.
-              <a class="product__link-basket" href="#">
-                <svg class="product__link-basket--icon-basket" width="21" height="18">
-                <use xlink:href="./img/sprite-auto.svg#icon-cart"></use>
-              </svg>
-              </a>
+                <a class="product__link-basket" href="#">
+                  <svg class="product__link-basket--icon-basket" width="21" height="18">
+                    <use xlink:href="./img/sprite-auto.svg#icon-cart"></use>
+                  </svg>
+                </a>
               </b>
             </div>
           </article>
@@ -136,10 +131,10 @@
                 Диаметр 15 см, высота 10 см
               </p>
               <b class="product__price">690 руб.<a class="product__link-basket" href="#">
-                <svg class="product__link-basket--icon-basket product__link-basket--icon-basket--min" width="21" height="18">
-                <use xlink:href="./img/sprite-auto.svg#icon-cart"></use>
-              </svg>
-              </a>
+                  <svg class="product__link-basket--icon-basket product__link-basket--icon-basket--min" width="21" height="18">
+                    <use xlink:href="./img/sprite-auto.svg#icon-cart"></use>
+                  </svg>
+                </a>
               </b>
             </div>
           </article>
@@ -167,10 +162,10 @@
                 Диаметр 30 см, высота 30 см
               </p>
               <b class="product__price product__price-basket">1 500 руб.<a class="product__link-basket" href="#">
-                <svg class="product__link-basket--icon-basket" width="21" height="18">
-                <use xlink:href="./img/sprite-auto.svg#icon-cart"></use>
-              </svg>
-              </a>
+                  <svg class="product__link-basket--icon-basket" width="21" height="18">
+                    <use xlink:href="./img/sprite-auto.svg#icon-cart"></use>
+                  </svg>
+                </a>
               </b>
             </div>
           </article>
@@ -211,9 +206,9 @@
     <div class="page-footer__wrapper">
       <div class="page-footer__logo">
         <a href="#">
-        <svg class="page-footer__logo-icon" width="102" height="34">
-          <use xlink:href="./img/sprite-auto.svg#logo-footer"></use>
-        </svg>
+          <svg class="page-footer__logo-icon" width="102" height="34">
+            <use xlink:href="./img/sprite-auto.svg#logo-footer"></use>
+          </svg>
         </a>
       </div>
       <div class="page-footer__social social">
@@ -257,6 +252,7 @@
   </footer>
 
   <section class="modal">
+    <!-- open class="modal-show"-->
     <h1>Добавить в корзину</h1>
     <p>Выберите размер:</p>
     <div class="modal__wrapper">
@@ -272,8 +268,8 @@
         </div>
       </div>
       <a class="modal__button button">
-      Добавить
-    </a>
+        Добавить
+      </a>
     </div>
   </section>
 

@@ -36,6 +36,7 @@
 
 @media (min-width: $tablet-width) {
   .filter-box {
+    position: relative;
     min-width: 768px;
     margin: 0 auto;
   }
@@ -43,7 +44,7 @@
   .filter-box::after {
     content: "";
     position: absolute;
-    top: 302px;
+    top: 213px;
     left: 0;
     display: block;
     width: 100%;
@@ -79,6 +80,7 @@
 
 @media (min-width: $desktop-width) {
   .filter-box {
+    position: relative;
     width: 1150px;
     margin: 0 auto;
     margin-top: 16px;
@@ -87,7 +89,7 @@
   .filter-box::after {
     content: "";
     position: absolute;
-    top: 324px;
+    top: 238px;
     left: 0;
     display: block;
     width: 100%;

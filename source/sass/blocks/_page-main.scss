@@ -86,7 +86,7 @@
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
-    width: 768px;
+    width: 668px;
     height: 40px;
     margin: 0 auto;
     margin-top: 20px;
@@ -101,7 +101,6 @@
       position: relative;
       z-index: 2;
       display: block;
-      margin-right: 50px;
       padding-top: 18px;
       font-size: 15px;
       line-height: 24px;
@@ -125,11 +124,10 @@
 
   .page-main__promo-list {
     top: 20px;
-    left: 50px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    width: 1150px;
+    width: 1050px;
     margin: 0 auto;
   }
 
@@ -172,7 +170,7 @@
   .page-main__promo-list-item:last-child {
     width: 281px;
     margin-left: auto;
-    margin-right: 50px;
+    margin-right: -50px;
   }
 
   .page-main__name {

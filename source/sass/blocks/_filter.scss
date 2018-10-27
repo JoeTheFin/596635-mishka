@@ -227,7 +227,7 @@ input[type="radio"]:focus + label {
 .filter__button {
   display: block;
   width: 100%;
-  margin-bottom: 60px;
+  margin-bottom: 57px;
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
@@ -342,14 +342,19 @@ input[type="radio"]:focus + label {
     justify-content: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 530px;
+    width: 450px;
     margin-top: -40px;
     margin-bottom: 18px;
     margin-left: 233px;
     padding: 0;
 
     li {
-      width: 262px;
+      width: 120px;
+      padding-right: 142px;
+    }
+
+    li:nth-child(2n) {
+      padding-right: 0;
     }
 
     label {
@@ -522,7 +527,7 @@ input[type="radio"]:focus + label {
   }
 
   .filter__list-checkbox {
-    width: 880px;
+    width: 750px;
     margin-left: 180px;
 
     label {
@@ -530,7 +535,16 @@ input[type="radio"]:focus + label {
     }
 
     li {
-      width: 264px;
+      width: 120px;
+      padding-right: 143px;
+    }
+
+    li:nth-child(2n) {
+      padding-right: 143px;
+    }
+
+    li:nth-child(3n) {
+      padding-right: 0;
     }
   }
 

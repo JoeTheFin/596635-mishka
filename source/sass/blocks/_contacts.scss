@@ -96,9 +96,13 @@
 
   .contacts__map-interactive {
     position: relative;
+    left: 50%;
+    right: 50%;
+    width: 99.9vw;
     min-width: 320px;
     height: 457px;
-    margin-left: -30px;
+    margin-left: -50vw;
+    margin-right: -50vw;
     border: none;
   }
 }
@@ -164,20 +168,26 @@
     width: 738px;
     height: 457px;
     margin-top: 0;
-    margin-left: -20px;
+    margin-left: -35px;
 
     .contacts__map {
       position: absolute;
       top: 0;
       width: 768px;
       height: 457px;
+      margin-left: 15px;
     }
 
     .contacts__map-interactive {
-      position: absolute;
-      top: 0;
-      z-index: 2;
-      width: 768px;
+      position: relative;
+      left: 50%;
+      right: 50%;
+      width: 99.9vw;
+      min-width: 768px;
+      height: 457px;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      border: none;
     }
   }
 
@@ -307,10 +317,10 @@
 
     .contacts__map-interactive {
       position: absolute;
-      top: 0;
-      left: 404px;
-      z-index: 2;
       width: 525px;
+      min-width: auto;
+      margin: 0;
+      margin-left: -75px;
     }
   }
 

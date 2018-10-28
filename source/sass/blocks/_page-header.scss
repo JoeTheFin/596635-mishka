@@ -18,6 +18,9 @@
 @media (min-width: $tablet-width) {
   .page-header {
     position: relative;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
     width: 768px;
     height: 88px;
     margin: 0 auto;
@@ -26,15 +29,14 @@
   }
 
   .page-header__logo {
-    position: absolute;
-    top: 2px;
-    left: 50px;
+    order: 1;
+    margin-right: -163px;
+    margin-left: 48px;
     z-index: 2;
-    display: block;
-    padding: 0;
     cursor: pointer;
 
     img {
+      padding-top: 2px;
       width: 113px;
       height: 47px;
     }
@@ -51,6 +53,7 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
+    flex-wrap: wrap;
     min-width: 1150px;
     height: 88px;
     margin: 0 auto;
@@ -59,8 +62,10 @@
   }
 
   .page-header__logo {
-    top: -11px;
-    left: 502px;
+    order: 2;
+    margin: 0;
+    margin-left: 500px;
+    margin-top: -115px;
 
     img {
       width: 149px;

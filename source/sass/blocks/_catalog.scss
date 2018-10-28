@@ -71,7 +71,7 @@
 
 @media (min-width: $desktop-width) {
   .catalog {
-    width: 1150px;
+    min-width: 1150px;
     margin: 0 auto;
     margin-top: 16px;
   }

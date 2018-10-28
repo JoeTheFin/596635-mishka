@@ -80,10 +80,9 @@
 
 @media (min-width: $desktop-width) {
   .filter-box {
-    position: relative;
-    width: 1150px;
+    min-width: 1150px;
     margin: 0 auto;
-    margin-top: 16px;
+    margin-top: 20px;
   }
 
   .filter-box::after {

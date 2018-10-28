@@ -182,6 +182,10 @@
 
   .videobox__wrapper {
     position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 1050px;
+    height: 455px;
   }
 
   .videobox__icon-video {
@@ -216,31 +220,26 @@
   }
 
   .videobox__name {
-    position: absolute;
-    top: -1px;
-    right: -270px;
     width: 180px;
-    margin-left: 60px;
-    margin-top: 85px;
+    margin: 0;
+    margin-top: 87px;
+    margin-left: 36px;
   }
 
   .videobox__description {
-    position: absolute;
-    top: 168px;
-    right: -355px;
     width: 235px;
-    margin-left: 43px;
+    margin: 0;
+    margin-left: 20px;
+    margin-top: 18px;
+    margin-bottom: 32px;
     font-size: 15px;
     line-height: 30px;
   }
 
   .videobox__button {
-    position: absolute;
-    bottom: 50px;
-    right: -321px;
     display: block;
     width: 225px;
-    margin-top: 33px;
-    margin-left: 80px;
+    margin: 0;
+    margin-left: 54px;
   }
 }

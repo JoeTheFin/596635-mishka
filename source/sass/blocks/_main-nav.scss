@@ -228,6 +228,27 @@
       display: block;
       vertical-align: middle;
     }
+
+    li:first-child::before,
+    li:nth-child(3)::before,
+    li:nth-child(3)::after {
+      content: "";
+      position: absolute;
+      top: -20px;
+      right: -45px;
+      display: block;
+      width: 1px;
+      height: 100px;
+      background-color: #ececec;
+    }
+
+    li:nth-child(3)::before {
+      right: 12px;
+    }
+
+    li:nth-child(3)::after {
+      left: 0;
+    }
   }
 
   .main-nav__list-item {

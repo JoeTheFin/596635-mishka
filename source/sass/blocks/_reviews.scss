@@ -198,7 +198,9 @@
 @media (min-width: $desktop-width) {
   .reviews {
     position: relative;
-    margin-left: 50px;
+    width: 1050px;
+    margin: 0 auto;
+    margin-top: 40px;
   }
 
   .reviews__wrapper {
@@ -208,9 +210,16 @@
   }
 
   .reviews__title {
+    width: 250px;
     margin-top: 28px;
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .reviews__item {
+    display: block;
+    width: 801px;
+    margin: 0;
   }
 
   .reviews__text {
@@ -227,12 +236,16 @@
   }
 
   .reviews__write {
-    top: 77px;
-    left: 825px;
+    top: 76px;
+    left: auto;
+    right: 0;
   }
 
   .reviews__toggles {
+    width: 217px;
+    top: auto;
+    left: auto;
+    right: -22px;
     bottom: 63px;
-    right: 233px;
   }
 }

@@ -90,6 +90,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .social {
+    width: 120px;
+  }
+
   .social__link-icon-insta {
     left: -20px;
   }

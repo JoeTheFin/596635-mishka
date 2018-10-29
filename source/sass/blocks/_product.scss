@@ -150,8 +150,7 @@
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    align-self: flex-end;
-    min-height: 656px;
+    align-items: stretch;
     margin-bottom: -16px;
   }
 
@@ -166,7 +165,11 @@
 
   .product__box {
     width: 287px;
-    min-height: 196px;
+    height: auto;
+  }
+
+  .product__image-box {
+    height: auto;
   }
 
   .product__price,

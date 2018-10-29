@@ -30,11 +30,18 @@
 .filter__list-radio,
 .filter__list-checkbox {
   display: block;
+  width: 260px;
   margin-top: 7px;
   margin-left: -2px;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
   padding-left: 0;
   list-style: none;
+}
+
+.filter__list-checkbox {
+  label {
+    margin-bottom: 19px;
+  }
 }
 
 .filter__label {
@@ -42,12 +49,13 @@
   position: relative;
   margin-left: 50px;
   margin-top: 4px;
-  margin-bottom: 2px;
+  padding-bottom: 2px;
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
   color: #000000;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .filter input[type="radio"],
@@ -130,13 +138,15 @@ input[type="radio"]:focus + label {
 .filter__tel-email {
   input {
     width: 260px;
-    height: 48px;
+    height: 52px;
     padding-left: 0;
+    padding-right: 45px;
     font-size: 19px;
     line-height: 18px;
     color: #444444;
     border: none;
     border-bottom: 2px solid #000000;
+    box-sizing: border-box;
   }
 
   input:hover,
@@ -378,10 +388,11 @@ input[type="radio"]:focus + label {
     }
 
     label {
-      width: 120px;
+      width: 170px;
       height: 59px;
       margin: 0;
       padding: 0;
+      padding-bottom: 20px;
     }
   }
 
@@ -435,10 +446,10 @@ input[type="radio"]:focus + label {
 
     input[type="email"],
     input[type="tel"] {
-      width: 485px;
+      width: 500px;
       height: 50px;
       margin-left: -15px;
-      margin-top: 2px;
+      margin-top: 7px;
       background-color: rgba(255, 255, 255, 0);
     }
 
@@ -580,15 +591,17 @@ input[type="radio"]:focus + label {
   }
 
   .filter__input-box {
-    margin-left: 82px;
-    padding-right: 45px;
+    margin-left: 81px;
+    padding-right: 40px;
 
     input[type="email"],
     input[type="tel"] {
-      width: 682px;
+      margin-top: 7px;
+      width: 700px;
     }
 
     input[type="text"] {
+      margin-top: 10px;
       margin-right: 35px;
     }
   }
@@ -603,10 +616,24 @@ input[type="radio"]:focus + label {
     right: 88px;
   }
 
+  .filter__wrapper-desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .filter__name--dop {
+    margin-top: -7px;
+    width: auto;
+  }
+
   .filter__addition-box {
     textarea {
       display: block;
+      margin: 0;
+      margin-top: -40px;
       margin-left: 65px;
+      padding: 13px;
       height: 142px;
       width: 700px;
       border: 2px solid black;

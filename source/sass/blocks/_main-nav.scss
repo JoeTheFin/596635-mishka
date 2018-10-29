@@ -83,8 +83,8 @@
   }
 }
 
-.main-nav__list-item--icon-search,
-.main-nav__list-item--icon-basket {
+.main-nav__list-item-icon-search,
+.main-nav__list-item-icon-basket {
   position: absolute;
   top: 25px;
   left: -26px;
@@ -93,16 +93,16 @@
 
 .main-nav__list-item--search:hover,
 .main-nav__list-item--basket:hover {
-  .main-nav__list-item--icon-search,
-  .main-nav__list-item--icon-basket {
+  .main-nav__list-item-icon-search,
+  .main-nav__list-item-icon-basket {
     fill: #63d1bb;
   }
 }
 
 .main-nav__list-item--search:active,
 .main-nav__list-item--basket:active {
-  .main-nav__list-item--icon-search,
-  .main-nav__list-item--icon-basket {
+  .main-nav__list-item-icon-search,
+  .main-nav__list-item-icon-basket {
     fill: #d0f1ea;
   }
 }
@@ -191,23 +191,23 @@
     }
   }
 
-  .main-nav__list-item--icon-search {
+  .main-nav__list-item-icon-search {
     position: absolute;
     top: 38px;
     left: 32px;
   }
 
-  .main-nav__list-item--icon-basket {
+  .main-nav__list-item-icon-basket {
     position: absolute;
     top: 5px;
     left: -52px;
   }
 
-  .main-nav__list-item--name-basket {
+  .main-nav__list-item-name-basket {
     font-size: 17px;
   }
 
-  .main-nav__list-item--name-src {
+  .main-nav__list-item-name-src {
     font-size: 0;
   }
 }

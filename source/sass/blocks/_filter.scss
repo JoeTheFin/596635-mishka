@@ -176,15 +176,15 @@ input[type="radio"]:focus + label {
   position: relative;
 }
 
-.filter__input-box--icon-tel,
-.filter__input-box--icon-mail {
+.filter__input-box-icon-tel,
+.filter__input-box-icon-mail {
   position: absolute;
   top: 12px;
   right: 4px;
   fill: #cccccc;
 }
 
-.filter__input-box--icon-tel {
+.filter__input-box-icon-tel {
   top: 13px;
   right: 8px;
 }
@@ -192,8 +192,8 @@ input[type="radio"]:focus + label {
 .filter__input-box:hover,
 .filter__input-box:active,
 .filter__input-box:focus {
-  .filter__input-box--icon-tel,
-  .filter__input-box--icon-mail {
+  .filter__input-box-icon-tel,
+  .filter__input-box-icon-mail {
     fill: #62d1ba;
   }
 }
@@ -213,16 +213,16 @@ input[type="radio"]:focus + label {
   border: 2px solid #000000;
 }
 
-.filter__name--dop-input {
+.filter__name-dop-input {
   &::placeholder {
     font-size: 17px;
     color: #d2d2d2;
   }
 }
 
-.filter__name--dop-input:hover,
-.filter__name--dop-input:active,
-.filter__name--dop-input:focus {
+.filter__name-dop-input:hover,
+.filter__name-dop-input:active,
+.filter__name-dop-input:focus {
   border: 2px solid #62d1ba;
 }
 
@@ -462,12 +462,12 @@ input[type="radio"]:focus + label {
     }
   }
 
-  .filter__input-box--icon-tel {
+  .filter__input-box-icon-tel {
     top: 18px;
     right: 27px;
   }
 
-  .filter__input-box--icon-mail {
+  .filter__input-box-icon-mail {
     top: 16px;
     right: 23px;
   }
@@ -483,7 +483,7 @@ input[type="radio"]:focus + label {
     }
   }
 
-  .filter__name--dop-input {
+  .filter__name-dop-input {
     &::placeholder {
       font-size: 19px;
     }
@@ -593,12 +593,12 @@ input[type="radio"]:focus + label {
     }
   }
 
-  .filter__input-box--icon-mail {
+  .filter__input-box-icon-mail {
     top: 15px;
     right: 84px;
   }
 
-  .filter__input-box--icon-tel {
+  .filter__input-box-icon-tel {
     top: 16px;
     right: 88px;
   }

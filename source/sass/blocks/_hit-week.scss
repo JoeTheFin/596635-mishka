@@ -76,7 +76,8 @@
 
 .hit-week__price {
   display: block;
-  margin-bottom: 23px;
+  margin-top: 15px;
+  margin-bottom: 25px;
   padding-top: 344px;
   text-align: center;
   font-size: 17px;
@@ -151,14 +152,6 @@
     flex-direction: row;
   }
 
-  .hit-week__container-one {
-    width: 290px;
-  }
-
-  .hit-week__container-two {
-    display: block;
-  }
-
   .hit-week__image {
     position: inherit;
     width: 333px;
@@ -172,7 +165,7 @@
     display: block;
     width: 1050px;
     margin: 0 auto;
-    padding-top: 80px;
+    margin-top: 75px;
   }
 
   .hit-week__wrapper {
@@ -190,7 +183,7 @@
 
   .hit-week__name {
     position: absolute;
-    top: 0;
+    top: 5px;
     left: -155px;
   }
 

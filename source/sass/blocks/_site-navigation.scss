@@ -12,9 +12,8 @@
 
 .site-navigation__box {
   display: block;
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
-  background-position: center;
 
   &--home {
     background-color: #63d1bb;
@@ -27,14 +26,14 @@
   }
 }
 
-.site-navigation__box--icon-interior {
+.site-navigation__box-icon-interior {
   position: absolute;
   top: 21px;
   right: 35px;
   fill: #3bb09d;
 }
 
-.site-navigation__box--icon-toy {
+.site-navigation__box-icon-toy {
   position: absolute;
   top: 21px;
   right: 28px;
@@ -59,8 +58,8 @@
     padding-bottom: 34px;
   }
 
-  .site-navigation__box--icon-interior,
-  .site-navigation__box--icon-toy {
+  .site-navigation__box-icon-interior,
+  .site-navigation__box-icon-toy {
     fill: #29a592;
   }
 }
@@ -70,8 +69,8 @@
     color: #97e2d2;
   }
 
-  .site-navigation__box--icon-interior,
-  .site-navigation__box--icon-toy {
+  .site-navigation__box-icon-interior,
+  .site-navigation__box-icon-toy {
     fill: #3eb9a7;
   }
 }
@@ -95,13 +94,13 @@
     padding-top: 28px;
   }
 
-  .site-navigation__box--icon-interior {
+  .site-navigation__box-icon-interior {
     position: absolute;
     top: 30px;
     right: 35px;
   }
 
-  .site-navigation__box--icon-toy {
+  .site-navigation__box-icon-toy {
     position: absolute;
     top: 31px;
     right: 35px;
@@ -117,9 +116,7 @@
 
 @media (min-width: $desktop-width) {
   .site-navigation__box {
-    display: block;
-    width: 1050px;
-    height: 100px;
+    height: 120px;
     margin: 0 auto;
   }
 

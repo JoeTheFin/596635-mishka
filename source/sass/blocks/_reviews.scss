@@ -42,19 +42,21 @@
 .reviews__toggles {
   margin-top: 28px;
   margin-bottom: 36px;
+}
 
-  &--left,
-  &--right {
-    display: inline-block;
-    width: 128px;
-    height: 50px;
-    border: 1px solid #ececec;
-    background-position: 50% 50%;
-  }
+.reviews__toggles-left,
+.reviews__toggles-right {
+  display: inline-block;
+  width: 128px;
+  height: 50px;
+  margin: 0;
+  border: 1px solid #ececec;
+  background-position: 50% 50%;
+}
 
-  &--right {
-    margin-left: -5px;
-  }
+.reviews__toggles-right {
+  margin: 0;
+  margin-left: -5px;
 }
 
 .reviews__toggles-button {
@@ -69,27 +71,27 @@
   cursor: pointer;
 }
 
-.reviews__toggles--icon-left,
-.reviews__toggles--icon-right {
+.reviews__toggles-icon-left,
+.reviews__toggles-icon-right {
   position: absolute;
   top: 10px;
   left: 37px;
   fill: #000000;
 }
 
-.reviews__toggles--icon-right {
+.reviews__toggles-icon-right {
   top: 6px;
   left: 40px;
   transform: rotate(180deg);
 }
 
-.reviews__toggles--icon-left:hover,
-.reviews__toggles--icon-right:hover {
+.reviews__toggles-icon-left:hover,
+.reviews__toggles-icon-right:hover {
   fill: #666666;
 }
 
-.reviews__toggles--icon-left:active,
-.reviews__toggles--icon-right:active {
+.reviews__toggles-icon-left:active,
+.reviews__toggles-icon-right:active {
   fill: #c0c0c0;
 }
 
@@ -165,15 +167,15 @@
     position: absolute;
     bottom: 15px;
     right: 30px;
+  }
 
-    &--left,
-    &--right {
-      border: none;
-    }
+  .reviews__toggles-left,
+  .reviews__toggles-right {
+    border: none;
+  }
 
-    &--right {
-      margin-left: -45px;
-    }
+  .reviews__toggles-right {
+    margin-left: -45px;
   }
 
   .reviews__toggles--icon-right {

@@ -337,19 +337,26 @@ input[type="radio"]:focus + label {
     box-sizing: border-box;
   }
 
+  * {
+    outline: 1px solid red;
+  }
+
   .filter__list-checkbox {
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 530px;
     margin-top: -40px;
     margin-bottom: 18px;
     margin-left: 233px;
     padding: 0;
 
     li {
-      width: 262px;
+      width: 264px;
+    }
+
+    li:nth-child(2n) {
+      width: 140px;
     }
 
     label {
@@ -522,7 +529,7 @@ input[type="radio"]:focus + label {
   }
 
   .filter__list-checkbox {
-    width: 880px;
+    width: 792px;
     margin-left: 180px;
 
     label {
@@ -530,6 +537,10 @@ input[type="radio"]:focus + label {
     }
 
     li {
+      width: 264px;
+    }
+
+    li:nth-child(2n) {
       width: 264px;
     }
   }

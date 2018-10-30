@@ -79,7 +79,7 @@
 
 @media (min-width: $desktop-width) {
   .filter-box {
-    width: 1150px;
+    min-width: 1150px;
     margin: 0 auto;
     margin-top: 16px;
   }

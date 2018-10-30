@@ -146,7 +146,7 @@ input[type="radio"]:focus + label {
   }
 
   input::placeholder {
-    font-size: 17.5px;
+    font-size: 17px;
     line-height: 18px;
     color: #d2d2d2;
   }
@@ -154,27 +154,6 @@ input[type="radio"]:focus + label {
   label {
     margin-top: 20px;
     margin-left: -15px;
-  }
-}
-
-.filter__input-box {
-  position: relative;
-}
-
-.filter__input-box--icon-tel,
-.filter__input-box--icon-mail {
-  position: absolute;
-  top: 13px;
-  right: 5px;
-  fill: #cccccc;
-}
-
-.filter__input-box:hover,
-.filter__input-box:active,
-.filter__input-box:focus {
-  .filter__input-box--icon-tel,
-  .filter__input-box--icon-mail {
-    fill: #62d1ba;
   }
 }
 
@@ -186,6 +165,35 @@ input[type="radio"]:focus + label {
     margin-top: 2px;
     margin-left: -15px;
     margin-bottom: 22px;
+  }
+  input[type="tel"]::placeholder {
+    font-size: 19px;
+  }
+}
+
+.filter__input-box {
+  position: relative;
+}
+
+.filter__input-box--icon-tel,
+.filter__input-box--icon-mail {
+  position: absolute;
+  top: 12px;
+  right: 4px;
+  fill: #cccccc;
+}
+
+.filter__input-box--icon-tel {
+  top: 13px;
+  right: 8px;
+}
+
+.filter__input-box:hover,
+.filter__input-box:active,
+.filter__input-box:focus {
+  .filter__input-box--icon-tel,
+  .filter__input-box--icon-mail {
+    fill: #62d1ba;
   }
 }
 
@@ -205,6 +213,12 @@ input[type="radio"]:focus + label {
 
   ::placeholder {
     padding: 13px;
+  }
+}
+
+.filter__name-dop-input {
+  &::placeholder {
+    font-size: 17px;
     color: #d2d2d2;
   }
 }
@@ -244,7 +258,7 @@ input[type="radio"]:focus + label {
 
   .filter__wrapper {
     display: block;
-    min-width: 768px;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -335,10 +349,6 @@ input[type="radio"]:focus + label {
     position: relative;
     margin-top: -32px;
     box-sizing: border-box;
-  }
-
-  * {
-    outline: 1px solid red;
   }
 
   .filter__list-checkbox {
@@ -517,9 +527,8 @@ input[type="radio"]:focus + label {
   }
 
   .filter__wrapper-min {
-    width: 860px;
-    margin-left: 110px;
-    margin-right: 180px;
+    width: 930px;
+    margin: 0 auto;
   }
 
   .filter__list-radio {

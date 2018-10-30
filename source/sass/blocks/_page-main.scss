@@ -119,7 +119,7 @@
 
 @media (min-width: $desktop-width) {
   .page-main {
-    width: 1150px;
+    min-width: 1150px;
     margin: 0 auto;
   }
 

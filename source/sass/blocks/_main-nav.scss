@@ -27,6 +27,10 @@
   }
 }
 
+.main-nav--nojs {
+  margin-bottom: 0;
+}
+
 .main-nav--opened {
   margin-bottom: 0;
 
@@ -73,45 +77,32 @@
     color: #cacaca;
   }
 
-  &:first-child {
-    display: none;
-  }
-
   &:last-child {
     margin-bottom: -22px;
     border-bottom: 1px solid #ececec;
   }
-
-  &:nth-child(4) svg {
-    position: absolute;
-    top: 25px;
-    left: -25px;
-  }
-
-  &:last-child svg {
-    position: absolute;
-    top: 25px;
-    left: -27px;
-  }
 }
 
-.main-nav__list-item--icon-search,
-.main-nav__list-item--icon-basket {
+.main-nav__list-item-icon-search,
+.main-nav__list-item-icon-basket {
+  position: absolute;
+  top: 25px;
+  left: -26px;
   fill: #d3d2d2;
 }
 
 .main-nav__list-item--search:hover,
 .main-nav__list-item--basket:hover {
-  .main-nav__list-item--icon-search,
-  .main-nav__list-item--icon-basket {
+  .main-nav__list-item-icon-search,
+  .main-nav__list-item-icon-basket {
     fill: #63d1bb;
   }
 }
 
 .main-nav__list-item--search:active,
 .main-nav__list-item--basket:active {
-  .main-nav__list-item--icon-search,
-  .main-nav__list-item--icon-basket {
+  .main-nav__list-item-icon-search,
+  .main-nav__list-item-icon-basket {
     fill: #d0f1ea;
   }
 }
@@ -138,6 +129,7 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
+    order: 2;
     width: 668px;
     margin: 0 auto;
     padding-top: 2px;
@@ -157,7 +149,7 @@
     justify-content: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
-    min-height: 162px;
+    min-height: auto;
   }
 
   .main-nav__list-item {
@@ -175,84 +167,96 @@
     }
 
     &:first-child {
-      order: 1;
       display: block;
-      padding-top: 4px;
-      margin-left: -2px;
+      margin-top: 88px;
+      margin-right: 28px;
     }
 
     &:nth-child(2) {
-      order: 4;
-      width: 158px;
-      margin-right: 10px;
-      padding-bottom: 30px;
-    }
-
-    &:nth-child(3) {
-      order: 5;
-      width: 158px;
-    }
-
-    &:nth-child(4) {
-      order: 2;
-      width: 85px;
-      height: 88px;
-      margin-top: -17px;
-      margin-left: 180px;
-      border-left: 1px solid #ececec;
-      border-right: 1px solid #ececec;
+      margin-top: 88px;
+      margin-right: 12px;
     }
 
     &:last-child {
-      order: 3;
-      margin-top: 13px;
-      padding-left: 82px;
+      margin-left: 28px;
       border-bottom: none;
-    }
-
-    &:nth-child(4) svg {
-      top: 36px;
-      left: 35px;
-    }
-
-    &:last-child svg {
-      top: 5px;
-      left: -52px;
     }
   }
 
-  .main-nav__list-item--name-basket {
+  .main-nav__list-item--search {
+    width: 82px;
+    height: 90px;
+    margin-top: -20px;
+    margin-right: 55px;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+  }
+
+  .main-nav__list-item--basket {
+    margin-top: 13px;
+
+    a {
+      width: 182px;
+    }
+  }
+
+  .main-nav__list-item-icon-search {
+    position: absolute;
+    top: 38px;
+    left: 32px;
+  }
+
+  .main-nav__list-item-icon-basket {
+    position: absolute;
+    top: 5px;
+    left: -52px;
+  }
+
+  .main-nav__list-item-name-basket {
     font-size: 17px;
   }
 
-  .main-nav__list-item--name-src {
+  .main-nav__list-item-name-src {
     font-size: 0;
-  }
-
-  .main-nav__list-item-logo {
-    a:hover {
-      opacity: 0.6;
-    }
-
-    a:active {
-      opacity: 0.3;
-    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav {
+    order: 1;
     width: 1050px;
     margin: 0 auto;
   }
 
   .main-nav__list {
-    height: 87px;
-    flex-wrap: nowrap;
+    height: 88px;
+    flex-wrap: wrap;
+    min-height: auto;
 
     li {
       display: block;
       vertical-align: middle;
+    }
+
+    li:first-child::before,
+    li:nth-child(3)::before,
+    li:nth-child(3)::after {
+      content: "";
+      position: absolute;
+      top: -20px;
+      right: -45px;
+      display: block;
+      width: 1px;
+      height: 100px;
+      background-color: #ececec;
+    }
+
+    li:nth-child(3)::before {
+      right: 2px;
+    }
+
+    li:nth-child(3)::after {
+      left: 0;
     }
   }
 
@@ -262,93 +266,42 @@
     }
 
     &:first-child {
-      order: 3;
-      width: 244px;
-      height: 73px;
-      box-sizing: border-box;
+      margin: 0;
+      margin-right: 80px;
+      padding-top: 14px;
     }
 
     &:nth-child(2) {
-      order: 1;
-      margin-top: -17px;
-      margin-left: -50px;
-      padding: 30px 28px 31px 48px;
-      border-right: 1px solid #e7e7e7;
-    }
-
-    &:nth-child(3) {
-      order: 2;
-      margin-top: -17px;
-      margin-left: -10px;
-      padding: 30px 28px 31px 33px;
-    }
-
-    &:nth-child(4) {
-      order: 4;
-      width: 23px;
-      height: 26px;
-      margin-left: 55px;
-      margin-top: -18px;
-      padding: 30px;
-      padding-bottom: 32px;
-      border-left: 1px solid #e7e7e7;
-      border-right: 1px solid #e7e7e7;
+      margin: 0;
+      padding-top: 14px;
     }
 
     &:last-child {
-      order: 5;
-      width: 314px;
-      margin-top: 0;
-      margin-right: -50px;
-      padding-left: 40px;
-      padding-top: 14px;
-      padding-bottom: 30px;
-    }
-
-    &:nth-child(4) svg {
-      top: 7px;
-      left: 3px;
-    }
-
-    &:last-child svg {
-      top: 4px;
+      margin-left: 80px;
     }
   }
 
   .main-nav__list-item--search {
+    width: 86px;
+    height: 28px;
+    margin: 0;
+    margin-left: 340px;
+    margin-right: 0;
+    border: none;
+
     a {
       display: block;
       width: 20px;
     }
-  }
 
-  .main-nav__list-item-logo {
-    position: relative;
-    margin-top: -12px;
-    padding-left: 68px;
-
-    picture {
-      display: none;
-    }
-
-    a:hover {
-      opacity: 0.6;
-    }
-
-    a:active {
-      opacity: 0.3;
+    svg {
+      top: 19px;
+      left: 0;
     }
   }
 
-  .main-nav__list-item-logo-link {
-    position: absolute;
-    top: -1px;
-    left: -41px;
-    width: 149px;
-    height: 73px;
-    background-image: url("../img/logo-desktop.svg");
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: auto;
+  .main-nav__list-item--basket {
+    margin: 0;
+    padding-top: 14px;
   }
 }

@@ -12,7 +12,9 @@
 
   h1 {
     display: block;
+    width: auto;
     padding-top: 75px;
+    padding-bottom: 20px;
     font-size: 27px;
     line-height: 30px;
     text-align: center;
@@ -71,7 +73,7 @@
 
 @media (min-width: $desktop-width) {
   .catalog {
-    width: 1150px;
+    min-width: 1150px;
     margin: 0 auto;
     margin-top: 16px;
   }
@@ -93,7 +95,6 @@
     margin-top: -56px;
     padding-top: 16px;
     height: 237px;
-    width: 100%;
 
     h1 {
       font-size: 53px;

@@ -30,11 +30,18 @@
 .filter__list-radio,
 .filter__list-checkbox {
   display: block;
+  width: 260px;
   margin-top: 7px;
   margin-left: -2px;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
   padding-left: 0;
   list-style: none;
+}
+
+.filter__list-checkbox {
+  label {
+    margin-bottom: 19px;
+  }
 }
 
 .filter__label {
@@ -42,12 +49,13 @@
   position: relative;
   margin-left: 50px;
   margin-top: 4px;
-  margin-bottom: 2px;
+  padding-bottom: 2px;
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
   color: #000000;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .filter input[type="radio"],
@@ -130,13 +138,15 @@ input[type="radio"]:focus + label {
 .filter__tel-email {
   input {
     width: 260px;
-    height: 48px;
+    height: 52px;
     padding-left: 0;
+    padding-right: 45px;
     font-size: 19px;
     line-height: 18px;
     color: #444444;
     border: none;
     border-bottom: 2px solid #000000;
+    box-sizing: border-box;
   }
 
   input:hover,
@@ -166,6 +176,7 @@ input[type="radio"]:focus + label {
     margin-left: -15px;
     margin-bottom: 22px;
   }
+
   input[type="tel"]::placeholder {
     font-size: 19px;
   }
@@ -175,8 +186,8 @@ input[type="radio"]:focus + label {
   position: relative;
 }
 
-.filter__input-box--icon-tel,
-.filter__input-box--icon-mail {
+.filter__input-box-icon-tel,
+.filter__input-box-icon-mail {
   position: absolute;
   top: 12px;
   right: 4px;
@@ -191,8 +202,8 @@ input[type="radio"]:focus + label {
 .filter__input-box:hover,
 .filter__input-box:active,
 .filter__input-box:focus {
-  .filter__input-box--icon-tel,
-  .filter__input-box--icon-mail {
+  .filter__input-box-icon-tel,
+  .filter__input-box-icon-mail {
     fill: #62d1ba;
   }
 }
@@ -223,9 +234,9 @@ input[type="radio"]:focus + label {
   }
 }
 
-.filter__name--dop-input:hover,
-.filter__name--dop-input:active,
-.filter__name--dop-input:focus {
+.filter__name-dop-input:hover,
+.filter__name-dop-input:active,
+.filter__name-dop-input:focus {
   border: 2px solid #62d1ba;
 }
 
@@ -241,7 +252,7 @@ input[type="radio"]:focus + label {
 .filter__button {
   display: block;
   width: 100%;
-  margin-bottom: 60px;
+  margin-bottom: 57px;
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
@@ -271,15 +282,15 @@ input[type="radio"]:focus + label {
     width: 100%;
   }
 
+  .filter__wrapper-min {
+    width: 668px;
+    margin: 0 auto;
+  }
+
   .filter__checkbox-filter-box,
   .filter__tel-email {
     width: 100%;
     background-color: #f1f1f1;
-  }
-
-  .filter__wrapper-min {
-    width: 668px;
-    margin: 0 auto;
   }
 
   .filter__fieldset {
@@ -288,6 +299,7 @@ input[type="radio"]:focus + label {
 
   .filter__name {
     display: block;
+    width: 90px;
     padding-left: 4px;
     padding-top: 49px;
     font-size: 17px;
@@ -315,10 +327,18 @@ input[type="radio"]:focus + label {
   }
 
   .filter__list-radio {
-    label {
-      margin-top: -50px;
-      margin-bottom: 38px;
-      margin-left: 235px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 600px;
+    margin: 0;
+    margin-top: -46px;
+    margin-left: 17px;
+    margin-bottom: 56px;
+    padding: 0;
+
+    li {
+      height: 75px;
     }
   }
 
@@ -356,6 +376,7 @@ input[type="radio"]:focus + label {
     justify-content: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 450px;
     margin-top: -40px;
     margin-bottom: 18px;
     margin-left: 233px;
@@ -366,14 +387,16 @@ input[type="radio"]:focus + label {
     }
 
     li:nth-child(2n) {
-      width: 140px;
+      width: 120px;
+      margin-right: 0;
     }
 
     label {
-      width: 120px;
+      width: 170px;
       height: 59px;
       margin: 0;
       padding: 0;
+      padding-bottom: 20px;
     }
   }
 
@@ -419,27 +442,19 @@ input[type="radio"]:focus + label {
       margin-top: 7px;
     }
 
-    input[type="text"]::placeholder {
-      font-size: 20px;
+    input[type="text"]::placeholder,
+    input[type="email"]::placeholder,
+    input[type="tel"]::placeholder {
+      font-size: 19px;
     }
 
     input[type="email"],
     input[type="tel"] {
-      width: 485px;
+      width: 500px;
       height: 50px;
       margin-left: -15px;
-      margin-top: 2px;
+      margin-top: 7px;
       background-color: rgba(255, 255, 255, 0);
-    }
-
-    input[type="email"]::placeholder {
-      font-size: 20px;
-      line-height: 18px;
-    }
-
-    input[type="tel"]::placeholder {
-      font-size: 17px;
-      line-height: 18px;
     }
 
     input[type="text"],
@@ -462,9 +477,14 @@ input[type="radio"]:focus + label {
     }
   }
 
-  .filter__input-box--icon-tel,
-  .filter__input-box--icon-mail {
-    right: 26px;
+  .filter__input-box-icon-tel {
+    top: 18px;
+    right: 27px;
+  }
+
+  .filter__input-box-icon-mail {
+    top: 16px;
+    right: 23px;
   }
 
   .filter__addition-box {
@@ -476,10 +496,11 @@ input[type="radio"]:focus + label {
       margin-top: -40px;
       border: 2px solid black;
     }
+  }
 
-    textarea::placeholder {
-      font-size: 21px;
-      color: #c4c4c4;
+  .filter__name-dop-input {
+    &::placeholder {
+      font-size: 19px;
     }
   }
 
@@ -522,7 +543,7 @@ input[type="radio"]:focus + label {
 
   .filter__wrapper {
     display: block;
-    min-width: 1150px;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -531,22 +552,45 @@ input[type="radio"]:focus + label {
     margin: 0 auto;
   }
 
+  .filter__name {
+    margin-left: -51px;
+  }
+
   .filter__list-radio {
-    label {
-      margin-left: 185px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 600px;
+    margin: 0;
+    margin-top: -50px;
+    margin-left: -70px;
+    margin-bottom: 56px;
+    padding: 0;
+
+    li {
+      height: 75px;
     }
   }
 
   .filter__list-checkbox {
-    width: 792px;
-    margin-left: 180px;
+    width: 700px;
+    margin-left: 145px;
 
     label {
       height: 59px;
     }
 
     li {
-      width: 264px;
+      width: 120px;
+      margin-right: 143px;
+    }
+
+    li:nth-child(2n) {
+      margin-right: 143px;
+    }
+
+    li:nth-child(3n) {
+      margin-right: 0;
     }
 
     li:nth-child(2n) {
@@ -555,25 +599,50 @@ input[type="radio"]:focus + label {
   }
 
   .filter__input-box {
-    margin-left: 118px;
-    padding-right: 45px;
+    margin-left: 81px;
+    padding-right: 40px;
 
     input[type="email"],
     input[type="tel"] {
-      width: 682px;
+      margin-top: 7px;
+      width: 700px;
+    }
+
+    input[type="text"] {
+      margin-top: 10px;
+      margin-right: 35px;
     }
   }
 
-  .filter__input-box--icon-tel,
-  .filter__input-box--icon-mail {
-    right: 52px;
+  .filter__input-box-icon-mail {
+    top: 15px;
+    right: 84px;
+  }
+
+  .filter__input-box-icon-tel {
+    top: 16px;
+    right: 88px;
+  }
+
+  .filter__wrapper-desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .filter__name--dop {
+    margin-top: -7px;
+    width: auto;
   }
 
   .filter__addition-box {
     textarea {
       display: block;
-      margin-left: 100px;
-      height: 139px;
+      margin: 0;
+      margin-top: -40px;
+      margin-left: 65px;
+      padding: 13px;
+      height: 142px;
       width: 700px;
       border: 2px solid black;
     }
@@ -589,11 +658,11 @@ input[type="radio"]:focus + label {
   .filter__button {
     margin-right: auto;
     margin-left: -15px;
-    margin-top: 45px;
+    margin-top: 42px;
   }
 
   .filter__footnote {
     margin-right: -17px;
-    margin-top: 60px;
+    margin-top: 57px;
   }
 }

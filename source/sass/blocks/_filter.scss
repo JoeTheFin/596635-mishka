@@ -221,6 +221,10 @@ input[type="radio"]:focus + label {
   resize: none;
   outline: none;
   border: 2px solid #000000;
+
+  ::placeholder {
+    padding: 13px;
+  }
 }
 
 .filter__name-dop-input {
@@ -379,11 +383,11 @@ input[type="radio"]:focus + label {
     padding: 0;
 
     li {
-      width: 120px;
-      margin-right: 142px;
+      width: 264px;
     }
 
     li:nth-child(2n) {
+      width: 120px;
       margin-right: 0;
     }
 
@@ -614,6 +618,16 @@ input[type="radio"]:focus + label {
   .filter__input-box-icon-tel {
     top: 16px;
     right: 88px;
+  }
+
+  .filter__fullname-box {
+    .filter__input-box {
+      margin-top: -50px;
+    }
+
+    label {
+      height: 74px;
+    }
   }
 
   .filter__wrapper-desktop {

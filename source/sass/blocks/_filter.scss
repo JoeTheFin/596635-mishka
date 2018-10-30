@@ -194,7 +194,7 @@ input[type="radio"]:focus + label {
   fill: #cccccc;
 }
 
-.filter__input-box--icon-tel {
+.filter__input-box-icon-tel {
   top: 13px;
   right: 8px;
 }
@@ -548,7 +548,7 @@ input[type="radio"]:focus + label {
   }
 
   .filter__wrapper-min {
-    width: 930px;
+    width: 860px;
     margin: 0 auto;
   }
 
@@ -592,10 +592,6 @@ input[type="radio"]:focus + label {
     li:nth-child(3n) {
       margin-right: 0;
     }
-
-    li:nth-child(2n) {
-      width: 264px;
-    }
   }
 
   .filter__input-box {
@@ -622,6 +618,16 @@ input[type="radio"]:focus + label {
   .filter__input-box-icon-tel {
     top: 16px;
     right: 88px;
+  }
+
+  .filter__fullname-box {
+    .filter__input-box {
+      margin-top: -50px;
+    }
+
+    label {
+      height: 74px;
+    }
   }
 
   .filter__wrapper-desktop {

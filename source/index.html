@@ -18,41 +18,41 @@
 
   <header class="page-header">
 
-    <a class="page-header__logo">
-      <picture>
-        <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-        <img src="img/logo-mobile.svg" width="85" height="35" alt="Мишка-логотип">
-      </picture>
-    </a>
     <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs">
+      <a class="main-nav__logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img src="img/logo-mobile.svg" width="85" height="35" alt="Мишка-логотип">
+        </picture>
+      </a>
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__list-item">
-            <a href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="main-nav__list-item">
-            <a href="form.html">Вязание на заказ</a>
-          </li>
-          <li class="main-nav__list-item main-nav__list-item--search">
-            <a href="#">
-              <svg class="main-nav__list-item-icon-search" width="18" height="18">
-                <use xlink:href="./img/sprite-auto.svg#icon-search"></use>
-              </svg>
-              <span class="main-nav__list-item-name-src">Поиск по сайту</span>
-            </a>
-          </li>
-          <li class="main-nav__list-item main-nav__list-item--basket">
-            <a href="#">
-              <svg class="main-nav__list-item-icon-basket" width="21" height="18">
-                <use xlink:href="./img/sprite-auto.svg#icon-cart"></use>
-              </svg>
-              <span class="main-nav__list-item-name-basket">Корзина: пока пуста</span>
-            </a>
-          </li>
-        </ul>
-      </div>
+      <ul class="main-nav__list main-nav__list--site-list">
+        <li class="main-nav__list-item main-nav__list-item--catalog">
+          <a href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="main-nav__list-item main-nav__list-item--form">
+          <a href="form.html">Вязание на заказ</a>
+        </li>
+      </ul>
+      <ul class="main-nav__list main-nav__list--user-list">
+        <li class="main-nav__list-item main-nav__list-item--search">
+          <a href="#">
+            <svg class="main-nav__list-item-icon-search" width="18" height="18">
+              <use xlink:href="./img/sprite-auto.svg#icon-search"></use>
+            </svg>
+            <span class="main-nav__list-item-name-src">Поиск по сайту</span>
+          </a>
+        </li>
+        <li class="main-nav__list-item main-nav__list-item--basket">
+          <a href="#">
+            <svg class="main-nav__list-item-icon-basket" width="21" height="18">
+              <use xlink:href="./img/sprite-auto.svg#icon-cart"></use>
+            </svg>
+            <span class="main-nav__list-item-name-basket">Корзина: пока пуста</span>
+          </a>
+        </li>
+      </ul>
     </nav>
 
   </header>

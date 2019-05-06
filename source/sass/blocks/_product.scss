@@ -15,6 +15,14 @@
 
 .product__image {
   display: block;
+
+  &--tab {
+    display: none;
+  }
+
+  &--des {
+    display: none;
+  }
 }
 
 .product__box {
@@ -43,6 +51,7 @@
   line-height: 30px;
   font-weight: 400;
   color: #444444;
+  padding-right: 10px;
 }
 
 .product__price {
@@ -101,9 +110,15 @@
   }
 
   .product__image {
-    display: block;
-    width: 334px;
-    height: 334px;
+    display: none;
+
+    &--tab {
+      display: block;
+    }
+
+    &--des {
+      display: none;
+    }
   }
 
   .product__box {
@@ -113,6 +128,7 @@
   .product__name {
     font-size: 20px;
     line-height: 24px;
+    padding-right: 20px;
   }
 
   .product__description {
@@ -120,7 +136,6 @@
   }
 
   .product__price {
-    margin-top: 169px;
     margin-left: 4px;
     font-size: 17px;
   }
@@ -184,9 +199,15 @@
   }
 
   .product__image {
-    display: block;
-    width: 316px;
-    height: 462px;
+    display: none;
+
+    &--tab {
+      display: none;
+    }
+
+    &--des {
+      display: block;
+    }
   }
 
   .product__link-basket-icon-basket {

@@ -20,11 +20,7 @@
 
     <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs">
       <a class="main-nav__logo" href="index.html">
-        <picture>
-          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img src="img/logo-mobile.svg" width="85" height="35" alt="Мишка-логотип">
-        </picture>
+          <img src="img/logo.svg" width="200" height="90" alt="логотип">
       </a>
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list main-nav__list--site-list">
@@ -44,18 +40,6 @@
 
   <main class="page-main">
 
-    <ul class="page-main__promo-list">
-      <li class="page-main__promo-list-item">
-        <a href="#">Новые поступления</a>
-      </li>
-      <li class="page-main__promo-list-item">
-        <a href="#">Распродажа</a>
-      </li>
-      <li class="page-main__promo-list-item">
-        <a href="#">Бесплатная доставка по России</a>
-      </li>
-    </ul>
-
     <div class="page-main__name">
       <h1>Милые штуки ручной<br> работы для дома</h1>
     </div>
@@ -64,9 +48,9 @@
       <a class="site-navigation__link" href="#">
         <div class="site-navigation__box site-navigation__box--home">
           <svg class="site-navigation__box-icon-interior" width="41" height="63">
-            <use xlink:href="./img/sprite-auto.svg#icon-interior"></use>
+            <use xlink:href="./img/sprite-auto.svg#icon-hand"></use>
           </svg>
-          <b class="site-navigation__name">Предметы<br> интерьера</b>
+          <b class="site-navigation__name">ПРИЕДЕМ<br> БЫСТРО</b>
         </div>
       </a>
       <a class="site-navigation__link" href="#">
@@ -74,7 +58,7 @@
           <svg class="site-navigation__box-icon-toy" width="60" height="60">
             <use xlink:href="./img/sprite-auto.svg#icon-toy"></use>
           </svg>
-          <b class="site-navigation__name">Детские<br> игрушки</b>
+          <b class="site-navigation__name">ВОЗЬМЕМ<br> МАЛО</b>
         </div>
       </a>
     </section>
@@ -225,7 +209,7 @@
           <table class="contacts__info">
             <tr>
               <td>e-mail:</td>
-              <td><a class="contacts__email-link" href="#">info@mimimishkashop.ru</a></td>
+              <td><a class="contacts__email-link" href="#">oknoff2008@yandex.ru</a></td>
             </tr>
           </table>
         </div>
@@ -233,7 +217,7 @@
           <table class="contacts__info">
             <tr>
               <td>адрес:</td>
-              <td>г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</td>
+              <td>г. Казань,<br> ул. Максимова,<br> д. 33</td>
             </tr>
           </table>
         </div>
@@ -247,7 +231,7 @@
             <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
             <img class="contacts__map" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="457" alt="Карта, где мы находимся">
           </picture>
-          <iframe class="contacts__map-interactive" src="https://yandex.ru/map-widget/v1/?um=constructor%3A556077e997789d0ec8ffed6e0d328936633f971e0e7b6d140268e8b582e5439d&amp;source=constructor"></iframe>
+          <iframe class="contacts__map-interactive" src=https://yandex.ru/map-widget/v1/-/CCbErAkt" allowfullscreen="false""></iframe>
         </div>
         <a class="contacts__write button" href="#">Напишите нам</a>
       </div>
@@ -259,10 +243,8 @@
 
     <div class="page-footer__wrapper">
       <div class="page-footer__logo">
-        <a href="#">
-          <svg class="page-footer__logo-icon" width="102" height="34">
-            <use xlink:href="./img/sprite-auto.svg#logo-footer"></use>
-          </svg>
+        <a class="main-nav__logo" href="index.html">
+          <img src="img/logo.svg" width="150" height="100" alt="логотип">
         </a>
       </div>
       <div class="page-footer__social social">
@@ -307,8 +289,8 @@
 
   <section class="modal">
     <!-- open class="modal-show"-->
-    <h1>Добавить в корзину</h1>
-    <p>Выберите размер:</p>
+    <h1>Хочу заказать</h1>
+    <p>Выберите услугу:</p>
     <div class="modal__wrapper">
       <div class="modal__size-box">
         <div class="modal__size">
@@ -320,6 +302,17 @@
         <div class="modal__size">
           <a class="modal__size-link">L</a>
         </div>
+      </div>
+      <div class="modal__size-box">
+        <form action="mailto:joethefina@ya.ru" type="post" enctype="text/plain">
+          <label for="subj">Тема:</label><br />
+          <input type="text" id="subj" name="Subject" /><br /><br />
+
+          <label for="body">Текст:</label><br />
+          <textarea id="body" name="Body" rows="5" colls="20"></textarea><br /><br />
+
+          <input type="submit" value="Отправить письмо" />
+        </form>
       </div>
       <a class="modal__button button">
         Добавить

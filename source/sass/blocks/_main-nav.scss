@@ -73,6 +73,7 @@
     font-weight: 700;
     color: #000000;
     text-decoration: none;
+    text-transform: uppercase;
   }
 
   a:hover {
@@ -151,9 +152,9 @@
     margin-right: 207px;
 
     img {
-      padding-top: 2px;
-      width: 112px;
-      height: 47px;
+      padding-top: 0;
+      width: 170px;
+      height: 75px;
     }
 
     &:hover {

@@ -27,10 +27,19 @@
 .videobox__name {
   position: relative;
   display: block;
-  margin-left: 90px;
+  margin-left: 20px;
   margin-top: 23px;
   margin-bottom: 23px;
   font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.videobox__name--p {
+  display: block;
+  margin-left: 25px;
+  font-size: 15px;
   line-height: 24px;
   font-weight: 700;
   color: #000000;
@@ -139,7 +148,6 @@
 
   .videobox__name {
     position: relative;
-    order: 1;
     padding-top: 10px;
     padding-left: 16px;
     font-size: 20px;
@@ -188,48 +196,20 @@
     height: 455px;
   }
 
-  .videobox__icon-video {
-    top: 43px;
-    left: 761px;
-  }
-
-  .videobox__image {
-    width: 682px;
-    height: 455px;
-  }
-
-  .videobox__content-icon-play {
-    position: absolute;
-    top: 190px;
-    left: 290px;
-
-    &:hover {
-      top: 180px;
-      left: 282px;
-      width: 120px;
-      height: 92px;
-    }
-
-    &:active {
-      top: 196px;
-      left: 298px;
-      width: 80px;
-      height: 62px;
-      opacity: 0.6;
-    }
-  }
-
   .videobox__name {
     width: 180px;
     margin: 0;
-    margin-top: 87px;
-    margin-left: 36px;
+  }
+
+  .videobox__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .videobox__description {
     width: 235px;
     margin: 0;
-    margin-left: 20px;
     margin-top: 18px;
     margin-bottom: 32px;
     font-size: 15px;
@@ -238,8 +218,10 @@
 
   .videobox__button {
     display: block;
+    position: absolute;
+    bottom: 60px;
+    left: 60%;
     width: 225px;
     margin: 0;
-    margin-left: 54px;
   }
 }

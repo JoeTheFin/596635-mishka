@@ -6,7 +6,7 @@
   z-index: 3;
   display: none;
   width: 320px;
-  height: 336px;
+  height: auto;
   margin: 0 auto;
   box-sizing: border-box;
   font-family: $font-family;
@@ -28,6 +28,18 @@
     text-transform: uppercase;
   }
 
+  h2 {
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
   p {
     display: block;
     width: 145px;
@@ -40,6 +52,10 @@
     color: #444444;
     text-align: center;
   }
+}
+
+.number-tel {
+  font-size: 25px;
 }
 
 .modal-show {
@@ -63,21 +79,37 @@
 
 .modal__wrapper {
   display: block;
-  width: 260px;
+  width: auto;
   margin: 0 auto;
+
+  h3 {
+    display: block;
+    text-align: center;
+  }
 
   .modal__size-box {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+
+    form {
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
   }
 
   .modal__button {
     display: block;
-    margin-top: 30px;
+    text-align: center;
     color: #ffffff;
     background-color: #63d1bb;
     border: none;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .modal__button:hover {
+    background-color: #46c1ae;
   }
 }
 
@@ -112,12 +144,16 @@
 @media (min-width: $tablet-width) {
   .modal {
     width: 568px;
-    height: 340px;
+    height: auto;
 
     h1 {
       width: 100%;
       font-size: 30px;
       line-height: 57px;
+    }
+
+    h2 {
+      font-size: 20px;
     }
 
     p {
@@ -132,5 +168,9 @@
 
   .modal__size {
     width: 110px;
+  }
+
+  .number-tel {
+    font-size: 28px;
   }
 }

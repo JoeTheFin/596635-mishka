@@ -2,6 +2,7 @@ var link = document.querySelector(".modal-link");
 var popup = document.querySelector(".modal");
 var overlay = document.querySelector(".modal-overlay");
 var basketLink = document.querySelectorAll(".product__link-basket");
+
 for (var i = 0; i < basketLink.length; i++) {
   basketLink[i].addEventListener("click", function (evt) {
     evt.preventDefault();

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="css/style-min.css" type="text/css" rel="stylesheet">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+</head>
+
+<body>
+
+<div style="display:none">
+  <include src="build/img/sprite-auto.svg"></include>
+</div>
+
+<header class="page-header">
+
+  <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs">
+    <a class="main-nav__logo" href="index.html">
+      <img src="img/logo.svg" width="200" height="90" alt="логотип">
+    </a>
+    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <ul class="main-nav__list main-nav__list--site-list">
+      <li class="main-nav__list-item main-nav__list-item--form">
+        <a href="okna.html">Окна</a>
+      </li>
+      <li class="main-nav__list-item main-nav__list-item--sky">
+        <a href="balkony.html">Балконы</a>
+      </li>
+    </ul>
+  </nav>
+
+</header>
+
+<main class="page-main">
+
+  <section class="catalog">
+    <div class="catalog__caption catalog__caption--potolki">
+      <h1>Натяжные потолки</h1>
+    </div>
+    <div class="catalog__wrapper">
+      <div class="catalog__wrapper-desktop">
+        <article class="catalog__product product">
+          <div class="product__image-box">
+            <img class="product__image--des" src="img/plastic-des.jpg" width="316" height="462">
+            <img class="product__image--tab" src="img/plastic.jpg" width="334" height="334">
+            <img class="product__image" src="img/plastic.jpg" width="260" height="195">
+          </div>
+          <div class="product__box">
+            <a class="product__link" href="#">
+              <b class="product__name">
+                Пластиковые конструкции
+              </b>
+            </a>
+            <p class="product__description">
+              Окна из пластикового профиля самый популярный вид окон.
+              Мы используем пластиковые профили от лучших производителей — Rehau, Brusbox, Veka
+            </p>
+            <b class="product__price">от 6 900 руб
+              <a class="product__link-basket modal-link" href="#">
+                <svg class="product__link-basket-icon-basket" width="21" height="18">
+                  <use xlink:href="./img/sprite-auto.svg#icon-cart"></use>
+                </svg>
+              </a>
+            </b>
+          </div>
+        </article>
+        <article class="catalog__product product">
+          <div class="product__image-box">
+            <img class="product__image--des" src="img/al-des.jpg" width="316" height="462">
+            <img class="product__image--tab" src="img/al-tab.jpg" width="334" height="334">
+            <img class="product__image" src="img/al.jpg" width="260" height="195">
+          </div>
+          <div class="product__box">
+            <a class="product__link" href="#">
+              <b class="product__name">
+                Алюминиевые конструкции
+              </b>
+            </a>
+            <p class="product__description">
+              Конструкции из алюминиевого профиля. Благодаря высокой
+              прочности и жесткости, такие конструкции идеально подходят для остекления больших площадей
+            </p>
+            <b class="product__price">от 9 900 руб
+              <a class="product__link-basket" href="#">
+                <svg class="product__link-basket-icon-basket product__link-basket-icon-basket--min" width="21" height="18">
+                  <use xlink:href="./img/sprite-auto.svg#icon-cart"></use>
+                </svg>
+              </a>
+            </b>
+          </div>
+        </article>
+        <article class="catalog__product product">
+          <div class="product__image-box">
+            <img class="product__image--des" src="img/nostand-des.jpg" width="316" height="462">
+            <img class="product__image--tab" src="img/nostand.jpg" width="334" height="334">
+            <img class="product__image" src="img/nostand.jpg" width="260" height="195">
+          </div>
+          <div class="product__box">
+            <a class="product__link" href="#">
+              <b class="product__name">
+                Нестандартные конструкции
+              </b>
+            </a>
+            <p class="product__description">
+              Современные технологии производства окон позволяют нам изготовить окна различной
+              конструкции — арки, круги, трапеции, треугольники
+            </p>
+            <b class="product__price">от 10 000 руб
+              <a class="product__link-basket" href="#">
+                <svg class="product__link-basket-icon-basket" width="21" height="18">
+                  <use xlink:href="./img/sprite-auto.svg#icon-cart"></use>
+                </svg>
+              </a>
+            </b>
+          </div>
+        </article>
+      </div>
+      <article class="catalog__videobox videobox">
+        <div class="videobox__wrapper">
+          <b class="videobox__name">Процесс производства:</b>
+          <div class="videobox__content">
+            <div>
+              <h2 class="videobox__name--p">1. Замер</h2>
+              <p class="videobox__description">Бесплатный замер окон. Наши опытные мастера
+                с высокой точностью выполнят все необходимые
+                измерения, что гарантирует идеальное эстетическое
+                восприятие и удобство эксплуатации
+                металлопластикового стеклопакета</p>
+            </div>
+            <div>
+              <h2 class="videobox__name--p">2. Демонтаж старых окон</h2>
+              <p class="videobox__description">Демонтаж старых оконных конструкций
+                производим двумя способами – с сохранением оконного профиля или без сохранения.
+                Если вам нужно оставить вашу старую раму, например, на дачу, то мы сделаем это максимально бережно
+              </p>
+            </div>
+            <div>
+              <h2 class="videobox__name--p">3. Монтаж новых окон</h2>
+              <p class="videobox__description">Монтаж окна по ГОСТу, полная шумоизоляция
+                и герметичность. Мы не допускаем появления грибка и плесени, а также промерзания
+                монтажного шва</p>
+            </div>
+          </div>
+          <a class="videobox__button button product__link-basket" href="#">Сделать заказ</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer class="page-footer">
+
+  <div class="page-footer__wrapper">
+    <div class="page-footer__logo">
+      <a class="main-nav__logo" href="index.html">
+        <img src="img/logo.svg" width="150" height="100" alt="логотип">
+      </a>
+    </div>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a href="balkony.html">Балконы</a>
+        </li>
+        <li class="social__item">
+          <a href="potolki.html">Потолки</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright">
+      <b class="page-footer__copyright-text">250-23-50&nbsp&nbsp</b>
+      <b class="page-footer__copyright-text">297-72-32</b>
+    </div>
+  </div>
+
+  <div class="modal-overlay"></div>
+
+</footer>
+
+<section class="modal">
+  <!-- open class="modal-show"-->
+  <h1>Хотите заказать?</h1>
+  <h2>Просто позвоните: <br>
+    <span class="number-tel">250-23-50</span> &nbsp; <span class="number-tel">297-72-32</span></h2>
+  <p>или</p>
+  <div class="modal__wrapper">
+    <h3>Напишите нам <br>на электронную почту</h3>
+    <div class="modal__size-box">
+      <form action="mailto:oknoff2008@yandex.ru" type="post" enctype="text/plain">
+        <input class="modal__button button" type="submit" value="Написать письмо" />
+      </form>
+    </div>
+  </div>
+</section>
+
+<script src="js/menu-open.js"></script>
+<script src="js/modal-open.js"></script>
+<script src="js/picturefill.js"></script>
+<script src="js/svgxuse.js"></script>
+
+</body>
+
+</html>

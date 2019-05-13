@@ -88,7 +88,7 @@
   position: relative;
   margin-top: 35px;
 
-  picture {
+  img {
     position: absolute;
     top: 0;
     left: -30px;
@@ -199,9 +199,6 @@
   .contacts__table-one {
     display: inline-block;
     width: 300px;
-    margin-right: 30px;
-    margin-bottom: 85px;
-    margin-left: -4px;
     vertical-align: baseline;
 
     td:first-child {
@@ -214,9 +211,16 @@
   .contacts__table-two {
     display: inline-block;
     width: 330px;
-    margin-top: 25px;
-    margin-right: 0;
-    margin-bottom: 50px;
+
+    td:last-child {
+      padding: 0;
+      white-space: nowrap;
+    }
+  }
+
+  .contacts__table-three {
+    display: inline-block;
+    width: 330px;
 
     td:last-child {
       padding: 0;
@@ -295,9 +299,9 @@
 
   .contacts__table-two {
     display: block;
-    margin-top: -85px;
+    margin-top: 20px;
     margin-left: -3px;
-    margin-bottom: 78px;
+    margin-bottom: 15px;
   }
 
   .contacts__map-box {
@@ -312,7 +316,7 @@
       top: 0;
       left: 404px;
       width: 525px;
-      height: 457px;
+      height: auto;
     }
 
     .contacts__map-interactive {
